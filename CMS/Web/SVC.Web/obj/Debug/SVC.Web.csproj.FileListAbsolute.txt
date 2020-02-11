@@ -1,0 +1,14 @@
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\bin\SVC.Web.dll.config
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\bin\SVC.Web.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\bin\SVC.Web.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\bin\SEM.CMS.CL.AR.Common.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\bin\Microsoft.Practices.Unity.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\bin\Microsoft.Practices.Unity.Interception.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\bin\SEM.CMS.CL.AR.Common.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\obj\Debug\SVC.Web.csprojAssemblyReference.cache
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\obj\Debug\SVC.Web.csproj.CopyComplete
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\obj\Debug\SVC.Web.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\SVC.Web\obj\Debug\SVC.Web.pdb

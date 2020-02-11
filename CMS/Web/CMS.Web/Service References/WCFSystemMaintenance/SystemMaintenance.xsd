@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DeleteDataGridColumn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SystemMaintenanceDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MS.DS.SystemMaintenanceDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/SystemMaintenanceDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteDataGridColumnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteDataGridColumnResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SystemMaintenanceDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MS.DS.SystemMaintenanceDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/SystemMaintenanceDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataColumnByDataGridName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DataGridName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataColumnByDataGridNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataColumnByDataGridNameResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SystemMaintenanceDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MS.DS.SystemMaintenanceDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/SystemMaintenanceDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataColumnList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DataGridName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataColumnListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataColumnListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SystemMaintenanceDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MS.DS.SystemMaintenanceDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/SystemMaintenanceDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataColumnName">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataColumnNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataColumnNameResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SystemMaintenanceDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MS.DS.SystemMaintenanceDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/SystemMaintenanceDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReferenceByReferenceCategoryID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SystemMaintenanceDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MS.DS.SystemMaintenanceDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/SystemMaintenanceDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReferenceByReferenceCategoryIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetReferenceByReferenceCategoryIDResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SystemMaintenanceDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MS.DS.SystemMaintenanceDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/SystemMaintenanceDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertDataGridColumn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SystemMaintenanceDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MS.DS.SystemMaintenanceDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/SystemMaintenanceDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertDataGridColumnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertDataGridColumnResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SystemMaintenanceDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MS.DS.SystemMaintenanceDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/SystemMaintenanceDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDataGridColumn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SystemMaintenanceDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MS.DS.SystemMaintenanceDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/SystemMaintenanceDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDataGridColumnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateDataGridColumnResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SystemMaintenanceDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MS.DS.SystemMaintenanceDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/SystemMaintenanceDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

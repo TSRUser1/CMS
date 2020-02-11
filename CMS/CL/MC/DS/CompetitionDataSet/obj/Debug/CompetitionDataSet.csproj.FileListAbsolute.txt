@@ -1,0 +1,5 @@
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MC\DS\CompetitionDataSet\bin\Debug\SEM.CMS.CL.MC.DS.CompetitionDataSet.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MC\DS\CompetitionDataSet\bin\Debug\SEM.CMS.CL.MC.DS.CompetitionDataSet.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MC\DS\CompetitionDataSet\obj\Debug\CompetitionDataSet.csprojAssemblyReference.cache
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MC\DS\CompetitionDataSet\obj\Debug\SEM.CMS.CL.MC.DS.CompetitionDataSet.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MC\DS\CompetitionDataSet\obj\Debug\SEM.CMS.CL.MC.DS.CompetitionDataSet.pdb

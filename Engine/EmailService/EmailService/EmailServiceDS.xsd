@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmailServiceDS" targetNamespace="http://tempuri.org/EmailServiceDS.xsd" xmlns:mstns="http://tempuri.org/EmailServiceDS.xsd" xmlns="http://tempuri.org/EmailServiceDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EmailServiceDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="EmailServiceDS" msprop:Generator_UserDSName="EmailServiceDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Email" msprop:Generator_TableClassName="EmailDataTable" msprop:Generator_TableVarName="tableEmail" msprop:Generator_RowChangedName="EmailRowChanged" msprop:Generator_TablePropName="Email" msprop:Generator_RowDeletingName="EmailRowDeleting" msprop:Generator_RowChangingName="EmailRowChanging" msprop:Generator_RowEvHandlerName="EmailRowChangeEventHandler" msprop:Generator_RowDeletedName="EmailRowDeleted" msprop:Generator_RowClassName="EmailRow" msprop:Generator_UserTableName="Email" msprop:Generator_RowEvArgName="EmailRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmailID" msprop:Generator_ColumnVarNameInTable="columnEmailID" msprop:Generator_ColumnPropNameInRow="EmailID" msprop:Generator_ColumnPropNameInTable="EmailIDColumn" msprop:Generator_UserColumnName="EmailID" type="xs:int" minOccurs="0" />
+              <xs:element name="EmailSubject" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="EmailSubject" msprop:Generator_ColumnVarNameInTable="columnEmailSubject" msprop:Generator_ColumnPropNameInTable="EmailSubjectColumn" msprop:Generator_UserColumnName="EmailSubject" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceiverEmail" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ReceiverEmail" msprop:Generator_ColumnVarNameInTable="columnReceiverEmail" msprop:Generator_ColumnPropNameInTable="ReceiverEmailColumn" msprop:Generator_UserColumnName="ReceiverEmail" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceiverEmail_CC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ReceiverEmail_CC" msprop:Generator_ColumnVarNameInTable="columnReceiverEmail_CC" msprop:Generator_ColumnPropNameInTable="ReceiverEmail_CCColumn" msprop:Generator_UserColumnName="ReceiverEmail_CC" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceiverEmail_BCC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ReceiverEmail_BCC" msprop:Generator_ColumnVarNameInTable="columnReceiverEmail_BCC" msprop:Generator_ColumnPropNameInTable="ReceiverEmail_BCCColumn" msprop:Generator_UserColumnName="ReceiverEmail_BCC" type="xs:string" minOccurs="0" />
+              <xs:element name="EmailContent" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="EmailContent" msprop:Generator_ColumnVarNameInTable="columnEmailContent" msprop:Generator_ColumnPropNameInTable="EmailContentColumn" msprop:Generator_UserColumnName="EmailContent" type="xs:string" minOccurs="0" />
+              <xs:element name="EmailStatus" msprop:Generator_ColumnVarNameInTable="columnEmailStatus" msprop:Generator_ColumnPropNameInRow="EmailStatus" msprop:Generator_ColumnPropNameInTable="EmailStatusColumn" msprop:Generator_UserColumnName="EmailStatus" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="CreatedBy" msprop:Generator_ColumnVarNameInTable="columnCreatedBy" msprop:Generator_ColumnPropNameInRow="CreatedBy" msprop:Generator_ColumnPropNameInTable="CreatedByColumn" msprop:Generator_UserColumnName="CreatedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedDateTime" msprop:Generator_ColumnVarNameInTable="columnCreatedDateTime" msprop:Generator_ColumnPropNameInRow="CreatedDateTime" msprop:Generator_ColumnPropNameInTable="CreatedDateTimeColumn" msprop:Generator_UserColumnName="CreatedDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ModifiedBy" msprop:Generator_ColumnVarNameInTable="columnModifiedBy" msprop:Generator_ColumnPropNameInRow="ModifiedBy" msprop:Generator_ColumnPropNameInTable="ModifiedByColumn" msprop:Generator_UserColumnName="ModifiedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="ModifiedDateTime" msprop:Generator_ColumnVarNameInTable="columnModifiedDateTime" msprop:Generator_ColumnPropNameInRow="ModifiedDateTime" msprop:Generator_ColumnPropNameInTable="ModifiedDateTimeColumn" msprop:Generator_UserColumnName="ModifiedDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AttemptCount" msprop:Generator_ColumnVarNameInTable="columnAttemptCount" msprop:Generator_ColumnPropNameInRow="AttemptCount" msprop:Generator_ColumnPropNameInTable="AttemptCountColumn" msprop:Generator_UserColumnName="AttemptCount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EmailAttachment" msprop:Generator_TableClassName="EmailAttachmentDataTable" msprop:Generator_TableVarName="tableEmailAttachment" msprop:Generator_RowChangedName="EmailAttachmentRowChanged" msprop:Generator_TablePropName="EmailAttachment" msprop:Generator_RowDeletingName="EmailAttachmentRowDeleting" msprop:Generator_RowChangingName="EmailAttachmentRowChanging" msprop:Generator_RowEvHandlerName="EmailAttachmentRowChangeEventHandler" msprop:Generator_RowDeletedName="EmailAttachmentRowDeleted" msprop:Generator_RowClassName="EmailAttachmentRow" msprop:Generator_UserTableName="EmailAttachment" msprop:Generator_RowEvArgName="EmailAttachmentRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmailAttachmentID" msprop:Generator_ColumnVarNameInTable="columnEmailAttachmentID" msprop:Generator_ColumnPropNameInRow="EmailAttachmentID" msprop:Generator_ColumnPropNameInTable="EmailAttachmentIDColumn" msprop:Generator_UserColumnName="EmailAttachmentID" type="xs:int" minOccurs="0" />
+              <xs:element name="EmailAttachmentLocation" msprop:Generator_ColumnVarNameInTable="columnEmailAttachmentLocation" msprop:Generator_ColumnPropNameInRow="EmailAttachmentLocation" msprop:Generator_ColumnPropNameInTable="EmailAttachmentLocationColumn" msprop:Generator_UserColumnName="EmailAttachmentLocation" type="xs:string" minOccurs="0" />
+              <xs:element name="EmailAttachmentType" msprop:Generator_ColumnVarNameInTable="columnEmailAttachmentType" msprop:Generator_ColumnPropNameInRow="EmailAttachmentType" msprop:Generator_ColumnPropNameInTable="EmailAttachmentTypeColumn" msprop:Generator_UserColumnName="EmailAttachmentType" type="xs:int" minOccurs="0" />
+              <xs:element name="EmailID" msprop:Generator_ColumnVarNameInTable="columnEmailID" msprop:Generator_ColumnPropNameInRow="EmailID" msprop:Generator_ColumnPropNameInTable="EmailIDColumn" msprop:Generator_UserColumnName="EmailID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Response" msprop:Generator_TableClassName="ResponseDataTable" msprop:Generator_TableVarName="tableResponse" msprop:Generator_RowChangedName="ResponseRowChanged" msprop:Generator_TablePropName="Response" msprop:Generator_RowDeletingName="ResponseRowDeleting" msprop:Generator_RowChangingName="ResponseRowChanging" msprop:Generator_RowEvHandlerName="ResponseRowChangeEventHandler" msprop:Generator_RowDeletedName="ResponseRowDeleted" msprop:Generator_RowClassName="ResponseRow" msprop:Generator_UserTableName="Response" msprop:Generator_RowEvArgName="ResponseRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResponseCode" msprop:Generator_ColumnVarNameInTable="columnResponseCode" msprop:Generator_ColumnPropNameInRow="ResponseCode" msprop:Generator_ColumnPropNameInTable="ResponseCodeColumn" msprop:Generator_UserColumnName="ResponseCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ResponseMessage" msprop:Generator_ColumnVarNameInTable="columnResponseMessage" msprop:Generator_ColumnPropNameInRow="ResponseMessage" msprop:Generator_ColumnPropNameInTable="ResponseMessageColumn" msprop:Generator_UserColumnName="ResponseMessage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

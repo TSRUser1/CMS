@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e88c0a7d-d929-4444-b33b-fe6a81e424e9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/SEM.CMS.App/MS/SystemMaintenance.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SystemMaintenance.disco" MetadataType="Disco" ID="5473c3a5-d577-48d3-8a67-8c17c6bd4e6d" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MS/SystemMaintenance.svc?disco" />
+    <MetadataFile FileName="SystemMaintenance1.xsd" MetadataType="Schema" ID="795e089b-d765-4c9e-b0eb-4fae58d84cec" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MS/SystemMaintenance.svc?xsd=xsd3" />
+    <MetadataFile FileName="SystemMaintenance.wsdl" MetadataType="Wsdl" ID="1dbc0fc3-5d30-4be1-9482-11b8ab7fc6b1" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MS/SystemMaintenance.svc?wsdl" />
+    <MetadataFile FileName="SystemMaintenanceDS.xsd" MetadataType="Schema" ID="ec4556df-ca0b-450f-bf46-9852585cb8b6" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MS/SystemMaintenance.svc?xsd=xsd2" />
+    <MetadataFile FileName="SystemMaintenance11.xsd" MetadataType="Schema" ID="fc1f7c18-e015-4bb0-b51a-99f9e1358408" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MS/SystemMaintenance.svc?xsd=xsd1" />
+    <MetadataFile FileName="SystemMaintenance.xsd" MetadataType="Schema" ID="863970c4-cbac-4a04-8edc-51cc1ccfceb6" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MS/SystemMaintenance.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

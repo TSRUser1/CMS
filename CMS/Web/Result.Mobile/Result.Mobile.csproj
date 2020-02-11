@@ -1,0 +1,1279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E71ECA44-5128-4B8E-931E-224201F5F335}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SEM.CMS.Result.Mobile</RootNamespace>
+    <AssemblyName>SEM.CMS.Result.Mobile</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.3.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\AjaxControlToolkit.15.1.3.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin, Version=5.14.5506.26196, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\AjaxMin.5.14.5506.26202\lib\net40\AjaxMin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\jquery-share\images\social-icons-sprite.png" />
+    <Content Include="Assets\jquery-share\images\social-icons.png" />
+    <Content Include="Assets\jquery-share\jquery.share.css" />
+    <Content Include="Assets\jquery-share\jquery.share.js" />
+    <Content Include="Athletes\Biography.aspx" />
+    <Content Include="Athletes\TeamBiography.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\drawer.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\jcarousel.css" />
+    <Content Include="css\reset.min.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="css\yamm.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Event\Athletes.aspx" />
+    <Content Include="Event\Record.aspx" />
+    <Content Include="Event\EventList.aspx" />
+    <Content Include="Event\Summary.aspx" />
+    <Content Include="Event\FinalRankings.aspx" />
+    <Content Include="Event\Results.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Event\Report.aspx" />
+    <Content Include="fonts\museosansbold.svg" />
+    <Content Include="fonts\museosansregular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\multimedal.png" />
+    <Content Include="Images\pdf.png" />
+    <Content Include="Images\singlemedal.png" />
+    <Content Include="Images\Sports.ico" />
+    <Content Include="Images\Sports.png" />
+    <Content Include="Images\standing.png" />
+    <Content Include="img\action\back-to-top.png" />
+    <Content Include="img\action\blue-button.png" />
+    <Content Include="img\action\bronze-button.png" />
+    <Content Include="img\action\gold-button.png" />
+    <Content Include="img\action\navy-blue-button.png" />
+    <Content Include="img\action\pink-button.png" />
+    <Content Include="img\action\purple-button.png" />
+    <Content Include="img\action\standing-button-a.png" />
+    <Content Include="img\action\standing-button-b.png" />
+    <Content Include="img\action\status.png" />
+    <Content Include="img\ads\main\Deloitte_logo.png" />
+    <Content Include="img\ads\main\eagle.jpg" />
+    <Content Include="img\ads\main\fairprice_logo161.png" />
+    <Content Include="img\ads\main\Footer_banner_Download.jpg" />
+    <Content Include="img\ads\main\Footer_banner_Subscribe.jpg" />
+    <Content Include="img\ads\main\MC_Rotating.png" />
+    <Content Include="img\ads\main\road.jpg" />
+    <Content Include="img\ads\main\SingTel_Rotating.jpg" />
+    <Content Include="img\ads\main\sponsor-banner.jpg" />
+    <Content Include="img\ads\official\Anderco Rotating.jpg" />
+    <Content Include="img\ads\official\atos_logo161.png" />
+    <Content Include="img\ads\official\DBS_Rotating.png" />
+    <Content Include="img\ads\official\Kubota Rotating Banner.jpg" />
+    <Content Include="img\ads\official\Samsung_Rotating_Banner.jpg" />
+    <Content Include="img\ads\official\Union Pay Rotating Banner.png" />
+    <Content Include="img\ads\official\volvo new logo_rotating.png" />
+    <Content Include="img\carousel\arrow.png" />
+    <Content Include="img\carousel\next-arrow.png" />
+    <Content Include="img\carousel\previous-arrow.png" />
+    <Content Include="img\country\BRU-small.gif" />
+    <Content Include="img\country\BRU.gif" />
+    <Content Include="img\country\CAM-small.gif" />
+    <Content Include="img\country\CAM.gif" />
+    <Content Include="img\country\flag_large\Afghanistan.png" />
+    <Content Include="img\country\flag_large\Albania.png" />
+    <Content Include="img\country\flag_large\Algeria.png" />
+    <Content Include="img\country\flag_large\Andorra.png" />
+    <Content Include="img\country\flag_large\Angola.png" />
+    <Content Include="img\country\flag_large\Antigua and Barbuda.png" />
+    <Content Include="img\country\flag_large\Argentina.png" />
+    <Content Include="img\country\flag_large\Armenia.png" />
+    <Content Include="img\country\flag_large\Aruba.png" />
+    <Content Include="img\country\flag_large\Australia.png" />
+    <Content Include="img\country\flag_large\Austria.png" />
+    <Content Include="img\country\flag_large\Azerbaijan.png" />
+    <Content Include="img\country\flag_large\Bahamas.png" />
+    <Content Include="img\country\flag_large\Bahrain.png" />
+    <Content Include="img\country\flag_large\Bangladesh.png" />
+    <Content Include="img\country\flag_large\Barbados.png" />
+    <Content Include="img\country\flag_large\Belarus.png" />
+    <Content Include="img\country\flag_large\Belgium.png" />
+    <Content Include="img\country\flag_large\Belize.png" />
+    <Content Include="img\country\flag_large\Benin.png" />
+    <Content Include="img\country\flag_large\Bermuda.png" />
+    <Content Include="img\country\flag_large\Bhutan.png" />
+    <Content Include="img\country\flag_large\Bolivia.png" />
+    <Content Include="img\country\flag_large\Bosnia and Herzegovina.gif" />
+    <Content Include="img\country\flag_large\Botswana.png" />
+    <Content Include="img\country\flag_large\Brazil.png" />
+    <Content Include="img\country\flag_large\British Virgin Islands.png" />
+    <Content Include="img\country\flag_large\Brunei.png" />
+    <Content Include="img\country\flag_large\Bulgaria.png" />
+    <Content Include="img\country\flag_large\Burkina Faso.png" />
+    <Content Include="img\country\flag_large\Burundi.png" />
+    <Content Include="img\country\flag_large\Cambodia.png" />
+    <Content Include="img\country\flag_large\Cameroon.png" />
+    <Content Include="img\country\flag_large\Canada.png" />
+    <Content Include="img\country\flag_large\Cape Verde.png" />
+    <Content Include="img\country\flag_large\Cayman Islands.png" />
+    <Content Include="img\country\flag_large\Central African Republic.png" />
+    <Content Include="img\country\flag_large\Chad.png" />
+    <Content Include="img\country\flag_large\Chile.png" />
+    <Content Include="img\country\flag_large\China.png" />
+    <Content Include="img\country\flag_large\Chinese Taipei3.png" />
+    <Content Include="img\country\flag_large\Colombia.png" />
+    <Content Include="img\country\flag_large\Comoros.png" />
+    <Content Include="img\country\flag_large\Congo.gif" />
+    <Content Include="img\country\flag_large\Cook Islands.gif" />
+    <Content Include="img\country\flag_large\Costa Rica.png" />
+    <Content Include="img\country\flag_large\Cote d%27Ivoire.png" />
+    <Content Include="img\country\flag_large\Croatia.png" />
+    <Content Include="img\country\flag_large\Cuba.png" />
+    <Content Include="img\country\flag_large\Cyprus.png" />
+    <Content Include="img\country\flag_large\Czech Republic.png" />
+    <Content Include="img\country\flag_large\Democratic Republic of the Congo.png" />
+    <Content Include="img\country\flag_large\Denmark.png" />
+    <Content Include="img\country\flag_large\Djibouti.png" />
+    <Content Include="img\country\flag_large\Dominica.png" />
+    <Content Include="img\country\flag_large\Dominican Republic.png" />
+    <Content Include="img\country\flag_large\East Timor.png" />
+    <Content Include="img\country\flag_large\Ecuador.png" />
+    <Content Include="img\country\flag_large\Egypt.png" />
+    <Content Include="img\country\flag_large\El Salvador.png" />
+    <Content Include="img\country\flag_large\Equatorial Guinea.png" />
+    <Content Include="img\country\flag_large\Eritrea.png" />
+    <Content Include="img\country\flag_large\Estonia.png" />
+    <Content Include="img\country\flag_large\Ethiopia.png" />
+    <Content Include="img\country\flag_large\Fiji.png" />
+    <Content Include="img\country\flag_large\Finland.png" />
+    <Content Include="img\country\flag_large\flag-macao.png" />
+    <Content Include="img\country\flag_large\flag-timor.png" />
+    <Content Include="img\country\flag_large\France.png" />
+    <Content Include="img\country\flag_large\Gabon.png" />
+    <Content Include="img\country\flag_large\Gambia.png" />
+    <Content Include="img\country\flag_large\Georgia.png" />
+    <Content Include="img\country\flag_large\Germany.png" />
+    <Content Include="img\country\flag_large\Ghana.png" />
+    <Content Include="img\country\flag_large\Greece.png" />
+    <Content Include="img\country\flag_large\Grenada.png" />
+    <Content Include="img\country\flag_large\Guam.jpg" />
+    <Content Include="img\country\flag_large\Guatemala.png" />
+    <Content Include="img\country\flag_large\Guinea-Bissau.png" />
+    <Content Include="img\country\flag_large\Guinea.png" />
+    <Content Include="img\country\flag_large\Guyana.png" />
+    <Content Include="img\country\flag_large\Haiti.png" />
+    <Content Include="img\country\flag_large\Herzegovina.png" />
+    <Content Include="img\country\flag_large\Honduras.png" />
+    <Content Include="img\country\flag_large\Hong Kong.gif" />
+    <Content Include="img\country\flag_large\Hungary.png" />
+    <Content Include="img\country\flag_large\Iceland.png" />
+    <Content Include="img\country\flag_large\India.png" />
+    <Content Include="img\country\flag_large\Indonesia.png" />
+    <Content Include="img\country\flag_large\Iran.png" />
+    <Content Include="img\country\flag_large\Iraq.png" />
+    <Content Include="img\country\flag_large\Ireland.png" />
+    <Content Include="img\country\flag_large\Israel.png" />
+    <Content Include="img\country\flag_large\Italy.png" />
+    <Content Include="img\country\flag_large\Jamaica.png" />
+    <Content Include="img\country\flag_large\Japan.png" />
+    <Content Include="img\country\flag_large\Jordan.png" />
+    <Content Include="img\country\flag_large\Kazakhstan.png" />
+    <Content Include="img\country\flag_large\Kenya.png" />
+    <Content Include="img\country\flag_large\Kiribati.png" />
+    <Content Include="img\country\flag_large\Kosovo.png" />
+    <Content Include="img\country\flag_large\Kuwait.png" />
+    <Content Include="img\country\flag_large\Kyrgyzstan.png" />
+    <Content Include="img\country\flag_large\Laos.png" />
+    <Content Include="img\country\flag_large\Latvia.png" />
+    <Content Include="img\country\flag_large\Lebanon.png" />
+    <Content Include="img\country\flag_large\Lesotho.png" />
+    <Content Include="img\country\flag_large\Liberia.png" />
+    <Content Include="img\country\flag_large\Libya.png" />
+    <Content Include="img\country\flag_large\Liechtenstein.png" />
+    <Content Include="img\country\flag_large\Lithuania.png" />
+    <Content Include="img\country\flag_large\Luxembourg.png" />
+    <Content Include="img\country\flag_large\Macedonia.png" />
+    <Content Include="img\country\flag_large\Madagascar.png" />
+    <Content Include="img\country\flag_large\Malawi.png" />
+    <Content Include="img\country\flag_large\Malaysia.png" />
+    <Content Include="img\country\flag_large\Maldives.png" />
+    <Content Include="img\country\flag_large\Mali.png" />
+    <Content Include="img\country\flag_large\Malta.png" />
+    <Content Include="img\country\flag_large\Marshall Islands.png" />
+    <Content Include="img\country\flag_large\Mauritania.png" />
+    <Content Include="img\country\flag_large\Mauritius.png" />
+    <Content Include="img\country\flag_large\Mexico.png" />
+    <Content Include="img\country\flag_large\Micronesia.png" />
+    <Content Include="img\country\flag_large\Moldova.png" />
+    <Content Include="img\country\flag_large\Monaco.png" />
+    <Content Include="img\country\flag_large\Mongolia.png" />
+    <Content Include="img\country\flag_large\Montenegro.png" />
+    <Content Include="img\country\flag_large\Morocco.png" />
+    <Content Include="img\country\flag_large\Mozambique.png" />
+    <Content Include="img\country\flag_large\Myanmar.png" />
+    <Content Include="img\country\flag_large\NA.png" />
+    <Content Include="img\country\flag_large\Namibia.png" />
+    <Content Include="img\country\flag_large\Nauru.png" />
+    <Content Include="img\country\flag_large\Nepal.png" />
+    <Content Include="img\country\flag_large\Netherlands.png" />
+    <Content Include="img\country\flag_large\New Zealand.png" />
+    <Content Include="img\country\flag_large\Nicaragua.png" />
+    <Content Include="img\country\flag_large\Niger.png" />
+    <Content Include="img\country\flag_large\Nigeria.png" />
+    <Content Include="img\country\flag_large\North Korea.png" />
+    <Content Include="img\country\flag_large\Norway.png" />
+    <Content Include="img\country\flag_large\Oman.png" />
+    <Content Include="img\country\flag_large\Pakistan.png" />
+    <Content Include="img\country\flag_large\Palau.png" />
+    <Content Include="img\country\flag_large\Palestine.png" />
+    <Content Include="img\country\flag_large\Panama.png" />
+    <Content Include="img\country\flag_large\Papua New Guinea.png" />
+    <Content Include="img\country\flag_large\Paraguay.png" />
+    <Content Include="img\country\flag_large\Peru.png" />
+    <Content Include="img\country\flag_large\Philippines.png" />
+    <Content Include="img\country\flag_large\Poland.png" />
+    <Content Include="img\country\flag_large\Portugal.png" />
+    <Content Include="img\country\flag_large\Qatar.png" />
+    <Content Include="img\country\flag_large\Republic of the Congo.png" />
+    <Content Include="img\country\flag_large\Romania.png" />
+    <Content Include="img\country\flag_large\Russia.png" />
+    <Content Include="img\country\flag_large\Rwanda.png" />
+    <Content Include="img\country\flag_large\Saint Kitts and Nevis.png" />
+    <Content Include="img\country\flag_large\Saint Lucia.png" />
+    <Content Include="img\country\flag_large\Saint Vincent and the Grenadines.png" />
+    <Content Include="img\country\flag_large\Samoa.png" />
+    <Content Include="img\country\flag_large\San Marino.png" />
+    <Content Include="img\country\flag_large\Sao Tome and Principe.png" />
+    <Content Include="img\country\flag_large\Saudi Arabia.png" />
+    <Content Include="img\country\flag_large\Senegal.png" />
+    <Content Include="img\country\flag_large\Serbia.png" />
+    <Content Include="img\country\flag_large\Seychelles.png" />
+    <Content Include="img\country\flag_large\Sierra Leone.png" />
+    <Content Include="img\country\flag_large\Singapore.png" />
+    <Content Include="img\country\flag_large\Slovakia.png" />
+    <Content Include="img\country\flag_large\Slovenia.png" />
+    <Content Include="img\country\flag_large\Solomon Islands.png" />
+    <Content Include="img\country\flag_large\Somalia.png" />
+    <Content Include="img\country\flag_large\South Africa.png" />
+    <Content Include="img\country\flag_large\South Korea.png" />
+    <Content Include="img\country\flag_large\Spain.png" />
+    <Content Include="img\country\flag_large\Sri Lanka.png" />
+    <Content Include="img\country\flag_large\Sudan.png" />
+    <Content Include="img\country\flag_large\Suriname.png" />
+    <Content Include="img\country\flag_large\Swaziland.png" />
+    <Content Include="img\country\flag_large\Sweden.png" />
+    <Content Include="img\country\flag_large\Switzerland.png" />
+    <Content Include="img\country\flag_large\Syria.png" />
+    <Content Include="img\country\flag_large\Tajikistan.png" />
+    <Content Include="img\country\flag_large\Tanzania.png" />
+    <Content Include="img\country\flag_large\Thailand.png" />
+    <Content Include="img\country\flag_large\Togo.png" />
+    <Content Include="img\country\flag_large\Tonga.png" />
+    <Content Include="img\country\flag_large\Trinidad and Tobago.png" />
+    <Content Include="img\country\flag_large\Tunisia.png" />
+    <Content Include="img\country\flag_large\Turkey.png" />
+    <Content Include="img\country\flag_large\Turkmenistan.png" />
+    <Content Include="img\country\flag_large\Tuvalu.png" />
+    <Content Include="img\country\flag_large\Uganda.png" />
+    <Content Include="img\country\flag_large\Ukraine.png" />
+    <Content Include="img\country\flag_large\United Arab Emirates.png" />
+    <Content Include="img\country\flag_large\United Kingdom.png" />
+    <Content Include="img\country\flag_large\United States.png" />
+    <Content Include="img\country\flag_large\Uruguay.png" />
+    <Content Include="img\country\flag_large\Uzbekistan.png" />
+    <Content Include="img\country\flag_large\Vanuatu.png" />
+    <Content Include="img\country\flag_large\Vatican City.png" />
+    <Content Include="img\country\flag_large\Venezuela.png" />
+    <Content Include="img\country\flag_large\Vietnam.png" />
+    <Content Include="img\country\flag_large\Western Sahara.png" />
+    <Content Include="img\country\flag_large\Yemen.png" />
+    <Content Include="img\country\flag_large\Zambia.png" />
+    <Content Include="img\country\flag_large\Zimbabwe.png" />
+    <Content Include="img\country\INA-small.gif" />
+    <Content Include="img\country\INA.gif" />
+    <Content Include="img\country\LAO-small.gif" />
+    <Content Include="img\country\LAO.gif" />
+    <Content Include="img\country\malaysia-small.png" />
+    <Content Include="img\country\malaysia.png" />
+    <Content Include="img\country\MAS-small.gif" />
+    <Content Include="img\country\MAS.gif" />
+    <Content Include="img\country\MYA-small.gif" />
+    <Content Include="img\country\MYA.gif" />
+    <Content Include="img\country\NA-small.gif" />
+    <Content Include="img\country\NA.gif" />
+    <Content Include="img\country\PHI-small.gif" />
+    <Content Include="img\country\PHI.gif" />
+    <Content Include="img\country\SIN-small.gif" />
+    <Content Include="img\country\SIN.gif" />
+    <Content Include="img\country\THA-small.gif" />
+    <Content Include="img\country\THA.gif" />
+    <Content Include="img\country\thailand.png" />
+    <Content Include="img\country\TLS-small.gif" />
+    <Content Include="img\country\TLS.gif" />
+    <Content Include="img\country\VIE-small.gif" />
+    <Content Include="img\country\VIE.gif" />
+    <Content Include="img\error\nila.png" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\footer\singtel.png" />
+    <Content Include="img\header\apg_main_logo.png" />
+    <Content Include="img\header\background_pattern_01.jpg" />
+    <Content Include="img\header\bottom-background.png" />
+    <Content Include="img\header\logo.png" />
+    <Content Include="img\header\social-medias.png" />
+    <Content Include="img\header\top-background.png" />
+    <Content Include="img\latest-medalist\anonymous.jpg" />
+    <Content Include="img\latest-medalist\player.png" />
+    <Content Include="img\loading\loading.gif" />
+    <Content Include="img\medal\bronze.png" />
+    <Content Include="img\medal\bronze_i.png" />
+    <Content Include="img\medal\bronze_img.png" />
+    <Content Include="img\medal\gold.png" />
+    <Content Include="img\medal\gold_i.png" />
+    <Content Include="img\medal\gold_img.png" />
+    <Content Include="img\medal\silver.png" />
+    <Content Include="img\medal\silver_i.png" />
+    <Content Include="img\medal\silver_img.png" />
+    <Content Include="img\medal\white.png" />
+    <Content Include="img\menu\man.png" />
+    <Content Include="img\menu\mixed.png" />
+    <Content Include="img\menu\women.png" />
+    <Content Include="img\player\anonymous.png" />
+    <Content Include="img\player\avatar.png" />
+    <Content Include="img\player\dias-daniel.jpg" />
+    <Content Include="img\player\avatar-big.jpg" />
+    <Content Include="img\schedule\cc.png" />
+    <Content Include="img\schedule\champion.png" />
+    <Content Include="img\schedule\empty.png" />
+    <Content Include="img\schedule\oc.png" />
+    <Content Include="img\social-media\sm_facebook.png" />
+    <Content Include="img\social-media\sm_twitter.png" />
+    <Content Include="img\sports\AR.png" />
+    <Content Include="img\sports\archery.png" />
+    <Content Include="img\sports\AR_small.png" />
+    <Content Include="img\sports\AT.png" />
+    <Content Include="img\sports\AT_small.png" />
+    <Content Include="img\sports\BA.png" />
+    <Content Include="img\sports\badminton.png" />
+    <Content Include="img\sports\BA_small.png" />
+    <Content Include="img\sports\BO.png" />
+    <Content Include="img\sports\BO_small.png" />
+    <Content Include="img\sports\CH.png" />
+    <Content Include="img\sports\CH_small.png" />
+    <Content Include="img\sports\CP.png" />
+    <Content Include="img\sports\FB.png" />
+    <Content Include="img\sports\FB_small.png" />
+    <Content Include="img\sports\FT.png" />
+    <Content Include="img\sports\FT_small.png" />
+    <Content Include="img\sports\GB.png" />
+    <Content Include="img\sports\GB_small.png" />
+    <Content Include="img\sports\ic_archery.png" />
+    <Content Include="img\sports\ic_athletics.png" />
+    <Content Include="img\sports\PO.png" />
+    <Content Include="img\sports\PO_small.png" />
+    <Content Include="img\sports\SA.png" />
+    <Content Include="img\sports\SA_small.png" />
+    <Content Include="img\sports\SH.png" />
+    <Content Include="img\sports\SH_small.png" />
+    <Content Include="img\sports\SW.png" />
+    <Content Include="img\sports\SW_small.png" />
+    <Content Include="img\sports\TB.png" />
+    <Content Include="img\sports\TB_small.png" />
+    <Content Include="img\sports\TT.png" />
+    <Content Include="img\sports\TT_small.png" />
+    <Content Include="img\sports\WB.png" />
+    <Content Include="img\sports\WB_small.png" />
+    <Content Include="img\standing-table\four-to-two.png" />
+    <Content Include="img\standing-table\two-to-one.png" />
+    <Content Include="img\table\bg-blue-header-62x62.png" />
+    <Content Include="img\table\bg-header.png" />
+    <Content Include="img\table\bg-orange-header-62x62.png" />
+    <Content Include="img\table\bg-pink-header-62x62.png" />
+    <Content Include="img\table\bg-red-header-62x62.png" />
+    <Content Include="img\table\blue-left-radius-62x62.png" />
+    <Content Include="img\table\blue-right-radius-62x62.png" />
+    <Content Include="img\table\left-radius.png" />
+    <Content Include="img\table\orange-left-radius-62x62.png" />
+    <Content Include="img\table\orange-right-radius-62x62.png" />
+    <Content Include="img\table\pink-left-radius-62x62.png" />
+    <Content Include="img\table\pink-right-radius-62x62.png" />
+    <Content Include="img\table\right-radius.png" />
+    <Content Include="img\tab\blue.png" />
+    <Content Include="img\tab\grey-highlight-radius.png" />
+    <Content Include="img\tab\grey-radius.png" />
+    <Content Include="img\tab\grey.png" />
+    <Content Include="img\tab\long-grey-radius.png" />
+    <Content Include="img\tab\pink-radius.png" />
+    <Content Include="img\tab\red-highlight-radius.png" />
+    <Content Include="img\trigger\arrow_collapse_down.png" />
+    <Content Include="img\trigger\arrow_collapse_up.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\dropdown-menu.js" />
+    <Content Include="js\jcarousel.ads.js" />
+    <Content Include="js\jcarousel.responsive.js" />
+    <Content Include="js\jquery-1.11.3.min.js" />
+    <Content Include="js\jquery-slidemenu.js" />
+    <Content Include="js\jquery.drawer.min.js" />
+    <Content Include="js\jquery.highlight.js" />
+    <Content Include="js\jquery.jcarousel-autoscroll.min.js" />
+    <Content Include="js\jquery.jcarousel.min.js" />
+    <Content Include="js\jquery.standing-table.js" />
+    <Content Include="js\jquery.touchwipe.min.js" />
+    <Content Include="js\jquery.trigger.js" />
+    <Content Include="Medal\Country.aspx" />
+    <Content Include="Medal\Date.aspx" />
+    <Content Include="Medal\Medallist.aspx" />
+    <Content Include="Medal\MultiMedallist.aspx" />
+    <Content Include="Medal\Standing.aspx" />
+    <Content Include="RWeb.Master" />
+    <Content Include="Schedule\ByNPC.aspx" />
+    <Content Include="Schedule\BySport.aspx" />
+    <Content Include="Schedule\Schedule.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\Museo Sans Rounded 500.ttf" />
+    <Content Include="fonts\museosansbold.eot" />
+    <Content Include="fonts\museosansbold.otf" />
+    <Content Include="fonts\museosansbold.ttf" />
+    <Content Include="fonts\museosansbold.woff" />
+    <Content Include="fonts\museosansregular.eot" />
+    <Content Include="fonts\museosansregular.otf" />
+    <Content Include="fonts\museosansregular.ttf" />
+    <Content Include="fonts\museosansregular.woff" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="css\drawer.css.map" />
+    <None Include="Properties\PublishProfiles\Result.Mobile.pubxml" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Schedule\ScheduleCountry.aspx" />
+    <Content Include="Schedule\Live.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertParticipantDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetGeneralScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.DeleteStartListParticipantResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetStartListMaintenanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetStartListParticipantListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertStartListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateStartListAssignTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateStartListPositionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateStartListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetScheduleListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.DeleteParticipantResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateParticipantDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetScheduleHeaderGroupedByDateFilteredBySportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetScheduleHeaderGroupedBySportFilteredByDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetCountryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetSportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetParticipantListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetParticipantDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetParticipantResultResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.DeleteScoreNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.DeleteScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetPartcipantAndScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetScheduleHeaderGroupedByDateFilteredByCountryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetScoreNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertScoreNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateScoreNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.DeleteFileInEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetFileInEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetFinalRankingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetEventAthletesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.DownloadFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetScheduleListForBannerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetSportDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetLatestMedalistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetMedalStandingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.DeleteModuleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.DeleteRoleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.GetAdminLoginSessionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.GetAdminUserByLoginIDResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.GetModuleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.GetPageNameResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.GetRoleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.InsertModuleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.InsertRoleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.ProcessAdministrationLoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.UpdateAdminLoginSessionGUIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.UpdateModuleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.UpdateRoleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetPartcipantAndStatisticResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetSportEventScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetStatisticNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetTeamAndScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertScoreForParticipantInScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertScoreForTeamInScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertStatisticForParticipantInScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertStatisticNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateScheduleExtraDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateStatisticNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateStatisticResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetParticipantBiographyResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetRefereeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertRefereeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateRefereeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetMedalStandingsByCountryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetParticipantInEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetMedallistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetKnockoutSummaryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetKnockoutSummaryForTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetLeagueSummaryForTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetLeagueSummaryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.DeleteScoreByScheduleIDAndTeamIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetSportClassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetBrokenRecordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateLeagueResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetLeagueForIndividualResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetLeagueForTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertLeagueForIndividualResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertLeagueForTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.DeleteStartListByScheduleIDAndParticipantIDResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetTeamBiographyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateStartListByScheduleIDAndParticipantIDResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.DeleteTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetParticipantEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetXMLLatestMedalistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetXMLMedalStandingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetXMLScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetMultiMedallistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetTeamEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.GetFunctionNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetStartListNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertStartListNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateStartListNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetParticipantInEventForTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetParticipantInTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetInitialRecordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetLiveScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Scripts\manifest.webmanifest" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCFAdministration\Administration.wsdl" />
+    <None Include="Service References\WCFAdministration\Administration.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFAdministration\Administration1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFAdministration\Administration2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFAdministration\AdministrationDS.xsd" />
+    <Content Include="Schedule\General.aspx" />
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.AdministrationDS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.DeleteAdminUserDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.GetAdminUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.InsertAdminUserDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SEM.CMS.Result.Mobile.WCFAdministration.UpdateAdminUserDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\WCFCompetition\Competition.disco" />
+    <None Include="Service References\WCFCompetition\configuration91.svcinfo" />
+    <None Include="Service References\WCFCompetition\configuration.svcinfo" />
+    <None Include="Service References\WCFCompetition\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\WCFAdministration\Administration.disco" />
+    <None Include="Service References\WCFAdministration\configuration91.svcinfo" />
+    <None Include="Service References\WCFAdministration\configuration.svcinfo" />
+    <None Include="Service References\WCFAdministration\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\WCFSystemMaintenance\SEM.CMS.Result.Mobile.WCFSystemMaintenance.DeleteDataGridColumnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SEM.CMS.Result.Mobile.WCFSystemMaintenance.GetDataColumnByDataGridNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SEM.CMS.Result.Mobile.WCFSystemMaintenance.GetDataColumnListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SEM.CMS.Result.Mobile.WCFSystemMaintenance.GetDataColumnNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SEM.CMS.Result.Mobile.WCFSystemMaintenance.GetReferenceByReferenceCategoryIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SEM.CMS.Result.Mobile.WCFSystemMaintenance.InsertDataGridColumnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SEM.CMS.Result.Mobile.WCFSystemMaintenance.SystemMaintenanceDS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SEM.CMS.Result.Mobile.WCFSystemMaintenance.UpdateDataGridColumnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\WCFCompetition\Competition.wsdl">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFCompetition\Competition.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFCompetition\Competition1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFCompetition\Competition2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFCompetition\CompetitionDS.xsd" />
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.CompetitionDS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.DeleteEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.DeleteScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetEventDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.GetEventListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.InsertScheduleDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SEM.CMS.Result.Mobile.WCFCompetition.UpdateScheduleDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\WCFSystemMaintenance\SystemMaintenance.disco" />
+    <None Include="Service References\WCFSystemMaintenance\configuration91.svcinfo" />
+    <None Include="Service References\WCFSystemMaintenance\configuration.svcinfo" />
+    <None Include="Service References\WCFSystemMaintenance\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="UserControls\ucKnockoutForThirtyTwo.ascx" />
+    <Content Include="UserControls\ucKnockoutForTwo.ascx" />
+    <Content Include="UserControls\ucKnockoutForSixTeen.ascx" />
+    <Content Include="UserControls\ucKnockoutForFour.ascx" />
+    <Content Include="UserControls\ucKnockoutForEight.ascx" />
+    <Content Include="UserControls\ucSelectedGame.ascx" />
+    <Content Include="UserControls\ucSubMenu.ascx" />
+    <Content Include="UserControls\uscLatestMedalist.ascx" />
+    <Content Include="UserControls\uscMedalStandings.ascx" />
+    <Content Include="UserControls\uscLiveSchedule.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Service References\WCFSystemMaintenance\SystemMaintenance.wsdl" />
+    <None Include="Service References\WCFSystemMaintenance\SystemMaintenance.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFSystemMaintenance\SystemMaintenance1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFSystemMaintenance\SystemMaintenance2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFSystemMaintenance\SystemMaintenanceDS.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Athletes\Biography.aspx.cs">
+      <DependentUpon>Biography.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Athletes\Biography.aspx.designer.cs">
+      <DependentUpon>Biography.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Athletes\TeamBiography.aspx.cs">
+      <DependentUpon>TeamBiography.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Athletes\TeamBiography.aspx.designer.cs">
+      <DependentUpon>TeamBiography.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Event\Athletes.aspx.cs">
+      <DependentUpon>Athletes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Event\Athletes.aspx.designer.cs">
+      <DependentUpon>Athletes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Event\Record.aspx.cs">
+      <DependentUpon>Record.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Event\Record.aspx.designer.cs">
+      <DependentUpon>Record.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Event\EventList.aspx.cs">
+      <DependentUpon>EventList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Event\EventList.aspx.designer.cs">
+      <DependentUpon>EventList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Event\Summary.aspx.cs">
+      <DependentUpon>Summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Event\Summary.aspx.designer.cs">
+      <DependentUpon>Summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Event\FinalRankings.aspx.cs">
+      <DependentUpon>FinalRankings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Event\FinalRankings.aspx.designer.cs">
+      <DependentUpon>FinalRankings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Event\Results.aspx.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Event\Results.aspx.designer.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Event\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Event\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Medal\Country.aspx.cs">
+      <DependentUpon>Country.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medal\Country.aspx.designer.cs">
+      <DependentUpon>Country.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medal\Date.aspx.cs">
+      <DependentUpon>Date.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medal\Date.aspx.designer.cs">
+      <DependentUpon>Date.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medal\Medallist.aspx.cs">
+      <DependentUpon>Medallist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medal\Medallist.aspx.designer.cs">
+      <DependentUpon>Medallist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medal\MultiMedallist.aspx.cs">
+      <DependentUpon>MultiMedallist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medal\MultiMedallist.aspx.designer.cs">
+      <DependentUpon>MultiMedallist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medal\Standing.aspx.cs">
+      <DependentUpon>Standing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medal\Standing.aspx.designer.cs">
+      <DependentUpon>Standing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RWeb.Master.cs">
+      <DependentUpon>RWeb.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RWeb.Master.designer.cs">
+      <DependentUpon>RWeb.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\ByNPC.aspx.cs">
+      <DependentUpon>ByNPC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule\ByNPC.aspx.designer.cs">
+      <DependentUpon>ByNPC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\BySport.aspx.cs">
+      <DependentUpon>BySport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule\BySport.aspx.designer.cs">
+      <DependentUpon>BySport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\General.aspx.cs">
+      <DependentUpon>General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule\General.aspx.designer.cs">
+      <DependentUpon>General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\Schedule.aspx.cs">
+      <DependentUpon>Schedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule\Schedule.aspx.designer.cs">
+      <DependentUpon>Schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\ScheduleCountry.aspx.cs">
+      <DependentUpon>ScheduleCountry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule\ScheduleCountry.aspx.designer.cs">
+      <DependentUpon>ScheduleCountry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\Live.aspx.cs">
+      <DependentUpon>Live.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule\Live.aspx.designer.cs">
+      <DependentUpon>Live.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCFAdministration\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCFCompetition\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCFSystemMaintenance\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucKnockoutForThirtyTwo.ascx.cs">
+      <DependentUpon>ucKnockoutForThirtyTwo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucKnockoutForThirtyTwo.ascx.designer.cs">
+      <DependentUpon>ucKnockoutForThirtyTwo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucKnockoutForTwo.ascx.cs">
+      <DependentUpon>ucKnockoutForTwo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucKnockoutForTwo.ascx.designer.cs">
+      <DependentUpon>ucKnockoutForTwo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucKnockoutForSixTeen.ascx.cs">
+      <DependentUpon>ucKnockoutForSixTeen.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucKnockoutForSixTeen.ascx.designer.cs">
+      <DependentUpon>ucKnockoutForSixTeen.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucKnockoutForFour.ascx.cs">
+      <DependentUpon>ucKnockoutForFour.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucKnockoutForFour.ascx.designer.cs">
+      <DependentUpon>ucKnockoutForFour.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucKnockoutForEight.ascx.cs">
+      <DependentUpon>ucKnockoutForEight.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucKnockoutForEight.ascx.designer.cs">
+      <DependentUpon>ucKnockoutForEight.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSelectedGame.ascx.cs">
+      <DependentUpon>ucSelectedGame.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSelectedGame.ascx.designer.cs">
+      <DependentUpon>ucSelectedGame.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSubMenu.ascx.cs">
+      <DependentUpon>ucSubMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSubMenu.ascx.designer.cs">
+      <DependentUpon>ucSubMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uscLatestMedalist.ascx.cs">
+      <DependentUpon>uscLatestMedalist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\uscLatestMedalist.ascx.designer.cs">
+      <DependentUpon>uscLatestMedalist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uscMedalStandings.ascx.cs">
+      <DependentUpon>uscMedalStandings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\uscMedalStandings.ascx.designer.cs">
+      <DependentUpon>uscMedalStandings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uscLiveSchedule.ascx.cs">
+      <DependentUpon>uscLiveSchedule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\uscLiveSchedule.ascx.designer.cs">
+      <DependentUpon>uscLiveSchedule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CL\AR\Common\Common.csproj">
+      <Project>{c6ac5cab-ee16-4bf9-b2cf-0ecb5fb00295}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WCFAdministration\" />
+    <WCFMetadataStorage Include="Service References\WCFCompetition\" />
+    <WCFMetadataStorage Include="Service References\WCFSystemMaintenance\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ThemeTemplate\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14496</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:14496/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,14 @@
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\bin\Debug\EmailService.exe.config
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\bin\Debug\EmailService.exe
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\bin\Debug\EmailService.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\bin\Debug\Universal.X307.AppBase.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\bin\Debug\Universal.X307.AppBase.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\obj\Debug\EmailService.csprojAssemblyReference.cache
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\obj\Debug\EmailService.csproj.CopyComplete
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\obj\Debug\EmailService.exe
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\Engine\EmailService\EmailService\obj\Debug\EmailService.pdb

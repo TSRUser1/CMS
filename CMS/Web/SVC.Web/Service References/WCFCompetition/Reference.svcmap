@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="146f26d9-2711-4374-994e-b69ecb456d74" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/SEM.CMS.App/MC/Competition.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Competition.xsd" MetadataType="Schema" ID="03db9bf1-a491-4129-800e-93056c9d8139" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MC/Competition.svc?xsd=xsd0" />
+    <MetadataFile FileName="Competition1.xsd" MetadataType="Schema" ID="eb034d02-498d-40a8-9d3a-f37b021e97ba" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MC/Competition.svc?xsd=xsd1" />
+    <MetadataFile FileName="Competition.wsdl" MetadataType="Wsdl" ID="d3a06160-ac47-487d-8039-2eaa19360a5c" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MC/Competition.svc?wsdl" />
+    <MetadataFile FileName="CompetitionDS.xsd" MetadataType="Schema" ID="3d93913d-e287-4365-91a6-cb41b539171a" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MC/Competition.svc?xsd=xsd2" />
+    <MetadataFile FileName="Competition.disco" MetadataType="Disco" ID="cfdd1c06-5611-432d-a3ef-740e1bcbd540" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MC/Competition.svc?disco" />
+    <MetadataFile FileName="Competition2.xsd" MetadataType="Schema" ID="3c2f278f-1ddc-4cb4-951b-7e22682bc1d1" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MC/Competition.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,367 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CMS.master.cs" Inherits="SEM.CMS.Web.CMS" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if IE 10]> <html lang="en" class="ie10"> <![endif]-->
+<!--[if !IE]> <html lang="en"> <![endif]-->
+<!-- BEGIN HEAD -->
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Competition Management System</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+	<link href="/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+	<link href="/assets/css/style.css" rel="stylesheet" />
+	<link href="/assets/css/style_responsive.css" rel="stylesheet" />
+	<link href="/assets/css/style_default.css" rel="stylesheet" id="style_color" />
+    <link href="/css/StyleSheetPopup.css" rel="stylesheet" type="text/css" />
+	<link href="#" rel="stylesheet" id="style_metro" />
+	<link href="/assets/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="/assets/uniform/css/uniform.default.css" />
+	<link rel="stylesheet" href="/assets/data-tables/DT_bootstrap.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="fixed-top">
+    <form id="Form_CMS" runat="server">
+    <div>
+        <asp:ScriptManager runat="server"></asp:ScriptManager>
+        <!-- BEGIN HEADER -->
+        <div id="header" class="navbar navbar-inverse navbar-fixed-top">
+            <!-- BEGIN TOP NAVIGATION BAR -->
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <!-- BEGIN LOGO -->
+                    <a class="brand" href="#">
+                        <%--<img src="/assets/img/logo.png" alt="Conquer"/>--%>
+                    </a>
+                    <!-- END LOGO -->
+                    <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                     <a class="btn btn-navbar collapsed" id="main_menu_trigger" data-toggle="collapse" data-target=".nav-collapse">
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="arrow"></span>
+                     </a>
+                    <!-- END RESPONSIVE MENU TOGGLER -->
+                    <div class="top-nav">
+                        <!-- BEGIN QUICK SEARCH FORM -->
+                        <div class="navbar-search hidden-phone" style="display:none">
+                            <div class="search-input-icon">
+                                <input type="text" class="search-query dropdown-toggle" id="quick_search" placeholder="Search" data-toggle="dropdown" />
+                                <i class="icon-search"></i>
+                                <!-- BEGIN QUICK SEARCH RESULT PREVIEW --><!-- END QUICK SEARCH RESULT PREVIEW -->
+                            </div>
+                        </div>
+                        <!-- END QUICK SEARCH FORM -->
+                        <!-- BEGIN TOP NAVIGATION MENU -->
+                        <ul class="nav pull-right" id="top_menu">
+                            <!-- BEGIN NOTIFICATION DROPDOWN -->
+                            <li class="dropdown" id="header_notification_bar" style="display:none">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-warning-sign"></i>
+                                    <span class="label label-important">0</span>
+                                </a>
+                            </li>
+                            <!-- END NOTIFICATION DROPDOWN -->
+                            <!-- BEGIN INBOX DROPDOWN -->
+                            <li class="dropdown" id="header_inbox_bar" style="display:none">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-envelope-alt"></i>
+                                    <span class="label label-success">0</span>
+                                </a>
+                            </li>
+                            <!-- END INBOX DROPDOWN -->
+                            <li class="divider-vertical hidden-phone hidden-tablet"></li>
+                            <!-- BEGIN USER LOGIN DROPDOWN -->
+                            <li class="dropdown" style="display:none">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-wrench"></i>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="icon-cogs"></i> System Settings</a></li>
+                                    <li><a href="#"><i class="icon-pushpin"></i> Shortcuts</a></li>
+                                    <li><a href="#"><i class="icon-trash"></i> Trash</a></li>
+                                </ul>
+                            </li>
+                            <!-- END USER LOGIN DROPDOWN -->
+                            <li class="divider-vertical hidden-phone hidden-tablet"></li>
+                            <!-- BEGIN USER LOGIN DROPDOWN -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-user"></i>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="icon-user"></i> <asp:Label ID="lblUserID" runat="server" Text=""></asp:Label></a></li>
+                                    <li style="display:none"><a href="#"><i class="icon-envelope-alt"></i> Inbox</a></li>
+                                    <li style="display:none"><a href="#"><i class="icon-tasks"></i> Tasks</a></li>
+                                    <li style="display:none"><a href="#"><i class="icon-ok"></i> Calendar</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/Login.aspx?action=logout""><i class="icon-key"></i> Log Out</a></li>
+                                </ul>
+                            </li>
+                            <!-- END USER LOGIN DROPDOWN -->
+                        </ul>
+                        <!-- END TOP NAVIGATION MENU -->
+                    </div>
+                </div>
+            </div>
+            <!-- END TOP NAVIGATION BAR -->
+        </div>
+        <!-- END HEADER -->
+        <!-- BEGIN CONTAINER -->
+        <div id="container" class="row-fluid">
+            <!-- BEGIN SIDEBAR -->
+            <div id="sidebar" class="nav-collapse collapse">
+                <!-- BEGIN RESPONSIVE QUICK SEARCH FORM --><!-- END RESPONSIVE QUICK SEARCH FORM -->
+                <!-- BEGIN SIDEBAR MENU -->
+                <ul>
+                    <li class="" runat="server" id="liHome">
+                        <a href="/Index.aspx">
+                            <i class="icon-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="has-sub" runat="server" id="liSportsManager">
+                        <a href="javascript:;" class="">
+                            <i class="icon-table"></i> Sports Manager
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <li class="" style="" runat="server" id="liParticipantMaint"><a class="" href="/Competition/ParticipantMaintenance.aspx">Participant Maint.</a></li>
+                            <li class="" style="" runat="server" id="liTeamMaint"><a class="" href="/Competition/TeamMaintenance.aspx">Team Maint.</a></li>
+                            <li class="" style="" runat="server" id="liEventsAndSchedules"><a class="" href="/Competition/EventMaintenance.aspx">Events &amp; Schedules</a></li>
+                            <%--<li class="" style="" runat="server" id="liResultConfig"><a class="" href="/Competition/ResultMaintenance.aspx">Result Config.</a></li>--%>
+                        </ul>
+                    </li>
+                    <li class="has-sub" runat="server" id="liAdmin">
+                        <a href="javascript:;" class="">
+                            <i class="icon-th"></i> Admin
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <li class="" style="" runat="server" id="liUserMaint"><a class="" href="/Admin/AdminUserMaintenance.aspx"> User Maintenance</a></li>
+                            <li class="" style="" runat="server" id="liModuleMaint"><a class="" href="/Admin/FunctionalModuleMaintenance.aspx"> Module Maintenance</a></li>
+                            <li class="" style="" runat="server" id="liRoleMaint"><a class="" href="/Admin/RoleMaintenance.aspx"> Role Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub" style="display:none" runat="server" id="liIT">
+                        <a href="javascript:;" class="">
+                            <i class="icon-ok"></i> IT
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <%--<li><a class="" href="/TemplateWF/TemplateTable.aspx"> Table</a></li>--%>
+                            <li><a class="" href="/Admin/DataGridColumnMaintenance.aspx"> DataGrid Maint.</a></li>
+                            <%--<li><a class="" href="/Admin/Crypto.aspx"> Crypto</a></li>--%>
+                        </ul>
+                    </li>
+                    <li style="display:none" ><a class="" href="#"><i class="icon-user"></i> Login Page</a></li>
+                </ul>
+            </div>
+            <!-- END SIDEBAR -->
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- BEGIN PAGE -->
+        <div id="body">
+            <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+            <div id="widget-config" class="modal hide">
+                <div class="modal-header">
+                    <button data-dismiss="modal" class="close" type="button">×</button>
+                    <h3>Widget Settings</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Here will be a configuration form</p>
+                </div>
+            </div>
+            <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+            <!-- BEGIN PAGE CONTAINER-->
+            <div class="container-fluid">
+                <!-- BEGIN PAGE HEADER-->
+                <div class="row-fluid">
+                    <div class="span12">
+                        <!-- BEGIN STYLE CUSTOMIZER-->
+                        <div id="styler" class="hidden-phone">
+                            <i class="icon-cog"></i>
+                            <span class="settings">
+                                <span class="text">Style:</span>
+                                <span class="colors">
+                                    <span class="color-default" data-style="default">
+                                    </span>
+                                    <span class="color-grey" data-style="grey">
+                                    </span>
+                                    <span class="color-navygrey" data-style="navygrey">
+                                    </span>
+                                    <span class="color-red" data-style="red">
+                                    </span>
+                                </span>
+                                <span class="layout">
+                                    <label class="hidden-phone">
+                                        <input type="checkbox" class="header" checked value="" />Sticky Header
+                                    </label><br />
+                                    <label><input type="checkbox" class="metro" value="" />Metro Style</label>
+                                    <span class="space5"></span>
+                                    <a class="btn fancybox-button" data-rel="fancybox-button" title="Large Desktop Preview"  href="/assets/img/demo/desktop.png"><i class="icon-eye-open"></i> Screenshots</a>
+                                    <a class="fancybox-button" data-rel="fancybox-button" title="Notebook Preview" href="/assets/img/demo/notebook.png"></a>
+                                    <a class="fancybox-button" data-rel="fancybox-button" title="Tablet Preview"  href="/assets/img/demo/tablet.png"></a>
+                                    <a class="fancybox-button" data-rel="fancybox-button" title="Phone Preview"  href="/assets/img/demo/phone.png"></a>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- END STYLE CUSTOMIZER-->
+                        <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                        <h3 class="page-title">
+                            <asp:Label ID="lblSideCategory" runat="server" Text="Side Category"></asp:Label>
+                            <small><asp:Label ID="lblSideCategoryDesc" runat="server" Text="catogory description"></asp:Label></small>
+                        </h3>
+                        <ul class="breadcrumb">
+                            <%--<li>
+                                <i class="icon-trophy"></i>
+                            </li>--%>
+                            <asp:ListView ID="ListViewSportList" runat="server" GroupPlaceholderID="groupPlaceHolderSportList" ItemPlaceholderID="itemPlaceHolderSportList">
+                                <LayoutTemplate>
+                                    <asp:PlaceHolder ID="groupPlaceHolderSportList" runat="server"></asp:PlaceHolder>
+                                </LayoutTemplate>
+                                <GroupTemplate>
+                                    <asp:PlaceHolder ID="itemPlaceHolderSportList" runat="server"></asp:PlaceHolder>
+                                </GroupTemplate>
+                                <ItemTemplate>
+                                    <li><span class="divider">|</span> <a href='<%# GetSportUrlBySportID(Eval("SportID")) %>' runat="server" id="aSportUrl"><asp:Label ID="lblSport" class='<%# GetCssClassBySportID(Eval("SportID")) %>' runat="server" Text='<%# Eval("SportName") %>'></asp:Label></a></li>
+                                </ItemTemplate>
+                            </asp:ListView>
+
+                            <asp:Button ID="btnTestAjax" runat="server" OnClick="btnTestAjax_Click" Text="Test Ajax Button" Visible="False" />
+                        </ul>
+                        <!-- END PAGE TITLE & BREADCRUMB-->
+                    </div>
+                </div>
+                <!-- END PAGE HEADER-->
+                <!-- BEGIN PAGE CONTENT-->
+                <asp:ContentPlaceHolder ID="CPH_CMS" runat="server">
+
+                </asp:ContentPlaceHolder>
+                <!-- END PAGE CONTENT-->
+            </div>	
+            <!-- END PAGE CONTAINER-->
+        </div>
+        <!-- END PAGE -->
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BEGIN FOOTER -->
+    <div id="footer">
+        2015 &copy; CMS. Admin Site.
+        <div class="span pull-right">
+            <span class="go-top"><i class="icon-arrow-up"></i></span>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+
+    <%--the section for AjaxPopup--%>
+        <asp:UpdatePanel ID="updPnl_Info" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                <asp:Panel ID="pnl_validation_Info" runat="server" CssClass="modalPopup" Style="display: none;" meta:resourcekey="pnl_validation_InfoResource1">
+                    <div style="text-align: left">
+                        <div><asp:Label ID="lblPopupMessage" runat="server" CssClass="labeltext" Text="* Test Ajax Successful."></asp:Label></div>
+                        <div style="text-align: right">
+                            <asp:Button ID="btn_Ok" runat="server" Text="Ok" />
+                        </div>
+                    </div>
+                </asp:Panel>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+
+        <asp:Panel ID="Panel_Info" runat="server">
+            <asp:HyperLink ID="invisibleTarget" runat="server" Style="display: none"></asp:HyperLink>
+            <ajaxToolkit:ModalPopupExtender
+                ID="modalPopupEx_Info"
+                runat="server"
+                PopupControlID="pnl_validation_Info"
+                TargetControlID="invisibleTarget"
+                CancelControlID="btn_Ok"
+                BackgroundCssClass="modalBackground" Enabled="True">
+            </ajaxToolkit:ModalPopupExtender>
+        </asp:Panel>
+
+        <asp:UpdatePanel ID="updPnlSuccess" runat="server" UpdateMode="Conditional">
+                <ContentTemplate>
+                    <asp:Panel ID="pnl_success" runat="server" CssClass="modalPopup" style="display:none;">
+                        <div style="text-align: left">
+                            <asp:Label ID="lblSuccess" runat="server" CssClass="labeltext" ></asp:Label>
+                            <div style="text-align: right">
+                                <asp:Button ID="btn_OkSuccess" runat="server" Text="Ok" onclick="btn_OkSuccess_Click" />
+                            </div>
+                        </div>
+                    </asp:Panel>
+                </ContentTemplate>
+        </asp:UpdatePanel>
+    
+        <asp:panel ID="Panel2" runat="server">
+            <asp:HyperLink ID="invisibleTarget2" runat="server" Style="display: none" meta:resourcekey="invisibleTarget2Resource1"></asp:HyperLink>
+            <ajaxToolkit:ModalPopupExtender 
+                                        ID="modalPopupExSuccess" 
+                                        runat="server" 
+                                        PopupControlID="pnl_success"
+                                        TargetControlID="invisibleTarget2" 
+                                        BackgroundCssClass="modalBackground" 
+                 Enabled="True">
+            </ajaxToolkit:ModalPopupExtender>
+        </asp:panel>
+        <%--end section for AjaxPopup--%>
+
+    </form>
+
+    <!-- BEGIN JAVASCRIPTS -->
+    <!-- Load javascripts at bottom, this will reduce page load time -->
+    <script src="/assets/js/jquery-1.8.2.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.blockui.js"></script>
+    <!-- ie8 fixes -->
+    <!--[if lt IE 9]>
+        <script src="/assets/js/excanvas.js"></script>
+        <script src="/assets/js/respond.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/assets/data-tables/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="/assets/data-tables/DT_bootstrap.js"></script>
+    <script type="text/javascript" src="/assets/uniform/jquery.uniform.min.js"></script>
+    <script src="/assets/fancybox/source/jquery.fancybox.pack.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            // initiate layout and plugins
+            App.init();
+        });
+    </script>
+    <script>
+        function ShowModalPopup_FrontEnd() {
+            $find("mpe_FrontEnd").show();
+            return false;
+        }
+        function HideModalPopup_FrontEnd() {
+            $find("mpe_FrontEnd").hide();
+            return false;
+        }
+        function ShowModalPopupMaintenence() {
+            $find("mpe_Maintenence").show();
+            return false;
+        }
+        function HideModalPopupMaintenence() {
+            $find("mpe_Maintenence").hide();
+            return false;
+        }
+    </script>
+    <!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

@@ -1,0 +1,413 @@
+﻿@font-face {
+  font-family: 'MuseoSans';
+  src: url("../fonts/museosansregular.eot");
+  src: url("../fonts/museosansregular.eot?#iefix") format("embedded-opentype"), url("../fonts/museosansregular.woff") format("woff"), url("../fonts/museosansregular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'MuseoSans';
+  src: url("../fonts/museosansbold.eot");
+  src: url("../fonts/museosansbold.eot?#iefix") format("embedded-opentype"), url("../fonts/museosansbold.woff") format("woff"), url("../fonts/museosansbold.ttf") format("truetype");
+  font-weight: 700; }
+body {font-family:"MuseoSans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;min-width:320px;}
+a{color:#5a5a5a;}
+a:hover{color:#0097d6;}
+
+/* BACKGROUND STYLE */
+.grey-bg{background:#f2f2f2;}
+
+/* ACTION */
+.blue-button{display:block;background:url(../img/action/blue-button.png) no-repeat center center;color:#fff;width:119px;height:28px;line-height:28px;font-weight:bold;padding-left:12px;text-align:left;}
+.blue-button:hover{color:#0080d9;text-decoration:none;}
+
+/* TABS */
+.nav-tabs > li > a{background:url(../img/tab/grey-radius.png) no-repeat transparent center top;border:none;border-radius:0;padding:7px 10px;color:#3b3b3b;-webkit-tap-highlight-color: #808080;}
+.nav-tabs > li.highlight > a{background:url(../img/tab/grey-highlight-radius.png) no-repeat transparent center top;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{background:url(../img/tab/pink-radius.png) no-repeat transparent center top;border:none;color:#fff;}
+.nav-tabs > li > a:focus, .nav-tabs > li > a:hover{border:none;background-color:transparent;}
+.nav-tabs > li.highlight.active > a{background:url(../img/tab/red-highlight-radius.png) no-repeat transparent center top;}
+
+/* HEADER */
+header .header-wrapper {background: url("../img/header/top-background.png") repeat-x top;height:46px;}
+header .header-wrapper .social-media ul{margin:11px 0 4px 0;}
+header .header-wrapper .social-media ul li{display:inline;margin-left:7px}
+header .header-wrapper .social-media ul li a{display:inline-block;background:url(../img/header/social-medias.png) no-repeat;width:27px;height:27px;}
+header .header-wrapper .social-media ul li .ic-twitter{}
+header .header-wrapper .social-media ul li .ic-facebook{background-position:-36px center;}
+header .header-wrapper .social-media ul li .ic-youtube{background-position:-72px center;}
+header .header-wrapper .social-media ul li .ic-instagram{background-position:-108px center;}
+header .header-wrapper .shortcut-links ul{margin:14px 0 13px 0;display:inline-block;}
+header .header-wrapper .shortcut-links ul li{display:inline;margin-right:30px;}
+header .header-wrapper .shortcut-links ul li a{color:#fff;font-size:12px;}
+header .header-wrapper .shortcut-links ul li a:hover{}
+header .header-wrapper .shortcut-links ul li:last-child{margin-right:0;}
+
+header .bottom-wrapper{background:url(../img/header/bottom-background.png) no-repeat #fff center bottom;padding:14px 0 52px 0;}
+header .bottom-wrapper .logo-wrapper{width:175px;float:left;}
+
+/* FOOTER */
+footer{background:#2b2b2b;padding-bottom:50px;}
+footer .copyright-wrapper {background: url("../img/header/background_pattern_01.jpg") repeat-x top;height:30px;}
+footer .copyright-wrapper2 {background-color: #4161a6;background-image: linear-gradient(to bottom, #0a90c6 0%, #4161a6 100%);height:80px;}
+footer .copyright{color:#b0b0b0;font-size:12px;padding:20px;font-size: 1.2rem;}
+/* CONTENT */
+.body-content-wrapper h1{font-size:20px;color:#0089e4;font-weight:bold;margin-bottom:10px;}
+
+/* TABLE STYLE */
+.body-content-wrapper .table-responsive{border:none;}
+.body-content-wrapper .table > thead > tr{}
+.body-content-wrapper .table > thead > tr > th{border-bottom:none;vertical-align:middle;padding:4px 15px;}
+.body-content-wrapper .table > thead > tr > th > h3{margin:0;color:#fff;font-size:18px;font-weight:bold;line-height:30px;}
+.body-content-wrapper .table > thead > tr > th > span{display:block;color:#fff;text-align:center;}
+.body-content-wrapper .table > thead > tr > th span.day{display:block;font-size:27px;font-weight:bold;line-height:30px;margin-top:3px;margin-bottom:1px;}
+.body-content-wrapper .table > thead > tr > th span.month{display:block;font-size:11px;text-transform:uppercase;line-height:13px;}
+.body-content-wrapper .table > tbody > tr > th{font-weight:bold;vertical-align:middle;padding:6px;}
+.body-content-wrapper .table > tbody > tr > td{min-height:32px;}
+.body-content-wrapper .table > tbody > tr.horizontal-header > th{background:#f2f2f2;font-size:13px;}
+.body-content-wrapper .table > tbody > tr.bottom-line-2px{border-bottom:solid 2px #f3f3f3;}
+.body-content-wrapper .table-bordered{border:solid 1px #fff;border-top:none;}
+.body-content-wrapper .table-bordered > tbody > tr > td, .body-content-wrapper .table-bordered > tbody > tr > th, .body-content-wrapper .table-bordered > tfoot > tr > td, .body-content-wrapper .table-bordered > tfoot > tr > th, .body-content-wrapper .table-bordered > thead > tr > td, .body-content-wrapper .table-bordered > thead > tr > th {border: 1px solid #fff;vertical-align:middle;}
+.body-content-wrapper .table-striped > tbody > tr {background-color: #ececec;}
+.body-content-wrapper .table-striped > tbody > tr:nth-of-type(2n+1) {background-color: #f2f2f2;}
+
+/* TABLE HEADER STYLE */
+.body-content-wrapper .pink-large-header2{background:url(../img/table/bg-pink-header-62x62.png) repeat-x center top;border-top:none;}
+.body-content-wrapper .pink-large-header{background:url(../img/table/bg-red-header-62x62.png) repeat-x center top;border-top:none;}
+.body-content-wrapper .pink-large-header > thead > tr > th:first-child{background:url(../img/table/bg-red-header-62x62.png) repeat-x center top;}
+.body-content-wrapper .pink-large-header > thead > tr > th:last-child{background:url(../img/table/bg-red-header-62x62.png) repeat-x center top;width:10px;}
+.body-content-wrapper .pink-62-header{background:url(../img/table/bg-red-header-62x62.png) repeat-x center top;border-bottom:solid 10px #e5e5e5;border-top:none;height:60px}
+.body-content-wrapper .pink-62-header > thead > tr > th:first-child{background:url(../img/table/bg-red-header-62x62.png) repeat-x center top;}
+.body-content-wrapper .pink-62-header > thead > tr > th:last-child{background:url(../img/table/bg-red-header-62x62.png) repeat-x center top;width:10px;}
+.body-content-wrapper .blue-62-header{background:url(../img/table/bg-red-header-62x62.png) repeat-x center top;}
+.body-content-wrapper .blue-62-header > thead > tr > th:first-child{background:url(../img/table/bg-red-header-62x62.png) no-repeat left top;}
+.body-content-wrapper .blue-62-header > thead > tr > th:last-child{background:url(../img/table/bg-red-header-62x62.png) no-repeat right top;width:10px;}
+.body-content-wrapper .orange-62-header{background:url(../img/table/bg-red-header-62x62.png) repeat-x center top;border-top:none;height:40px}
+.body-content-wrapper .orange-62-header > thead > tr > th:first-child{background:url(../img/table/bg-red-header-62x62.png) repeat-x center top;}
+.body-content-wrapper .orange-62-header > thead > tr > th:last-child{background:url(../img/table/bg-red-header-62x62.png) repeat-x center top;}
+
+/*GENERAL */
+.body-content-wrapper .table > thead > tr > th > a.taphover:hover, .body-content-wrapper .table > thead > tr > th > a.taphover:active {text-decoration: underline;color: white;cursor: pointer;}
+.body-content-wrapper .table > thead > tr > th > a {color: #fff;text-align: center;}
+.body-content-wrapper .table > thead > tr > th span.day {margin-bottom: 0px;}
+.schedule .table tbody tr td.sport-name {text-align: left;height: 55px;}
+.legend-schedule {display: inline-block;margin-bottom: 10px;}
+.legend-schedule img {padding-right: 5px;width: 40%;max-width: 37px;}
+.legend-schedule > div {padding-left: 8px;padding-right: 8px;}
+.legend-schedule > div > div {vertical-align: middle;display: inline-block;width: 73%;}
+.rWebFixedHeaderGrid {position: fixed;top: 0px;background-color: white;display: none;}
+.schedule .table {margin-bottom: 10px;}
+a:link {-webkit-tap-highlight-color: #808080;}/*ios safari touch*/
+a.taphover:hover, a.taphover:active {text-decoration: underline;color: black;cursor: pointer;}
+div.taphover_icon:hover, div.taphover_icon:active {opacity: 0.4;cursor: pointer;}
+
+/* MEDAL STANDINGS */
+.body-content-wrapper .medal-standings > tbody > tr > td{font-weight:bold;}
+
+
+/* LATEST MEDALIST */
+.body-content-wrapper .latest-medalist{border-bottom:solid 1px #d9d9d9;}
+.body-content-wrapper .latest-medalist > thead > tr, .body-content-wrapper .latest-medalist > thead > tr > th{border:none;}
+.body-content-wrapper .latest-medalist > tbody > tr{}
+.body-content-wrapper .latest-medalist > tbody > tr > td{text-align:left;vertical-align:middle;border-bottom:solid 1px #d9d9d9;}
+.body-content-wrapper .latest-medalist > tbody > tr > td.text-right{text-align:right;}
+.body-content-wrapper .latest-medalist .player-name{display:block;color:#002ba1;margin-top:2px;}
+.body-content-wrapper .latest-medalist .player{width:68px;}
+
+/* CONTENT HEADER */
+.body-content-wrapper .content-header{margin-top:20px;}
+
+/* SUB PAGE MENU */
+.body-content-wrapper .sub-page-menu{margin:10px 0 5px 0;}
+.body-content-wrapper .sub-page-menu ul{margin:0;}
+.body-content-wrapper .sub-page-menu ul li{display:inline;}
+.body-content-wrapper .sub-page-menu ul li a{display:inline-block;background:url(../img/tab/grey.png) repeat-x center center;border-radius:5px;color:#494949;font-weight:bold;padding:3px 15px;margin-bottom:5px;text-decoration:none;}
+.body-content-wrapper .sub-page-menu ul li a.selected{display:inline-block;background:url(../img/tab/blue.png) repeat-x center center;border-radius:5px;color:#fff;font-weight:bold;padding:3px 15px;margin-bottom:5px;}
+.body-content-wrapper .sub-page-menu ul li.highlight a{color:#004a7b;}
+.body-content-wrapper .categorized-menu{}
+.body-content-wrapper .categorized-menu ul{margin:0;}
+.body-content-wrapper .categorized-menu ul li{display:inline;}
+.body-content-wrapper .categorized-menu ul li a{display:inline-block;background:url(../img/tab/grey.png) repeat-x center center;text-transform:uppercase;font-size:18px;border-radius:5px;color:#fff;font-weight:bold;padding:4px 20px;margin-bottom:8px;}
+.body-content-wrapper .categorized-menu ul li a:hover{text-decoration:none;}
+.body-content-wrapper .categorized-menu ul li a.navy-blue-button{background:url(../img/action/navy-blue-button.png) repeat-x center center;}
+.body-content-wrapper .categorized-menu ul li a.pink-button{background:url(../img/action/pink-button.png) repeat-x center center;}
+.body-content-wrapper .categorized-menu ul li a.purple-button{background:url(../img/action/purple-button.png) repeat-x center center;}
+.body-content-wrapper .categorized-menu ul li a i{display:inline-block;width:31px;height:20px;vertical-align:middle;}
+.body-content-wrapper .categorized-menu ul li a.navy-blue-button i{background:url(../img/menu/man.png) no-repeat center center;width:17px;}
+.body-content-wrapper .categorized-menu ul li a.pink-button i{background:url(../img/menu/women.png) no-repeat center center;width:17px;}
+.body-content-wrapper .categorized-menu ul li a.purple-button i{background:url(../img/menu/mixed.png) no-repeat center center;}
+.body-content-wrapper .selection select{border:solid 1px #d3d3d3;padding:8px;border-radius:5px;outline:none;}
+.body-content-wrapper .game-title{font-size:20px;color:#0089e4;margin:25px 0 15px 0;font-weight:bold;}
+.body-content-wrapper .title-wrapper{position:relative;overflow:hidden;}
+.body-content-wrapper .title-wrapper .title-content{float:left;width:100%;}
+.body-content-wrapper .title-wrapper .title-content h1{font-size:36px;}
+.body-content-wrapper .title-wrapper .sports-icon{float:right;}
+
+/* MEDALS AND FINAL RANKING */
+.medals-and-final-ranking{margin-bottom:20px;}
+.medals-and-final-ranking .table > thead > tr > th{text-align:center;vertical-align:middle;background:#e00747;color:#fff;font-size:12px;font-weight:700;padding:10px 20px;}
+.medals-and-final-ranking .table > tbody > tr > th{vertical-align:middle;background:#707070;color:#fff;font-size:12px;font-weight:700;}
+.medals-and-final-ranking .table > tbody > tr > td{vertical-align:middle;padding:10px 20px;font-weight:bold;}
+.medals-and-final-ranking .table > tbody > tr > th.rank {width:30px;}
+.medals-and-final-ranking .table > tbody > tr > td.rank {width:30px;text-align:center;}
+.medals-and-final-ranking .table > tbody > tr > .name {width:140px;}
+.medals-and-final-ranking .table > tbody > tr > .name img{width:100px;}
+.medals-and-final-ranking .table > tbody > tr > .country {}
+.medals-and-final-ranking .table > tbody > tr > .medal {width:40px;}
+.medals-and-final-ranking .table > tbody > tr > td, .medals-and-final-ranking .table > tbody > tr > th, .medals-and-final-ranking .table > tfoot > tr > td, .medals-and-final-ranking .table > tfoot > tr > th, .medals-and-final-ranking .table > thead > tr > td, .medals-and-final-ranking .table > thead > tr > th {border-bottom: 2px solid #fff;padding:10px 20px;}
+
+/* NUMBER OF ATHLETES */
+.number-of-athletes{margin-bottom:20px;}
+.number-of-athletes .title-wrapper{background:#e00747;color:#fff;font-size:12px;font-weight:700;padding:10px 20px;border-bottom:solid 4px #707070;margin-bottom:4px;}
+.number-of-athletes .athletes-list .item-box{padding:15px;position:relative;overflow:hidden;background:#f2f2f2;margin-bottom:4px;}
+.number-of-athletes .athletes-list .item-box .photo{width:125px;float:left;}
+.number-of-athletes .athletes-list .item-box .photo img{width:100px;}
+.number-of-athletes .athletes-list .item-box .description{float:left;color:#242424;font-weight:bold;margin-left:2%;padding-top:5px;}
+.number-of-athletes .athletes-list .item-box .description .country{margin-bottom:2px;font-size:12px;margin:0 auto;max-width:150px}
+.number-of-athletes .athletes-list .item-box .description .name{font-size:14px;margin-bottom:5px;height:50px;margin:0 auto;max-width:150px}
+.number-of-athletes .athletes-list .item-box .description .bid{margin-bottom:1px;font-size:12px;margin:5px auto;max-width:150px}
+.number-of-athletes .athletes-list .item-box .description .dob{font-size:12px;margin:0 auto;max-width:150px}
+
+/* SUMMARY 2*/
+.summary2-a{margin-bottom:20px;}
+.summary2-a .table > thead > tr > th{background:#e00747;color:#fff;font-size:12px;font-weight:700;padding:10px 20px;}
+.summary2-a .table > tbody > tr > th.header-row{background:#e00747;color:#fff;font-size:12px;font-weight:700;padding:10px 20px;}
+.summary2-a .table > tbody > tr > th{background:#707070;color:#fff;font-size:12px;font-weight:700;}
+.summary2-a .table > tbody > tr > td{vertical-align:middle;padding:10px 20px;font-weight:bold;}
+.summary2-a .table > tbody > tr > th.rank {width:30px;}
+.summary2-a .table > tbody > tr > td.rank {width:30px;text-align:center;}
+.summary2-a .table > tbody > tr > .p {width:50px;text-align:center;}
+.summary2-a .table > tbody > tr > .w {width:50px;text-align:center;}
+.summary2-a .table > tbody > tr > .l {width:50px;text-align:center;}
+.summary2-a .table > tbody > tr > .points {width:50px;text-align:center;}
+.summary2-a .table > tbody > tr > .pf {width:50px;text-align:center;}
+.summary2-a .table > tbody > tr > .pa {width:50px;text-align:center;}
+.summary2-a .table > tbody > tr > .pd {width:50px;text-align:center;}
+.summary2-a .table > tbody > tr > td, .summary2-a .table > tbody > tr > th, .summary2-a .table > tfoot > tr > td, .summary2-a .table > tfoot > tr > th, .summary2-a .table > thead > tr > td, .summary2-a .table > thead > tr > th {border-bottom: 2px solid #fff;padding:10px 20px;}
+
+.summary2-b{margin-bottom:20px;}
+.summary2-b .table > tbody > tr > th{background:#e00747;color:#fff;font-size:12px;font-weight:700;padding:10px 20px; vertical-align: top;}
+/*.summary2-b .table > tbody > tr > th{background:#707070;color:#fff;font-size:12px;font-weight:700;}*/
+.summary2-b .table > tbody > tr > td{vertical-align:middle;padding:10px 20px;font-weight:bold;}
+.summary2-b .table > tbody > tr > td.country {width:90px;text-align:center;}
+.summary2-b .table > tbody > tr > td, .summary2-b .table > tbody > tr > th, .summary2-b .table > tfoot > tr > td, .summary2-b .table > tfoot > tr > th, .summary2-b .table > thead > tr > td, .summary2-b .table > thead > tr > th {border-bottom: 2px solid #fff;padding:10px 20px;}
+
+/* SPORT OVERVIEW */
+.sport-overview{margin-bottom:20px;}
+.sport-overview .tab-content{}
+.sport-overview .tab-content .table > thead > tr > th{background:#e00747;color:#fff;font-size:12px;font-weight:700;padding:10px 20px;}
+.sport-overview .tab-content .table > tbody > tr > td{vertical-align:middle;padding:10px 20px;font-weight:bold;}
+.sport-overview .tab-content .table > tbody > tr > td.start-time{width:100px;}
+.sport-overview .tab-content .table > tbody > tr > td.location{width:230px;}
+.sport-overview .tab-content .table > tbody > tr > td.event .event-title{display:block;}
+.sport-overview .tab-content .table > tbody > tr > td.event .event-description{font-weight:normal;display:block;}
+.sport-overview .tab-content .table > tbody > tr > td.country {width:250px;text-align:center;}
+.sport-overview .tab-content .table > tbody > tr > td.points{width:60px;text-align:center;}
+.sport-overview .tab-content .table > tbody > tr > td.action{width:129px;text-align:center;}
+.sport-overview .tab-content .table > tbody > tr > td, .sport-overview .tab-content .table > tbody > tr > th, .sport-overview .tab-content .table > tfoot > tr > td, .sport-overview .tab-content .table > tfoot > tr > th, .sport-overview .tab-content .table > thead > tr > td, .sport-overview .tab-content .table > thead > tr > th {border-bottom: 2px solid #fff;padding:10px 20px;}
+.sport-overview .nav-tabs span{display:block;font-size:24px;line-height:24px;font-weight:bold;text-align:center;}
+.sport-overview .nav-tabs .month{font-size:12px;line-height:12px;}
+.sport-overview .nav-tabs .all-days{margin-top:3px;font-size:12px;line-height:15px;}
+
+/* SPORT OVERVIEW TAB 2 */
+.sport-overview-tab2{margin-bottom:20px;}
+.sport-overview-tab2 .tab-content{}
+.sport-overview-tab2 .tab-content .table > thead > tr > th{background:#e00747;color:#fff;font-size:12px;font-weight:700;padding:10px 20px;}
+.sport-overview-tab2 .tab-content .table > tbody > tr > td{vertical-align:middle;padding:10px 20px;font-weight:bold;}
+.sport-overview-tab2 .tab-content .table > tbody > tr > td.start-time{width:100px;}
+.sport-overview-tab2 .tab-content .table > tbody > tr > td.location{width:230px;}
+.sport-overview-tab2 .tab-content .table > tbody > tr > td.event .event-title{display:block;}
+.sport-overview-tab2 .tab-content .table > tbody > tr > td.event .event-description{font-weight:normal;display:block;}
+.sport-overview-tab2 .tab-content .table > tbody > tr > td.country {width:250px;text-align:center;}
+.sport-overview-tab2 .tab-content .table > tbody > tr > td.points{width:60px;text-align:center;}
+.sport-overview-tab2 .tab-content .table > tbody > tr > td.action{width:129px;text-align:center;}
+.sport-overview-tab2 .tab-content .table > tbody > tr > td, .sport-overview-tab2 .tab-content .table > tbody > tr > th, .sport-overview-tab2 .tab-content .table > tfoot > tr > td, .sport-overview-tab2 .tab-content .table > tfoot > tr > th, .sport-overview-tab2 .tab-content .table > thead > tr > td, .sport-overview-tab2 .tab-content .table > thead > tr > th {border-bottom: 2px solid #fff;padding:10px 20px;}
+.sport-overview-tab2 .nav-tabs a{font-size:20px;padding-top:15px;padding-bottom:6px;}
+
+/* SECHEDULE */
+.schedule .table tbody tr td{text-align:center;vertical-align:middle;}
+
+/* SCHEDULE LIST */
+.schedule-list{margin-bottom:20px;}
+.schedule-list .jcarousel{margin:0 24px;}
+.schedule-list .jcarousel .item-box{background:#ececec;border-radius:5px;padding:5px 5px;}
+.schedule-list .jcarousel .highlight .item-box{background:#9a9a9a;}
+.schedule-list .jcarousel .item-box .details{background:#fff;border-radius:5px;padding:5px 5px;position:relative;overflow:hidden;color:#424242;margin-bottom:5px;}
+.schedule-list .jcarousel .item-box .details .date{font-weight:bold;text-align:center;width:54px;float:left;}
+.schedule-list .jcarousel .item-box .details .date .day{display:block;font-size:24px;line-height:25px;}
+.schedule-list .jcarousel .item-box .details .date .month{display:block;font-size:11px;line-height:12px;text-transform:uppercase;}
+.schedule-list .jcarousel .item-box .details .others{float:right;text-align:right;}
+.schedule-list .jcarousel .item-box .details .others .time{display:block;font-size:11px;line-height:12px;margin-bottom:3px;}
+.schedule-list .jcarousel .item-box .details .others .status{display:block;font-size:14px;line-height:14px;font-weight:bold;color:#fff;background:url(../img/action/status.png) repeat-x center center;border-radius:7px;text-align:center;padding:4px 5px;}
+.schedule-list .jcarousel .highlight .item-box .event{color:#fff;}
+.schedule-list .jcarousel .item-box .event{color:#010101;font-weight:bold;padding:5px 5px;line-height:16px;margin-bottom:25px;text-overflow:ellipsis;overflow:hidden;min-height:60px;}
+.schedule-list .jcarousel .item-box .team{text-align:center;margin-bottom:5px;}
+.schedule-list .jcarousel .highlight  .arrow-down{background:url(../img/carousel/arrow.png) no-repeat center center;height:10px;}
+
+/* RESULT */
+.result{margin-bottom:20px;}
+
+.result .results .table > thead > tr > th{background:#e00747;color:#fff;font-size:12px;font-weight:700;padding:10px 20px;border-bottom:0;}
+.result .results .table > tbody > tr > th.header{background:#e00747;color:#fff;font-size:12px;font-weight:700;padding:10px 20px;border-bottom:0;}
+.result .results .table > tbody > tr > th{background:#707070;color:#fff;font-weight:bold;}
+.result .results .table > tbody > tr > td{vertical-align:middle;padding:10px 20px;font-weight:normal;}
+.result .results .table > tbody > tr > th.rank {width:30px;}
+.result .results .table > tbody > tr > td.rank {width:30px;text-align:center;}
+.result .results .table > tbody > tr > td.target {width:50px;text-align:center;}
+.result .results .table > tbody > tr > td.country {}
+.result .results .table > tbody > tr > .first-round {width:100px;text-align:center;}
+.result .results .table > tbody > tr > .first-round-final {width:100px;text-align:center;font-weight:bold;}
+.result .results .table > tbody > tr > .second-round {width:100px;text-align:center;}
+.result .results .table > tbody > tr > .ten-times {width:100px;text-align:center;}
+.result .results .table > tbody > tr > .x-times {width:100px;text-align:center;}
+.result .results .table > tbody > tr > .dob {width:150px;text-align:center;}
+.result .results .table > tbody > tr > td, .result .results .table > tbody > tr > th, .result .results .table > tfoot > tr > td, .result .results .table > tfoot > tr > th {border-bottom: 2px solid #fff;padding:10px 20px;}
+
+.result{margin-bottom:20px;}
+.result .start-list .table > tbody > tr > th.header{background:#e00747;color:#fff;font-size:12px;font-weight:700;padding:10px 20px;border-bottom:0;}
+.result .start-list .table > tbody > tr > th.subheader{background:#009cde;color:#fff;font-size:12px;font-weight:700;padding:10px 18px;border-bottom:0;text-align:center}
+.result .start-list .table > tbody > tr > th{background:#707070;color:#fff;font-weight:700;}
+.result .start-list .table > tbody > tr > td{vertical-align:middle;padding:10px 20px;font-weight:normal;}
+.result .start-list .table > tbody > tr > td.target {width:50px;text-align:center;}
+.result .start-list .table > tbody > tr > td.country {}
+.result .start-list .table > tbody > tr > .dob {width:150px;text-align:center;}
+.result .start-list .table > tbody > tr > td, .result .start-list .table > tbody > tr > th, .result .start-list .table > tfoot > tr > td, .result .start-list .table > tfoot > tr > th {border-bottom: 2px solid #fff;padding:10px 20px;}
+
+.result .nav-tabs > li > a{font-size:18px;font-weight:bold;background:url(../img/tab/long-grey-radius.png) no-repeat transparent center top;border:none;border-radius:0;padding:12px 10px;color:#3b3b3b;width:137px;text-align:center;}
+.result .nav-tabs > li.active > a, .result .nav-tabs > li.active > a:focus, .result .nav-tabs > li.active > a:hover{background:#e00747;border:none;color:#fff;}
+.result .nav-tabs > li > a:focus, .result .nav-tabs > li > a:hover{border:none;background-color:transparent;}
+
+/* GAME STANDING */
+.game-standing{margin-bottom:20px;}
+.game-standing .gold-medal{background:url(../img/action/gold-button.png) no-repeat center center;display:inline-block;width:137px;}
+.game-standing .bronze-medal{background:url(../img/action/bronze-button.png) no-repeat center center;display:inline-block;width:157px;}
+.game-standing .top-menu-wrapper{margin-bottom:5px;}
+.game-standing .top-menu-wrapper a{color:#fff;font-size:18px;font-weight:bold;height:55px;line-height:55px;text-align:center;}
+.game-standing .standing-table .table tbody tr th{background:#e50047;color:#fff;font-size:12px;font-weight:700;padding:10px 20px;border-bottom:solid 4px #707070;margin-bottom:4px;}
+.game-standing .standing-table .table tbody tr td{border:none;vertical-align:middle;padding:0;}
+.game-standing .standing-table .table tbody tr td div{vertical-align:middle;padding:0;margin-top:5px;margin-bottom:5px;}
+.game-standing .standing-table .table tbody tr td div.connector{margin-right:5px;margin-left:5px;}
+.game-standing .standing-table .table tbody tr td.connection{width:35px;padding:0;}
+.game-standing .standing-table .table tbody tr td.connection.two-to-one{background:url(../img/standing-table/two-to-one.png) no-repeat center center;}
+.game-standing .standing-table .table tbody tr td.connection.four-to-two{background:url(../img/standing-table/four-to-two.png) no-repeat center center;}
+.game-standing .standing-table .table tbody tr td div.country{background:#f2f2f2;color:#242424;font-weight:bold;padding:10px;height:49px;position:relative;width: 100%;overflow: hidden;}
+.game-standing .standing-table .table tbody tr td div.country .country-image{float: left;}
+.game-standing .standing-table .table tbody tr td div.country .country-name{margin:0 40px 0 61px;padding:0;text-align:center;overflow:hidden;height:35px;text-overflow:ellipsis;}
+.game-standing .standing-table .table tbody tr td div.country .medal-icon{margin:0; position: absolute; right:2px; bottom:2px;}
+.game-standing .standing-table .table tbody tr td div.score{background:#0089e4;color:#242424;font-weight:bold;padding:10px;height:49px;text-align:center;vertical-align:middle;border:5px;}
+.game-standing .standing-table .table tbody tr td.first{padding-left:25px;}
+.game-standing .standing-table .table tbody tr td.middle{}
+.game-standing .standing-table .table tbody tr td.last{padding-right:25px;}
+.game-standing .standing-table .table tbody tr td.top{padding-top:31px;padding-bottom:34px;}
+.game-standing .standing-table .table tbody tr td.bottom{padding-top:31px;padding-bottom:31px;}
+.game-standing .standing-table .table tbody tr td.fixed{width:auto;height:100%;}
+.game-standing .standing-table .connection .line{border-collapse:collapse;border:none;padding:0;width:100%;}
+.game-standing .standing-table .connection .line tr td{height:49px;padding:0;width:15px;}
+.game-standing .standing-table .connection .line tr td.middle{width:5px;}
+.game-standing .standing-table .connection .line tr.split td{height:5px;}
+.game-standing .standing-table .connection .line tr td.has-line{background:#707070;}
+.game-standing .standing-table .table tbody tr td.front-upper{border-top: black 4px solid; border-right: black 4px solid;}
+.game-standing .standing-table .table tbody tr td.front-lower{border-bottom: black 4px solid; border-right: black 4px solid;}
+.game-standing .standing-table .table tbody tr td.back-upper{border-bottom: black 4px solid; border-left: black 4px solid;}
+.game-standing .standing-table .table tbody tr td.back-lower{border-top: black 4px solid; border-left: black 4px solid;}
+.game-standing .standing-table .table tbody tr td.link{border-right: black 4px solid;}
+.game-standing .standing-table .table tbody tr td div.header{text-align: left;background:#e50047;color:#fff;font-size:12px;font-weight:700;padding:10px 20px;border-bottom:solid 4px #707070;margin-bottom:4px;}
+
+/* DAILY MEDALLISTS */
+.daily-medallists{margin-bottom:20px;}
+.daily-medallists .table > thead > tr > th{background:#e00747;color:#fff;font-size:12px;font-weight:700;padding:10px 10px;border-bottom:0;}
+.daily-medallists .table > tbody tr td{vertical-align:middle;padding:10px 10px;}
+.daily-medallists .table > tbody > tr > th{background:#707070;color:#fff;font-size:12px;font-weight:700;padding:5px 10px;}
+.daily-medallists .table > tbody tr.has-player-photo td.name .country-flag{margin-top:17px;}
+.daily-medallists .table > tbody tr td.name .player-img{float:left;vertical-align:text-top;margin-right:5px;width:68px;}
+.daily-medallists .table > tbody tr td.name .player-name{display:block;margin-top:3px;}
+.daily-medallists .table tr .date,
+.daily-medallists .table tr .event,
+.daily-medallists .table tr .medal{text-align:center;}
+
+/* COUNTRY ATHLETES LIST */
+.country-athletes-list{margin-bottom:20px;}
+.country-athletes-list h2{margin:0 0 20px 0;font-size:16px;font-weight:bold;}
+.country-athletes-list .gender{margin-bottom:20px;}
+.country-athletes-list .gender span{display:block;}
+.country-athletes-list .table > thead > tr > th{background:#e00747;color:#fff;font-size:12px;font-weight:700;padding:10px 10px;border-bottom:0;}
+.country-athletes-list .table > tbody tr td{vertical-align:middle;padding:5px 10px;}
+.country-athletes-list .table  tr .rank, .country-athletes-list .table  tr .medal{text-align:center;}
+.country-athletes-list .table  tr .rank{width:60px;}
+.country-athletes-list .table  tr .medal{width:80px;}
+.country-athletes-list .table > tbody tr td.name .country-flag{margin-top:8px;}
+.country-athletes-list .table > tbody tr td.name .player-img{float:left;vertical-align:text-top;margin-right:5px;width:68px;}
+.country-athletes-list .table > tbody tr td.name span{display:block;}
+.country-athletes-list .table > tbody tr td.name .player-name{margin-top:3px;}
+.country-athletes-list .table > tbody tr td.name .description{font-size:11px;}
+.country-athletes-list .table tr .number{text-align:center;width:40px;}
+.country-athletes-list .table tr .birth-date{text-align:right;width:100px;}
+
+/* ATHLETES PROFILE */
+.athletes-profile{margin-bottom:20px;}
+.athletes-profile h1{font-size:28px;}
+.athletes-profile h2{margin:0 0 20px 0;font-size:16px;font-weight:bold;}
+.athletes-profile .profile .table{border:none;margin-bottom:0;}
+.athletes-profile .profile .table th, .athletes-profile .profile .table td{border:none;padding:1px;width:33%;}
+.athletes-profile .profile .table td{padding-bottom:5px;}
+.athletes-profile .social-media{margin-bottom:20px;}
+.athletes-profile .social-media ul{margin:0;}
+.athletes-profile .social-media ul li{display:inline-block;}
+.athletes-profile .social-media ul li a{display:inline-block;width:28px;height:28px;}
+.athletes-profile .social-media ul li.ic-facebook a{background:url(../img/social-media/sm_facebook.png) no-repeat;}
+.athletes-profile .social-media ul li.ic-twitter a{background:url(../img/social-media/sm_twitter.png) no-repeat;}
+.athletes-profile .table > thead > tr > th{background:#e00747;color:#fff;font-weight:bold;padding:10px 10px;border-bottom:0;}
+.athletes-profile .table > tbody tr td{vertical-align:middle;padding:5px 10px;}
+.athletes-profile .table  tr .rank, .athletes-profile .table  tr .medal{text-align:center;}
+.athletes-profile .table  tr .rank{width:60px;}
+.athletes-profile .table  tr .medal{width:80px;}
+.athletes-profile .trigger{font-size:17px;font-weight:bold;vertical-align:middle;}
+.athletes-profile .trigger h5{font-size:17px;font-weight:bold;margin:0;}
+.athletes-profile .trigger img{vertical-align:middle;}
+.athletes-profile .player-results{margin-bottom:10px;}
+.athletes-profile .player-results .table > thead > tr > th{background:#e00747;color:#fff;font-size:12px;font-weight:700;padding:10px 10px;border-bottom:0;}
+.athletes-profile .player-results .table > tbody tr td{vertical-align:middle;padding:5px 10px;}
+.athletes-profile .player-results .table > thead > tr > .time{text-align:center;width:50px;}
+.athletes-profile .player-results .table > thead > tr > .venue{text-align:center;width:80px;}
+.athletes-profile .player-results .table > thead > tr > .status{text-align:center;width:100px;}
+.athletes-profile .player-results .table > thead > tr > .information{text-align:center;}
+.athletes-profile .player-results .table > tbody > tr > td{vertical-align:middle;}
+.athletes-profile .player-results .table > tbody > tr > .time{text-align:center;width:50px;font-weight:bold;}
+.athletes-profile .player-results .table > tbody > tr > .venue{text-align:center;width:70px;}
+.athletes-profile .player-results .table > tbody > tr > .status{text-align:center;width:80px;}
+.athletes-profile .player-results .table > tbody > tr > .event{width:180px;}
+.athletes-profile .player-results .table > tbody > tr > .event span{display:block;}
+.athletes-profile .player-results .table > tbody > tr > .result{width:100px;}
+.athletes-profile .player-results .table > tbody > tr > .status a{display:block;background:#0089e4;color:#fff;text-decoration:none;border-radius:5px;padding:5px;}
+.athletes-profile .player-results .table > tbody > tr > .status a:hover{background:#0097d6;}
+.athletes-profile .legend .table{border:none;margin-bottom:0;}
+.athletes-profile .legend .table th, .athletes-profile .legend .table td{border:none;padding:1px;width:33%;font-size:12px;background:none;color:#000;}
+.athletes-profile .legend .table td{padding-bottom:5px;border:none;}
+.athletes-profile .athletes-image{width:155px;}
+
+/* LIVE SCHEDULE */
+.live-schedule tbody td .wrapper{height:250px;overflow-y:scroll;}
+
+/* GAMES LIST */
+.games-list{margin-top:10px;}
+.games-list .item-box{margin-bottom:15px;text-align:center;border-radius:5px;border:1px solid #d9d9d9;padding:5px;}
+.games-list .item-box span{display:block;}
+
+/* NOCs LIST */
+.nocs-list {margin-top:10px;}
+.nocs-list .item-box{margin-bottom:25px;text-align:center;padding:5px;height:100px;}
+.nocs-list .item-box img{display:block;margin:0 auto 3px auto;}
+.nocs-list .item-box span{display:block;}
+
+/* ADS */
+.ads-wrapper{padding:0px 0;background:#fff;}
+.ads-wrapper h5{ display: block;font-size: 16px;font-weight:300;margin: 10px auto 0;text-align: center;text-transform: uppercase;width: 100%;}
+
+header .go-to-top-wrapper{display:none;}
+.go-to-top-container .go-to-top-wrapper{width:71px;float:right;}
+.go-to-top-container #goToTop{display: block;right:70px;position:fixed;float:right;bottom:15px;width:71px;height:71px;background: url(../img/action/back-to-top.png) no-repeat;}
+
+.up-caret {border-left: 4px solid transparent;border-right: 4px solid transparent;border-bottom: 4px solid #fff;display: inline-block;height: 0;opacity:1;vertical-align: middle;width: 0;}
+
+/* EVENT LIST */
+.event-list-item {padding:0px 15px;}
+.event-list-item div {width:300px;}

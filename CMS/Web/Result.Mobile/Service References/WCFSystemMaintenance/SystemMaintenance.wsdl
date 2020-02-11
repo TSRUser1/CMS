@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SystemMaintenance" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/SEM.CMS.App/MS/SystemMaintenance.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8080/SEM.CMS.App/MS/SystemMaintenance.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/SEM.CMS.App/MS/SystemMaintenance.svc?xsd=xsd2" namespace="http://tempuri.org/SystemMaintenanceDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:8080/SEM.CMS.App/MS/SystemMaintenance.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISystemMaintenance_DeleteDataGridColumn_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDataGridColumn" />
+  </wsdl:message>
+  <wsdl:message name="ISystemMaintenance_DeleteDataGridColumn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDataGridColumnResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemMaintenance_GetDataColumnByDataGridName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataColumnByDataGridName" />
+  </wsdl:message>
+  <wsdl:message name="ISystemMaintenance_GetDataColumnByDataGridName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataColumnByDataGridNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemMaintenance_GetDataColumnList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataColumnList" />
+  </wsdl:message>
+  <wsdl:message name="ISystemMaintenance_GetDataColumnList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataColumnListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemMaintenance_GetDataColumnName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataColumnName" />
+  </wsdl:message>
+  <wsdl:message name="ISystemMaintenance_GetDataColumnName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataColumnNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemMaintenance_GetReferenceByReferenceCategoryID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReferenceByReferenceCategoryID" />
+  </wsdl:message>
+  <wsdl:message name="ISystemMaintenance_GetReferenceByReferenceCategoryID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReferenceByReferenceCategoryIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemMaintenance_InsertDataGridColumn_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDataGridColumn" />
+  </wsdl:message>
+  <wsdl:message name="ISystemMaintenance_InsertDataGridColumn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDataGridColumnResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemMaintenance_UpdateDataGridColumn_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDataGridColumn" />
+  </wsdl:message>
+  <wsdl:message name="ISystemMaintenance_UpdateDataGridColumn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDataGridColumnResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISystemMaintenance">
+    <wsdl:operation name="DeleteDataGridColumn">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemMaintenance/DeleteDataGridColumn" message="tns:ISystemMaintenance_DeleteDataGridColumn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemMaintenance/DeleteDataGridColumnResponse" message="tns:ISystemMaintenance_DeleteDataGridColumn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataColumnByDataGridName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemMaintenance/GetDataColumnByDataGridName" message="tns:ISystemMaintenance_GetDataColumnByDataGridName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemMaintenance/GetDataColumnByDataGridNameResponse" message="tns:ISystemMaintenance_GetDataColumnByDataGridName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataColumnList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemMaintenance/GetDataColumnList" message="tns:ISystemMaintenance_GetDataColumnList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemMaintenance/GetDataColumnListResponse" message="tns:ISystemMaintenance_GetDataColumnList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataColumnName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemMaintenance/GetDataColumnName" message="tns:ISystemMaintenance_GetDataColumnName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemMaintenance/GetDataColumnNameResponse" message="tns:ISystemMaintenance_GetDataColumnName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReferenceByReferenceCategoryID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemMaintenance/GetReferenceByReferenceCategoryID" message="tns:ISystemMaintenance_GetReferenceByReferenceCategoryID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemMaintenance/GetReferenceByReferenceCategoryIDResponse" message="tns:ISystemMaintenance_GetReferenceByReferenceCategoryID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDataGridColumn">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemMaintenance/InsertDataGridColumn" message="tns:ISystemMaintenance_InsertDataGridColumn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemMaintenance/InsertDataGridColumnResponse" message="tns:ISystemMaintenance_InsertDataGridColumn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataGridColumn">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemMaintenance/UpdateDataGridColumn" message="tns:ISystemMaintenance_UpdateDataGridColumn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemMaintenance/UpdateDataGridColumnResponse" message="tns:ISystemMaintenance_UpdateDataGridColumn_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISystemMaintenance" type="tns:ISystemMaintenance">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DeleteDataGridColumn">
+      <soap:operation soapAction="http://tempuri.org/ISystemMaintenance/DeleteDataGridColumn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataColumnByDataGridName">
+      <soap:operation soapAction="http://tempuri.org/ISystemMaintenance/GetDataColumnByDataGridName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataColumnList">
+      <soap:operation soapAction="http://tempuri.org/ISystemMaintenance/GetDataColumnList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataColumnName">
+      <soap:operation soapAction="http://tempuri.org/ISystemMaintenance/GetDataColumnName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReferenceByReferenceCategoryID">
+      <soap:operation soapAction="http://tempuri.org/ISystemMaintenance/GetReferenceByReferenceCategoryID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDataGridColumn">
+      <soap:operation soapAction="http://tempuri.org/ISystemMaintenance/InsertDataGridColumn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataGridColumn">
+      <soap:operation soapAction="http://tempuri.org/ISystemMaintenance/UpdateDataGridColumn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SystemMaintenance">
+    <wsdl:port name="BasicHttpBinding_ISystemMaintenance" binding="tns:BasicHttpBinding_ISystemMaintenance">
+      <soap:address location="http://localhost:8080/SEM.CMS.App/MS/SystemMaintenance.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

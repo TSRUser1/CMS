@@ -1,0 +1,16 @@
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\bin\SEM.CMS.Result.Web.dll.config
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\bin\SEM.CMS.Result.Web.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\bin\SEM.CMS.Result.Web.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\bin\AjaxControlToolkit.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\bin\AjaxMin.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\bin\SEM.CMS.CL.AR.Common.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\bin\Microsoft.Practices.Unity.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\bin\Microsoft.Practices.Unity.Interception.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\bin\SEM.CMS.CL.AR.Common.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\obj\Debug\Result.Web.csprojAssemblyReference.cache
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\obj\Debug\Result.Web.csproj.CopyComplete
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\obj\Debug\SEM.CMS.Result.Web.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Web\obj\Debug\SEM.CMS.Result.Web.pdb

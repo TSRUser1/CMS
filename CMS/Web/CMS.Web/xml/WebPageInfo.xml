@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pages>
+  <Info type="ParticipantDetail">
+    <SideCategory>Participants Maintenance</SideCategory>
+    <SideCategoryDesc>Configure Participant</SideCategoryDesc>
+  </Info>
+  <Info type="ParticipantMaintenance">
+    <SideCategory>Participants Maintenance</SideCategory>
+    <SideCategoryDesc>Configure Participant</SideCategoryDesc>
+  </Info>
+  <Info type="EventDetail">
+    <SideCategory>Events &amp; Schedules</SideCategory>
+    <SideCategoryDesc>Event Details</SideCategoryDesc>
+  </Info>
+  <Info type="EventMaintenance">
+    <SideCategory>Events &amp; Schedules</SideCategory>
+    <SideCategoryDesc>Event Maintenance</SideCategoryDesc>
+  </Info>
+  <Info type="ScheduleDetail">
+    <SideCategory>Events &amp; Schedules</SideCategory>
+    <SideCategoryDesc>Configure Schedule</SideCategoryDesc>
+  </Info>
+  <Info type="ScheduleMaintenance">
+    <SideCategory>Events &amp; Schedules</SideCategory>
+    <SideCategoryDesc>Configure Schedule</SideCategoryDesc>
+  </Info>
+  <Info type="StartList">
+    <SideCategory>Events &amp; Schedules</SideCategory>
+    <SideCategoryDesc>Configure Start List</SideCategoryDesc>
+  </Info>
+  <Info type="AdminUserDetail">
+    <SideCategory>Admin</SideCategory>
+    <SideCategoryDesc>Admin User Details</SideCategoryDesc>
+  </Info>
+  <Info type="AdminUserMaintenance">
+    <SideCategory>Admin</SideCategory>
+    <SideCategoryDesc>Admin User Maintenance</SideCategoryDesc>
+  </Info>
+  <Info type="DataGridColumnMaintenance">
+    <SideCategory>Admin</SideCategory>
+    <SideCategoryDesc>DataGridColumn Maintenance</SideCategoryDesc>
+  </Info>
+  <Info type="FunctionalModuleMaintenance">
+    <SideCategory>Admin</SideCategory>
+    <SideCategoryDesc>Functional Module Maintenance</SideCategoryDesc>
+  </Info>
+  <Info type="RoleDetail">
+    <SideCategory>Admin</SideCategory>
+    <SideCategoryDesc>Role Details</SideCategoryDesc>
+  </Info>
+  <Info type="RoleMaintenance">
+    <SideCategory>Admin</SideCategory>
+    <SideCategoryDesc>Role Maintenance</SideCategoryDesc>
+  </Info>
+</Pages>

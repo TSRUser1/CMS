@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AdministrationDS" targetNamespace="http://tempuri.org/AdministrationDS.xsd" xmlns:mstns="http://tempuri.org/AdministrationDS.xsd" xmlns="http://tempuri.org/AdministrationDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AdministrationDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AdministrationDS" msprop:Generator_UserDSName="AdministrationDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AdminUser" msprop:Generator_TableClassName="AdminUserDataTable" msprop:Generator_TableVarName="tableAdminUser" msprop:Generator_TablePropName="AdminUser" msprop:Generator_RowDeletingName="AdminUserRowDeleting" msprop:Generator_RowChangingName="AdminUserRowChanging" msprop:Generator_RowEvHandlerName="AdminUserRowChangeEventHandler" msprop:Generator_RowDeletedName="AdminUserRowDeleted" msprop:Generator_UserTableName="AdminUser" msprop:Generator_RowChangedName="AdminUserRowChanged" msprop:Generator_RowEvArgName="AdminUserRowChangeEvent" msprop:Generator_RowClassName="AdminUserRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AdminUserID" msprop:Generator_ColumnVarNameInTable="columnAdminUserID" msprop:Generator_ColumnPropNameInRow="AdminUserID" msprop:Generator_ColumnPropNameInTable="AdminUserIDColumn" msprop:Generator_UserColumnName="AdminUserID" type="xs:int" minOccurs="0" />
+              <xs:element name="LoginID" msprop:Generator_ColumnVarNameInTable="columnLoginID" msprop:Generator_ColumnPropNameInRow="LoginID" msprop:Generator_ColumnPropNameInTable="LoginIDColumn" msprop:Generator_UserColumnName="LoginID" type="xs:string" minOccurs="0" />
+              <xs:element name="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_UserColumnName="FullName" type="xs:string" minOccurs="0" />
+              <xs:element name="Password" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnPropNameInTable="PasswordColumn" msprop:Generator_UserColumnName="Password" type="xs:string" minOccurs="0" />
+              <xs:element name="Designation" msprop:Generator_ColumnVarNameInTable="columnDesignation" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_UserColumnName="Designation" type="xs:string" minOccurs="0" />
+              <xs:element name="LoginSessionGUID" msprop:Generator_ColumnVarNameInTable="columnLoginSessionGUID" msprop:Generator_ColumnPropNameInRow="LoginSessionGUID" msprop:Generator_ColumnPropNameInTable="LoginSessionGUIDColumn" msprop:Generator_UserColumnName="LoginSessionGUID" type="xs:string" minOccurs="0" />
+              <xs:element name="ModifiedBy" msprop:Generator_ColumnVarNameInTable="columnModifiedBy" msprop:Generator_ColumnPropNameInRow="ModifiedBy" msprop:Generator_ColumnPropNameInTable="ModifiedByColumn" msprop:Generator_UserColumnName="ModifiedBy" type="xs:int" minOccurs="0" />
+              <xs:element name="HasRole" msprop:Generator_ColumnVarNameInTable="columnHasRole" msprop:Generator_ColumnPropNameInRow="HasRole" msprop:Generator_ColumnPropNameInTable="HasRoleColumn" msprop:Generator_UserColumnName="HasRole" type="xs:boolean" default="false" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Response" msprop:Generator_TableClassName="ResponseDataTable" msprop:Generator_TableVarName="tableResponse" msprop:Generator_RowChangedName="ResponseRowChanged" msprop:Generator_TablePropName="Response" msprop:Generator_RowDeletingName="ResponseRowDeleting" msprop:Generator_RowChangingName="ResponseRowChanging" msprop:Generator_RowEvHandlerName="ResponseRowChangeEventHandler" msprop:Generator_RowDeletedName="ResponseRowDeleted" msprop:Generator_RowClassName="ResponseRow" msprop:Generator_UserTableName="Response" msprop:Generator_RowEvArgName="ResponseRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResponseCode" msprop:Generator_ColumnVarNameInTable="columnResponseCode" msprop:Generator_ColumnPropNameInRow="ResponseCode" msprop:Generator_ColumnPropNameInTable="ResponseCodeColumn" msprop:Generator_UserColumnName="ResponseCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ResponseMessage" msprop:Generator_ColumnVarNameInTable="columnResponseMessage" msprop:Generator_ColumnPropNameInRow="ResponseMessage" msprop:Generator_ColumnPropNameInTable="ResponseMessageColumn" msprop:Generator_UserColumnName="ResponseMessage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Module" msprop:Generator_TableClassName="ModuleDataTable" msprop:Generator_TableVarName="tableModule" msprop:Generator_TablePropName="Module" msprop:Generator_RowDeletingName="ModuleRowDeleting" msprop:Generator_RowChangingName="ModuleRowChanging" msprop:Generator_RowEvHandlerName="ModuleRowChangeEventHandler" msprop:Generator_RowDeletedName="ModuleRowDeleted" msprop:Generator_UserTableName="Module" msprop:Generator_RowChangedName="ModuleRowChanged" msprop:Generator_RowEvArgName="ModuleRowChangeEvent" msprop:Generator_RowClassName="ModuleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ModuleID" msprop:Generator_ColumnVarNameInTable="columnModuleID" msprop:Generator_ColumnPropNameInRow="ModuleID" msprop:Generator_ColumnPropNameInTable="ModuleIDColumn" msprop:Generator_UserColumnName="ModuleID" type="xs:int" minOccurs="0" />
+              <xs:element name="ModuleName" msprop:Generator_ColumnVarNameInTable="columnModuleName" msprop:Generator_ColumnPropNameInRow="ModuleName" msprop:Generator_ColumnPropNameInTable="ModuleNameColumn" msprop:Generator_UserColumnName="ModuleName" type="xs:string" minOccurs="0" />
+              <xs:element name="FunctionName" msprop:Generator_ColumnVarNameInTable="columnFunctionName" msprop:Generator_ColumnPropNameInRow="FunctionName" msprop:Generator_ColumnPropNameInTable="FunctionNameColumn" msprop:Generator_UserColumnName="FunctionName" type="xs:string" minOccurs="0" />
+              <xs:element name="PageName" msprop:Generator_ColumnVarNameInTable="columnPageName" msprop:Generator_ColumnPropNameInRow="PageName" msprop:Generator_ColumnPropNameInTable="PageNameColumn" msprop:Generator_UserColumnName="PageName" type="xs:string" minOccurs="0" />
+              <xs:element name="IsReadWrite" msprop:Generator_ColumnVarNameInTable="columnIsReadWrite" msprop:Generator_ColumnPropNameInRow="IsReadWrite" msprop:Generator_ColumnPropNameInTable="IsReadWriteColumn" msprop:Generator_UserColumnName="IsReadWrite" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="IsReadOnly" msprop:Generator_ColumnVarNameInTable="columnIsReadOnly" msprop:Generator_ColumnPropNameInRow="IsReadOnly" msprop:Generator_ColumnPropNameInTable="IsReadOnlyColumn" msprop:Generator_UserColumnName="IsReadOnly" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="ModifiedBy" msprop:Generator_ColumnVarNameInTable="columnModifiedBy" msprop:Generator_ColumnPropNameInRow="ModifiedBy" msprop:Generator_ColumnPropNameInTable="ModifiedByColumn" msprop:Generator_UserColumnName="ModifiedBy" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Role" msprop:Generator_TableClassName="RoleDataTable" msprop:Generator_TableVarName="tableRole" msprop:Generator_TablePropName="Role" msprop:Generator_RowDeletingName="RoleRowDeleting" msprop:Generator_RowChangingName="RoleRowChanging" msprop:Generator_RowEvHandlerName="RoleRowChangeEventHandler" msprop:Generator_RowDeletedName="RoleRowDeleted" msprop:Generator_UserTableName="Role" msprop:Generator_RowChangedName="RoleRowChanged" msprop:Generator_RowEvArgName="RoleRowChangeEvent" msprop:Generator_RowClassName="RoleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RoleID" msprop:Generator_ColumnVarNameInTable="columnRoleID" msprop:Generator_ColumnPropNameInRow="RoleID" msprop:Generator_ColumnPropNameInTable="RoleIDColumn" msprop:Generator_UserColumnName="RoleID" type="xs:int" minOccurs="0" />
+              <xs:element name="RoleName" msprop:Generator_ColumnVarNameInTable="columnRoleName" msprop:Generator_ColumnPropNameInRow="RoleName" msprop:Generator_ColumnPropNameInTable="RoleNameColumn" msprop:Generator_UserColumnName="RoleName" type="xs:string" minOccurs="0" />
+              <xs:element name="RoleDescription" msprop:Generator_ColumnVarNameInTable="columnRoleDescription" msprop:Generator_ColumnPropNameInRow="RoleDescription" msprop:Generator_ColumnPropNameInTable="RoleDescriptionColumn" msprop:Generator_UserColumnName="RoleDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="IsActive" msprop:Generator_ColumnVarNameInTable="columnIsActive" msprop:Generator_ColumnPropNameInRow="IsActive" msprop:Generator_ColumnPropNameInTable="IsActiveColumn" msprop:Generator_UserColumnName="IsActive" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="ModifiedBy" msprop:Generator_ColumnVarNameInTable="columnModifiedBy" msprop:Generator_ColumnPropNameInRow="ModifiedBy" msprop:Generator_ColumnPropNameInTable="ModifiedByColumn" msprop:Generator_UserColumnName="ModifiedBy" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdminUserInRole" msprop:Generator_TableClassName="AdminUserInRoleDataTable" msprop:Generator_TableVarName="tableAdminUserInRole" msprop:Generator_TablePropName="AdminUserInRole" msprop:Generator_RowDeletingName="AdminUserInRoleRowDeleting" msprop:Generator_RowChangingName="AdminUserInRoleRowChanging" msprop:Generator_RowEvHandlerName="AdminUserInRoleRowChangeEventHandler" msprop:Generator_RowDeletedName="AdminUserInRoleRowDeleted" msprop:Generator_UserTableName="AdminUserInRole" msprop:Generator_RowChangedName="AdminUserInRoleRowChanged" msprop:Generator_RowEvArgName="AdminUserInRoleRowChangeEvent" msprop:Generator_RowClassName="AdminUserInRoleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AdminUserInRoleID" msprop:Generator_ColumnVarNameInTable="columnAdminUserInRoleID" msprop:Generator_ColumnPropNameInRow="AdminUserInRoleID" msprop:Generator_ColumnPropNameInTable="AdminUserInRoleIDColumn" msprop:Generator_UserColumnName="AdminUserInRoleID" type="xs:int" minOccurs="0" />
+              <xs:element name="AdminUserID" msprop:Generator_ColumnVarNameInTable="columnAdminUserID" msprop:Generator_ColumnPropNameInRow="AdminUserID" msprop:Generator_ColumnPropNameInTable="AdminUserIDColumn" msprop:Generator_UserColumnName="AdminUserID" type="xs:int" minOccurs="0" />
+              <xs:element name="RoleID" msprop:Generator_ColumnVarNameInTable="columnRoleID" msprop:Generator_ColumnPropNameInRow="RoleID" msprop:Generator_ColumnPropNameInTable="RoleIDColumn" msprop:Generator_UserColumnName="RoleID" type="xs:int" minOccurs="0" />
+              <xs:element name="IsActive" msprop:Generator_ColumnVarNameInTable="columnIsActive" msprop:Generator_ColumnPropNameInRow="IsActive" msprop:Generator_ColumnPropNameInTable="IsActiveColumn" msprop:Generator_UserColumnName="IsActive" type="xs:int" minOccurs="0" />
+              <xs:element name="ModifiedBy" msprop:Generator_ColumnVarNameInTable="columnModifiedBy" msprop:Generator_ColumnPropNameInRow="ModifiedBy" msprop:Generator_ColumnPropNameInTable="ModifiedByColumn" msprop:Generator_UserColumnName="ModifiedBy" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ModuleInRole" msprop:Generator_TableClassName="ModuleInRoleDataTable" msprop:Generator_TableVarName="tableModuleInRole" msprop:Generator_TablePropName="ModuleInRole" msprop:Generator_RowDeletingName="ModuleInRoleRowDeleting" msprop:Generator_RowChangingName="ModuleInRoleRowChanging" msprop:Generator_RowEvHandlerName="ModuleInRoleRowChangeEventHandler" msprop:Generator_RowDeletedName="ModuleInRoleRowDeleted" msprop:Generator_UserTableName="ModuleInRole" msprop:Generator_RowChangedName="ModuleInRoleRowChanged" msprop:Generator_RowEvArgName="ModuleInRoleRowChangeEvent" msprop:Generator_RowClassName="ModuleInRoleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ModuleInRoleID" msprop:Generator_ColumnVarNameInTable="columnModuleInRoleID" msprop:Generator_ColumnPropNameInRow="ModuleInRoleID" msprop:Generator_ColumnPropNameInTable="ModuleInRoleIDColumn" msprop:Generator_UserColumnName="ModuleInRoleID" type="xs:int" minOccurs="0" />
+              <xs:element name="RoleID" msprop:Generator_ColumnVarNameInTable="columnRoleID" msprop:Generator_ColumnPropNameInRow="RoleID" msprop:Generator_ColumnPropNameInTable="RoleIDColumn" msprop:Generator_UserColumnName="RoleID" type="xs:int" minOccurs="0" />
+              <xs:element name="ModuleID" msprop:Generator_ColumnVarNameInTable="columnModuleID" msprop:Generator_ColumnPropNameInRow="ModuleID" msprop:Generator_ColumnPropNameInTable="ModuleIDColumn" msprop:Generator_UserColumnName="ModuleID" type="xs:int" minOccurs="0" />
+              <xs:element name="IsReadWrite" msprop:Generator_ColumnVarNameInTable="columnIsReadWrite" msprop:Generator_ColumnPropNameInRow="IsReadWrite" msprop:Generator_ColumnPropNameInTable="IsReadWriteColumn" msprop:Generator_UserColumnName="IsReadWrite" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsReadOnly" msprop:Generator_ColumnVarNameInTable="columnIsReadOnly" msprop:Generator_ColumnPropNameInRow="IsReadOnly" msprop:Generator_ColumnPropNameInTable="IsReadOnlyColumn" msprop:Generator_UserColumnName="IsReadOnly" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ModifiedBy" msprop:Generator_ColumnVarNameInTable="columnModifiedBy" msprop:Generator_ColumnPropNameInRow="ModifiedBy" msprop:Generator_ColumnPropNameInTable="ModifiedByColumn" msprop:Generator_UserColumnName="ModifiedBy" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

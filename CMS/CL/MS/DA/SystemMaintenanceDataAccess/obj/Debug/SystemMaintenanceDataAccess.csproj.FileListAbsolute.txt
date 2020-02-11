@@ -1,0 +1,15 @@
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\bin\Debug\SEM.CMS.CL.MS.DA.SystemMaintenanceDataAccess.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\bin\Debug\SEM.CMS.CL.MS.DA.SystemMaintenanceDataAccess.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\bin\Debug\SEM.CMS.CL.AR.Common.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\bin\Debug\SEM.CMS.CL.MS.DS.SystemMaintenanceDataset.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\bin\Debug\SEM.CMS.CL.AR.Common.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\bin\Debug\SEM.CMS.CL.MS.DS.SystemMaintenanceDataset.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\obj\Debug\SystemMaintenanceDataAccess.csprojAssemblyReference.cache
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\obj\Debug\SystemMaintenanceDataAccess.csproj.CopyComplete
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\obj\Debug\SEM.CMS.CL.MS.DA.SystemMaintenanceDataAccess.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DA\SystemMaintenanceDataAccess\obj\Debug\SEM.CMS.CL.MS.DA.SystemMaintenanceDataAccess.pdb

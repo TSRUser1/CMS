@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AdmissionControlDS" targetNamespace="http://tempuri.org/AdmissionControlDS.xsd" xmlns:mstns="http://tempuri.org/AdmissionControlDS.xsd" xmlns="http://tempuri.org/AdmissionControlDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AdmissionControlDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AdmissionControlDS" msprop:Generator_UserDSName="AdmissionControlDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Response" msprop:Generator_TableClassName="ResponseDataTable" msprop:Generator_TableVarName="tableResponse" msprop:Generator_TablePropName="Response" msprop:Generator_RowDeletingName="ResponseRowDeleting" msprop:Generator_RowChangingName="ResponseRowChanging" msprop:Generator_RowEvHandlerName="ResponseRowChangeEventHandler" msprop:Generator_RowDeletedName="ResponseRowDeleted" msprop:Generator_UserTableName="Response" msprop:Generator_RowChangedName="ResponseRowChanged" msprop:Generator_RowEvArgName="ResponseRowChangeEvent" msprop:Generator_RowClassName="ResponseRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResponseCode" msprop:Generator_ColumnVarNameInTable="columnResponseCode" msprop:Generator_ColumnPropNameInRow="ResponseCode" msprop:Generator_ColumnPropNameInTable="ResponseCodeColumn" msprop:Generator_UserColumnName="ResponseCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ResponseMessage" msprop:Generator_ColumnVarNameInTable="columnResponseMessage" msprop:Generator_ColumnPropNameInRow="ResponseMessage" msprop:Generator_ColumnPropNameInTable="ResponseMessageColumn" msprop:Generator_UserColumnName="ResponseMessage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdminUser" msprop:Generator_TableClassName="AdminUserDataTable" msprop:Generator_TableVarName="tableAdminUser" msprop:Generator_TablePropName="AdminUser" msprop:Generator_RowDeletingName="AdminUserRowDeleting" msprop:Generator_RowChangingName="AdminUserRowChanging" msprop:Generator_RowEvHandlerName="AdminUserRowChangeEventHandler" msprop:Generator_RowDeletedName="AdminUserRowDeleted" msprop:Generator_UserTableName="AdminUser" msprop:Generator_RowChangedName="AdminUserRowChanged" msprop:Generator_RowEvArgName="AdminUserRowChangeEvent" msprop:Generator_RowClassName="AdminUserRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AdminUserID" msprop:Generator_ColumnVarNameInTable="columnAdminUserID" msprop:Generator_ColumnPropNameInRow="AdminUserID" msprop:Generator_ColumnPropNameInTable="AdminUserIDColumn" msprop:Generator_UserColumnName="AdminUserID" type="xs:int" minOccurs="0" />
+              <xs:element name="LoginID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="LoginID" msprop:Generator_ColumnVarNameInTable="columnLoginID" msprop:Generator_ColumnPropNameInTable="LoginIDColumn" msprop:Generator_UserColumnName="LoginID" type="xs:string" minOccurs="0" />
+              <xs:element name="FullName" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_UserColumnName="FullName" type="xs:string" minOccurs="0" />
+              <xs:element name="Designation" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_ColumnVarNameInTable="columnDesignation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_UserColumnName="Designation" type="xs:string" minOccurs="0" />
+              <xs:element name="IsActive" msprop:Generator_ColumnVarNameInTable="columnIsActive" msprop:Generator_ColumnPropNameInRow="IsActive" msprop:Generator_ColumnPropNameInTable="IsActiveColumn" msprop:Generator_UserColumnName="IsActive" type="xs:int" minOccurs="0" />
+              <xs:element name="CreatedDateTime" msprop:Generator_ColumnVarNameInTable="columnCreatedDateTime" msprop:Generator_ColumnPropNameInRow="CreatedDateTime" msprop:Generator_ColumnPropNameInTable="CreatedDateTimeColumn" msprop:Generator_UserColumnName="CreatedDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreatedBy" msprop:Generator_ColumnVarNameInTable="columnCreatedBy" msprop:Generator_ColumnPropNameInRow="CreatedBy" msprop:Generator_ColumnPropNameInTable="CreatedByColumn" msprop:Generator_UserColumnName="CreatedBy" type="xs:int" minOccurs="0" />
+              <xs:element name="ModifiedDateTime" msprop:Generator_ColumnVarNameInTable="columnModifiedDateTime" msprop:Generator_ColumnPropNameInRow="ModifiedDateTime" msprop:Generator_ColumnPropNameInTable="ModifiedDateTimeColumn" msprop:Generator_UserColumnName="ModifiedDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ModifiedBy" msprop:Generator_ColumnVarNameInTable="columnModifiedBy" msprop:Generator_ColumnPropNameInRow="ModifiedBy" msprop:Generator_ColumnPropNameInTable="ModifiedByColumn" msprop:Generator_UserColumnName="ModifiedBy" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

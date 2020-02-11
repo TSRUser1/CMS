@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="InsertScheduleDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertScheduleDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertScheduleDetailResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateScheduleDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateScheduleDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateScheduleDetailResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetScheduleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteScheduleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEventList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEventListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetEventListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEventResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateEventResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteEventResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteEventResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertEventResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertEventResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEventDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEventDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetEventDetailsResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStartListParticipantList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStartListParticipantListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetStartListParticipantListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertStartList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertStartListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertStartListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStartListMaintenance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStartListMaintenanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetStartListMaintenanceResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateStartList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateStartListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateStartListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateStartListAssignTeam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateStartListAssignTeamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateStartListAssignTeamResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteStartListParticipant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteStartListParticipantResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteStartListParticipantResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="CompetitionDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MC.DS.CompetitionDataSet" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/CompetitionDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

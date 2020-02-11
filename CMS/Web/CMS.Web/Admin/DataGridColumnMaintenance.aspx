@@ -1,0 +1,154 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/CMS.Master" AutoEventWireup="true" ValidateRequest="false" CodeBehind="DataGridColumnMaintenance.aspx.cs" Inherits="SEM.CMS.Web.Admin.DataGridColumnMaintenance" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="CPH_CMS" runat="server">
+    <table style="width: 500px">
+        <colgroup>
+            <col style="width: 30px" />
+            <col style="width: 250px" />
+            <col style="width: 10px" />
+            <col style="width: 200px" />
+        </colgroup>
+        <tr>
+            <td></td>
+            <td colspan="3">
+                <asp:Button ID="btnBack" Text="Back" runat="server" OnClick="btnBack_Click" />
+                &nbsp;
+                <asp:Button ID="btnClear" Text="Clear" runat="server" OnClick="btnClear_Click" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3" style="font-weight: bold">Data Grid Column</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Data Grid Name</td>
+            <td>:</td>
+            <td>
+                <asp:TextBox ID="txtDataGridName" runat="server" Width="200px" CssClass="span12"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Header Text</td>
+            <td>:</td>
+            <td>
+                <asp:TextBox ID="txtHeaderText" runat="server" Width="200px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Data Field</td>
+            <td>:</td>
+            <td>
+                <asp:TextBox ID="txtDataField" runat="server" Width="200px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Sort ID</td>
+            <td>:</td>
+            <td>
+                <asp:TextBox ID="txtSortID" runat="server" Width="200px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Column Type</td>
+            <td>:</td>
+            <td>
+                <asp:DropDownList ID="ddlColumnType"  AutoPostBack="true" runat="server" Width="200px" OnSelectedIndexChanged="ddlColumnType_SelectedIndexChanged"></asp:DropDownList></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>Enum Type</td>
+            <td>&nbsp;</td>
+            <td>
+                <asp:DropDownList ID="ddlEnumType" runat="server" Width="200px" Enabled="False"></asp:DropDownList></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Navigation URL</td>
+            <td>:</td>
+            <td>
+                <asp:TextBox ID="txtNavigationURL" runat="server" Width="200px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Navigation URL Data Field</td>
+            <td>:</td>
+            <td>
+                <asp:TextBox ID="txtNavigationURLDataField" runat="server" Width="200px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Column Width</td>
+            <td>:</td>
+            <td>
+                <asp:TextBox ID="txtColumnWidth" runat="server" Width="200px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>CSS Class</td>
+            <td>:</td>
+            <td>
+                <asp:TextBox ID="txtCssClass" runat="server" Width="200px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <asp:CheckBox ID="chkIsReadOnly" runat="server" Text="Read Only"></asp:CheckBox></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <asp:CheckBox ID="chkIsAllowHTMLEncode" runat="server" Text="HTML Encode"></asp:CheckBox></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+    <div class="form-actions">
+        <asp:Button ID="btnInsert" Text="Insert Column" CssClass="btn btn-primary" runat="server" OnClick="btnInsert_Click" /></div>
+    <br />
+    <table>
+        <colgroup>
+            <col style="width: 30px" />
+            <col style="width: 150px" />
+            <col style="width: 10px" />
+            <col style="width: 200px" />
+        </colgroup>
+        <tr>
+            <td></td>
+            <td>Data grid</td>
+            <td>:</td>
+            <td>
+                <asp:DropDownList ID="ddlDataGridName" OnSelectedIndexChanged="ddlDataGridName_OnSelectedIndexChanged" AutoPostBack="true" Width="200px" runat="server">
+                    <asp:ListItem Text="All" Value=""></asp:ListItem>
+                </asp:DropDownList></td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <div style="overflow-x: scroll; margin-right: 50px;">
+    <asp:GridView ID="dgDataGridColumn" runat="server" EnableViewState="true"
+        class="table table-striped table-bordered"
+        AutoGenerateColumns="false"
+        AutoGenerateDeleteButton="true"
+        AutoGenerateEditButton="true"
+        AllowPaging="true"
+        OnRowCancelingEdit="DGDataGridColumn_RowCancelingEdit"
+        OnRowDeleting="DGDataGridColumn_RowDeleting"
+        OnRowEditing="DGDataGridColumn_RowEditing"
+        OnRowUpdating="DGDataGridColumn_RowUpdating"
+        OnPageIndexChanging="DGDataGridColumn_PageIndexChanging"
+        DataKeyNames="DataGridColumnID">
+        <Columns>
+            <asp:TemplateField HeaderText="No." ItemStyle-Width="20px">
+                <ItemTemplate>
+                    <%# Container.DataItemIndex + 1 %>
+                </ItemTemplate>
+            </asp:TemplateField>
+        </Columns>
+    </asp:GridView>
+    </div>
+</asp:Content>

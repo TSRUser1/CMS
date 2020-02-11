@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB8E30F7-A1F0-4636-B919-E30EBF9D6BCA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SVC.Web</RootNamespace>
+    <AssemblyName>SVC.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCFAdministration\Administration.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFAdministration\Administration1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DeleteResult.aspx" />
+    <Content Include="DeleteSchedule.aspx" />
+    <Content Include="InsertStartList.aspx" />
+    <Content Include="UpdateSchedule.aspx" />
+    <Content Include="InsertSchedule.aspx" />
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetKnockoutSummaryForTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetLeagueSummaryForTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetLeagueSummaryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.DeleteScoreByScheduleIDAndTeamIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetSportClassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetBrokenRecordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateLeagueResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.DeleteStartListByScheduleIDAndParticipantIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateStartListByScheduleIDAndParticipantIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.DeleteTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetLeagueForIndividualResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetLeagueForTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetParticipantEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetTeamBiographyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetXMLLatestMedalistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetXMLMedalStandingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetXMLScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertLeagueForIndividualResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertLeagueForTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetMultiMedallistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetTeamEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetStartListNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertStartListNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateStartListNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetParticipantInEventForTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetParticipantInTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.GetFunctionNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetInitialRecordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Client.aspx" />
+    <Content Include="InsertResult.aspx" />
+    <Content Include="Server.aspx" />
+    <None Include="Service References\WCFAdministration\Administration.disco" />
+    <None Include="Service References\WCFAdministration\configuration91.svcinfo" />
+    <None Include="Service References\WCFAdministration\configuration.svcinfo" />
+    <None Include="Service References\WCFAdministration\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\WCFCompetition\Competition.disco" />
+    <None Include="Service References\WCFCompetition\configuration91.svcinfo" />
+    <None Include="Service References\WCFCompetition\configuration.svcinfo" />
+    <None Include="Service References\WCFCompetition\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\WCFSystemMaintenance\SVC.Web.WCFSystemMaintenance.DeleteDataGridColumnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SVC.Web.WCFSystemMaintenance.GetDataColumnByDataGridNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SVC.Web.WCFSystemMaintenance.GetDataColumnListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SVC.Web.WCFSystemMaintenance.GetDataColumnNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SVC.Web.WCFSystemMaintenance.GetReferenceByReferenceCategoryIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SVC.Web.WCFSystemMaintenance.InsertDataGridColumnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SVC.Web.WCFSystemMaintenance.SystemMaintenanceDS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFSystemMaintenance\SVC.Web.WCFSystemMaintenance.UpdateDataGridColumnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\WCFSystemMaintenance\SystemMaintenance.disco" />
+    <None Include="Service References\WCFSystemMaintenance\configuration91.svcinfo" />
+    <None Include="Service References\WCFSystemMaintenance\configuration.svcinfo" />
+    <None Include="Service References\WCFSystemMaintenance\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="UpdateResult.aspx" />
+    <Content Include="UpdateStartList.aspx" />
+    <Content Include="Web.config" />
+    <None Include="Service References\WCFAdministration\Administration.wsdl" />
+    <None Include="Service References\WCFAdministration\Administration2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFAdministration\AdministrationDS.xsd" />
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.AdministrationDS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.DeleteAdminUserDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.DeleteModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.DeleteRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.GetAdminLoginSessionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.GetAdminUserByLoginIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.GetAdminUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.GetModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.GetPageNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.GetRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.InsertAdminUserDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.InsertModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.InsertRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.ProcessAdministrationLoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.UpdateAdminLoginSessionGUIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.UpdateAdminUserDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.UpdateModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFAdministration\SVC.Web.WCFAdministration.UpdateRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\WCFCompetition\Competition.wsdl" />
+    <None Include="Service References\WCFCompetition\Competition.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFCompetition\Competition1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFCompetition\Competition2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFCompetition\CompetitionDS.xsd" />
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.CompetitionDS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.DeleteEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.DeleteFileInEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.DeleteParticipantResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.DeleteScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.DeleteScoreNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.DeleteScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.DeleteStartListParticipantResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.DownloadFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetCountryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetEventAthletesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetEventDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetEventListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetFileInEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetFinalRankingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetGeneralScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetKnockoutSummaryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetLatestMedalistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetMedallistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetMedalStandingsByCountryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetMedalStandingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetPartcipantAndScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetPartcipantAndStatisticResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetParticipantBiographyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetParticipantDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetParticipantInEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetParticipantListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetParticipantResultResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetRefereeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetScheduleHeaderGroupedByDateFilteredByCountryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetScheduleHeaderGroupedByDateFilteredBySportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetScheduleHeaderGroupedBySportFilteredByDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetScheduleListForBannerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetScheduleListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetScoreNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetSportDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetSportEventScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetSportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetStartListMaintenanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetStartListParticipantListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetStatisticNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.GetTeamAndScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertParticipantDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertRefereeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertScheduleDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertScoreForParticipantInScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertScoreForTeamInScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertScoreNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertStartListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertStatisticForParticipantInScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.InsertStatisticNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateParticipantDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateRefereeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateScheduleDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateScheduleExtraDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateScoreNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateStartListAssignTeamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateStartListPositionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateStartListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateStatisticNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\WCFCompetition\SVC.Web.WCFCompetition.UpdateStatisticResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\WCFSystemMaintenance\SystemMaintenance.wsdl" />
+    <None Include="Service References\WCFSystemMaintenance\SystemMaintenance.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFSystemMaintenance\SystemMaintenance1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFSystemMaintenance\SystemMaintenance2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFSystemMaintenance\SystemMaintenanceDS.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.aspx.cs">
+      <DependentUpon>Client.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client.aspx.designer.cs">
+      <DependentUpon>Client.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteResult.aspx.cs">
+      <DependentUpon>DeleteResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteResult.aspx.designer.cs">
+      <DependentUpon>DeleteResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteSchedule.aspx.cs">
+      <DependentUpon>DeleteSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteSchedule.aspx.designer.cs">
+      <DependentUpon>DeleteSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertStartList.aspx.cs">
+      <DependentUpon>InsertStartList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertStartList.aspx.designer.cs">
+      <DependentUpon>InsertStartList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSchedule.aspx.cs">
+      <DependentUpon>UpdateSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateSchedule.aspx.designer.cs">
+      <DependentUpon>UpdateSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertSchedule.aspx.cs">
+      <DependentUpon>InsertSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertSchedule.aspx.designer.cs">
+      <DependentUpon>InsertSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertResult.aspx.cs">
+      <DependentUpon>InsertResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertResult.aspx.designer.cs">
+      <DependentUpon>InsertResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server.aspx.cs">
+      <DependentUpon>Server.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Server.aspx.designer.cs">
+      <DependentUpon>Server.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCFAdministration\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCFCompetition\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCFSystemMaintenance\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateResult.aspx.cs">
+      <DependentUpon>UpdateResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateResult.aspx.designer.cs">
+      <DependentUpon>UpdateResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStartList.aspx.cs">
+      <DependentUpon>UpdateStartList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateStartList.aspx.designer.cs">
+      <DependentUpon>UpdateStartList.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WCFAdministration\" />
+    <WCFMetadataStorage Include="Service References\WCFCompetition\" />
+    <WCFMetadataStorage Include="Service References\WCFSystemMaintenance\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CL\AR\Common\Common.csproj">
+      <Project>{c6ac5cab-ee16-4bf9-b2cf-0ecb5fb00295}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8203</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8203/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

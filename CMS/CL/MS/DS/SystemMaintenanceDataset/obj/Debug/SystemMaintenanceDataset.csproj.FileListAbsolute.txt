@@ -1,0 +1,5 @@
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DS\SystemMaintenanceDataset\bin\Debug\SEM.CMS.CL.MS.DS.SystemMaintenanceDataset.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DS\SystemMaintenanceDataset\bin\Debug\SEM.CMS.CL.MS.DS.SystemMaintenanceDataset.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DS\SystemMaintenanceDataset\obj\Debug\SystemMaintenanceDataset.csprojAssemblyReference.cache
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DS\SystemMaintenanceDataset\obj\Debug\SEM.CMS.CL.MS.DS.SystemMaintenanceDataset.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\DS\SystemMaintenanceDataset\obj\Debug\SEM.CMS.CL.MS.DS.SystemMaintenanceDataset.pdb

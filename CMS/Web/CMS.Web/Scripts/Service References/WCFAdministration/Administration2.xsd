@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DeleteAdminUserDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAdminUserDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteAdminUserDetailResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteModuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteModuleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRoleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteRoleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdminUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdminUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAdminUserResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetModuleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPageName">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPageNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPageNameResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRoleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAdminUserDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAdminUserDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertAdminUserDetailResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertModuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertModuleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertRoleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertRoleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAdminUserDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAdminUserDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateAdminUserDetailResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateModuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateModuleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRoleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateRoleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="AdministrationDS" Namespace="http://schemas.datacontract.org/2004/07/SEM.CMS.CL.MA.DS.AdministrationDataset" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any namespace="http://tempuri.org/AdministrationDS.xsd" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

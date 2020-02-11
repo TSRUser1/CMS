@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/CompetitionDS.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:mstns="http://tempuri.org/CompetitionDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/CompetitionDS.xsd" id="CompetitionDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="CompetitionDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Response">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Result" type="xs:string" />
+              <xs:element minOccurs="0" name="ResponseCode" type="xs:string" />
+              <xs:element minOccurs="0" name="ResponseMessage" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Reference">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ReferenceInternalID" type="xs:int" />
+              <xs:element minOccurs="0" name="ReferenceName" type="xs:string" />
+              <xs:element minOccurs="0" name="ReferenceCode" type="xs:string" />
+              <xs:element minOccurs="0" name="ReferenceDescription" type="xs:string" />
+              <xs:element minOccurs="0" name="ReferenceContent" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Event">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="EventName" type="xs:string" />
+              <xs:element minOccurs="0" name="EventCode" type="xs:string" />
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="GenderID" type="xs:int" />
+              <xs:element minOccurs="0" name="GenderName" type="xs:string" />
+              <xs:element minOccurs="0" name="PlayFormatID" type="xs:int" />
+              <xs:element minOccurs="0" name="PlayFormatName" type="xs:string" />
+              <xs:element minOccurs="0" name="EventTypeID" type="xs:int" />
+              <xs:element minOccurs="0" name="EventTypeName" type="xs:string" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Sport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportName" type="xs:string" />
+              <xs:element minOccurs="0" name="SportCode" type="xs:string" />
+              <xs:element minOccurs="0" name="ImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:string" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:string" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:string" />
+              <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:string" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Score">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ParticipantInScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="TeamID" type="xs:int" />
+              <xs:element minOccurs="0" name="ParticipantID" type="xs:int" />
+              <xs:element minOccurs="0" name="BibNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="Description" type="xs:string" />
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="FamilyName" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryImage" type="xs:string" />
+              <xs:element msdata:Caption="DataColumn1" minOccurs="0" name="BigCountryImage" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreID" type="xs:int" />
+              <xs:element minOccurs="0" name="Score1" type="xs:string" />
+              <xs:element minOccurs="0" name="Score2" type="xs:string" />
+              <xs:element minOccurs="0" name="Score3" type="xs:string" />
+              <xs:element minOccurs="0" name="Score4" type="xs:string" />
+              <xs:element minOccurs="0" name="Score5" type="xs:string" />
+              <xs:element minOccurs="0" name="Score6" type="xs:string" />
+              <xs:element minOccurs="0" name="Score7" type="xs:string" />
+              <xs:element minOccurs="0" name="Score8" type="xs:string" />
+              <xs:element minOccurs="0" name="Score9" type="xs:string" />
+              <xs:element minOccurs="0" name="Score10" type="xs:string" />
+              <xs:element minOccurs="0" name="Score11" type="xs:string" />
+              <xs:element minOccurs="0" name="Score12" type="xs:string" />
+              <xs:element minOccurs="0" name="Score13" type="xs:string" />
+              <xs:element minOccurs="0" name="Score14" type="xs:string" />
+              <xs:element minOccurs="0" name="Score15" type="xs:string" />
+              <xs:element minOccurs="0" name="Score16" type="xs:string" />
+              <xs:element minOccurs="0" name="Score17" type="xs:string" />
+              <xs:element minOccurs="0" name="Score18" type="xs:string" />
+              <xs:element minOccurs="0" name="Score19" type="xs:string" />
+              <xs:element minOccurs="0" name="Score20" type="xs:string" />
+              <xs:element minOccurs="0" name="BreakRecord" type="xs:string" />
+              <xs:element minOccurs="0" name="MedalID" type="xs:int" />
+              <xs:element minOccurs="0" name="ResultPosition" type="xs:int" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ScoreFinal" type="xs:string" />
+              <xs:element minOccurs="0" name="AccreditationNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="MedalType" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GeneralSchedule">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportName" type="xs:string" />
+              <xs:element minOccurs="0" name="SportCode" type="xs:string" />
+              <xs:element minOccurs="0" name="ImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:int" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+              <xs:element msprop:Generator_UserColumnName="3Dec" msprop:Generator_ColumnVarNameInTable="column3Dec" minOccurs="0" name="_x0033_Dec" type="xs:boolean" />
+              <xs:element msprop:Generator_UserColumnName="3DecImage" msprop:Generator_ColumnVarNameInTable="column3DecImage" minOccurs="0" name="_x0033_DecImage" type="xs:string" />
+              <xs:element msprop:Generator_UserColumnName="4Dec" msprop:Generator_ColumnVarNameInTable="column4Dec" minOccurs="0" name="_x0034_Dec" type="xs:boolean" />
+              <xs:element msprop:Generator_UserColumnName="4DecImage" msprop:Generator_ColumnVarNameInTable="column4DecImage" minOccurs="0" name="_x0034_DecImage" type="xs:string" />
+              <xs:element msprop:Generator_UserColumnName="5Dec" msprop:Generator_ColumnVarNameInTable="column5Dec" minOccurs="0" name="_x0035_Dec" type="xs:boolean" />
+              <xs:element msprop:Generator_UserColumnName="5DecImage" msprop:Generator_ColumnVarNameInTable="column5DecImage" minOccurs="0" name="_x0035_DecImage" type="xs:string" />
+              <xs:element msprop:Generator_UserColumnName="6Dec" msprop:Generator_ColumnVarNameInTable="column6Dec" minOccurs="0" name="_x0036_Dec" type="xs:boolean" />
+              <xs:element msprop:Generator_UserColumnName="6DecImage" msprop:Generator_ColumnVarNameInTable="column6DecImage" minOccurs="0" name="_x0036_DecImage" type="xs:string" />
+              <xs:element msprop:Generator_UserColumnName="7Dec" msprop:Generator_ColumnVarNameInTable="column7Dec" minOccurs="0" name="_x0037_Dec" type="xs:boolean" />
+              <xs:element msprop:Generator_UserColumnName="7DecImage" msprop:Generator_ColumnVarNameInTable="column7DecImage" minOccurs="0" name="_x0037_DecImage" type="xs:string" />
+              <xs:element msprop:Generator_UserColumnName="8Dec" msprop:Generator_ColumnVarNameInTable="column8Dec" minOccurs="0" name="_x0038_Dec" type="xs:boolean" />
+              <xs:element msprop:Generator_UserColumnName="8DecImage" msprop:Generator_ColumnVarNameInTable="column8DecImage" minOccurs="0" name="_x0038_DecImage" type="xs:string" />
+              <xs:element msprop:Generator_UserColumnName="9Dec" msprop:Generator_ColumnVarNameInTable="column9Dec" minOccurs="0" name="_x0039_Dec" type="xs:boolean" />
+              <xs:element msprop:Generator_UserColumnName="9DecImage" msprop:Generator_ColumnVarNameInTable="column9DecImage" minOccurs="0" name="_x0039_DecImage" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ScoreName">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ScoreNameID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScoreName1" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName2" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName3" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName4" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName5" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName6" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName7" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName8" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName9" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName10" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName11" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName12" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName13" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName14" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName15" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName16" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName17" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName18" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName19" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreName20" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ScoreNameFinal" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ParticipantInSchedule">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ParticipantInScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="TeamID" type="xs:int" />
+              <xs:element minOccurs="0" name="ParticipantID" type="xs:int" />
+              <xs:element minOccurs="0" name="ParticipantName" type="xs:string" />
+              <xs:element minOccurs="0" name="GenderID" type="xs:int" />
+              <xs:element minOccurs="0" name="GenderName" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="PassportNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="BibNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="SortID" type="xs:int" />
+              <xs:element minOccurs="0" name="Description" type="xs:string" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:int" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="UpdatedRow" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ScheduleHeaderSport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportName" type="xs:string" />
+              <xs:element minOccurs="0" name="ImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ScheduleHeaderDate">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="Date" type="xs:string" />
+              <xs:element minOccurs="0" name="IsMedalDate" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Country">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="ISOCode2" type="xs:string" />
+              <xs:element minOccurs="0" name="ISOCode3" type="xs:string" />
+              <xs:element minOccurs="0" name="FlagImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="IconFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="SmallIconFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="RegionID" type="xs:int" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:int" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ParticipantList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ParticipantID" type="xs:int" />
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="FlagImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportName" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="File">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="FileID" type="xs:int" />
+              <xs:element minOccurs="0" name="FileName" type="xs:string" />
+              <xs:element minOccurs="0" name="FilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FileInEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="FileID" type="xs:int" />
+              <xs:element minOccurs="0" name="FileName" type="xs:string" />
+              <xs:element minOccurs="0" name="FilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="FileGroupID" type="xs:int" />
+              <xs:element minOccurs="0" name="ReferenceName" type="xs:string" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FinalRankings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ScoreID" type="xs:int" />
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="Medal" type="xs:string" />
+              <xs:element minOccurs="0" name="MedalCode" type="xs:string" />
+              <xs:element minOccurs="0" name="MedalIconFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="ResultPosition" type="xs:int" />
+              <xs:element minOccurs="0" name="ParticipantID" type="xs:int" />
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="ParticipantImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="IconImageFilePath" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EventAthletes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="ParticipantID" type="xs:int" />
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="FlagImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="BibNumber" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SportDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="StartEvent" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="EndEvent" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ParticipantCount" type="xs:int" />
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportName" type="xs:string" />
+              <xs:element minOccurs="0" name="ImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MedalStandings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Rank" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="SmallIconFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="IconFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="GoldMedal" type="xs:int" />
+              <xs:element minOccurs="0" name="SilverMedal" type="xs:int" />
+              <xs:element minOccurs="0" name="BronzeMedal" type="xs:int" />
+              <xs:element minOccurs="0" name="Total" type="xs:int" />
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleDateTime" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StatisticName">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:Caption="ScoreNameID" minOccurs="0" name="StatisticNameID" type="xs:int" />
+              <xs:element msdata:Caption="ScoreName1" minOccurs="0" name="StatisticName1" type="xs:string" />
+              <xs:element msdata:Caption="ScoreName2" minOccurs="0" name="StatisticName2" type="xs:string" />
+              <xs:element msdata:Caption="ScoreName3" minOccurs="0" name="StatisticName3" type="xs:string" />
+              <xs:element msdata:Caption="ScoreName4" minOccurs="0" name="StatisticName4" type="xs:string" />
+              <xs:element msdata:Caption="ScoreName5" minOccurs="0" name="StatisticName5" type="xs:string" />
+              <xs:element msdata:Caption="ScoreName6" minOccurs="0" name="StatisticName6" type="xs:string" />
+              <xs:element msdata:Caption="ScoreName7" minOccurs="0" name="StatisticName7" type="xs:string" />
+              <xs:element msdata:Caption="ScoreName8" minOccurs="0" name="StatisticName8" type="xs:string" />
+              <xs:element msdata:Caption="ScoreName9" minOccurs="0" name="StatisticName9" type="xs:string" />
+              <xs:element msdata:Caption="ScoreName10" minOccurs="0" name="StatisticName10" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Statistic">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ParticipantInScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="TeamID" type="xs:int" />
+              <xs:element minOccurs="0" name="ParticipantID" type="xs:int" />
+              <xs:element minOccurs="0" name="BibNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="Description" type="xs:string" />
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="FamilyName" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryImage" type="xs:string" />
+              <xs:element msdata:Caption="ScoreID" minOccurs="0" name="StatisticID" type="xs:int" />
+              <xs:element msdata:Caption="Score1" minOccurs="0" name="Statistic1" type="xs:string" />
+              <xs:element msdata:Caption="Score2" minOccurs="0" name="Statistic2" type="xs:string" />
+              <xs:element msdata:Caption="Score3" minOccurs="0" name="Statistic3" type="xs:string" />
+              <xs:element msdata:Caption="Score4" minOccurs="0" name="Statistic4" type="xs:string" />
+              <xs:element msdata:Caption="Score5" minOccurs="0" name="Statistic5" type="xs:string" />
+              <xs:element msdata:Caption="Score6" minOccurs="0" name="Statistic6" type="xs:string" />
+              <xs:element msdata:Caption="Score7" minOccurs="0" name="Statistic7" type="xs:string" />
+              <xs:element msdata:Caption="Score8" minOccurs="0" name="Statistic8" type="xs:string" />
+              <xs:element msdata:Caption="Score9" minOccurs="0" name="Statistic9" type="xs:string" />
+              <xs:element msdata:Caption="Score10" minOccurs="0" name="Statistic10" type="xs:string" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="AccreditationNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="MedalType" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Referee">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="RefereeID" type="xs:int" />
+              <xs:element minOccurs="0" name="RefereeName1" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeName2" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeName3" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeName4" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeName5" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeName6" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeName7" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeName8" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeName9" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeName10" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeTitle1" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeTitle2" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeTitle3" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeTitle4" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeTitle5" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeTitle6" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeTitle7" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeTitle8" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeTitle9" type="xs:string" />
+              <xs:element minOccurs="0" name="RefereeTitle10" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ParticipantBiography">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ParticipantID" type="xs:int" />
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="FlagImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Gender" type="xs:string" />
+              <xs:element minOccurs="0" name="Height" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Weight" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportName" type="xs:string" />
+              <xs:element minOccurs="0" name="FamilyName" type="xs:string" />
+              <xs:element minOccurs="0" name="GenderID" type="xs:int" />
+              <xs:element minOccurs="0" name="PassportNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LatestMedalist">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ScoreID" type="xs:int" />
+              <xs:element minOccurs="0" name="ParticipantID" type="xs:int" />
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="ParticipantImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportName" type="xs:string" />
+              <xs:element minOccurs="0" name="SportImageFilePath" type="xs:string" />
+              <xs:element msdata:Caption="Date" minOccurs="0" name="ScheduleDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="FlagImageFilePath" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ScheduleList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportName" type="xs:string" />
+              <xs:element minOccurs="0" name="SportImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleDate" type="xs:string" />
+              <xs:element msdata:Caption="Date" minOccurs="0" name="ScheduleDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Venue" type="xs:string" />
+              <xs:element minOccurs="0" name="Location" type="xs:string" />
+              <xs:element minOccurs="0" name="EventName" type="xs:string" />
+              <xs:element minOccurs="0" name="GenderID" type="xs:int" />
+              <xs:element minOccurs="0" name="Gender" type="xs:string" />
+              <xs:element minOccurs="0" name="GenderCode" type="xs:string" />
+              <xs:element minOccurs="0" name="RoundName" type="xs:string" />
+              <xs:element minOccurs="0" name="HeadToHead" type="xs:boolean" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="FlagImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleName" type="xs:string" />
+              <xs:element minOccurs="0" name="IsMedalGame" type="xs:boolean" />
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="IsEndState" type="xs:boolean" />
+              <xs:element minOccurs="0" name="CountryID1" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName1" type="xs:string" />
+              <xs:element minOccurs="0" name="FlagImageFilePath1" type="xs:string" />
+              <xs:element minOccurs="0" name="ParticipantID1" type="xs:int" />
+              <xs:element minOccurs="0" name="FullName1" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreFinal1" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryID2" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName2" type="xs:string" />
+              <xs:element minOccurs="0" name="FlagImageFilePath2" type="xs:string" />
+              <xs:element minOccurs="0" name="ParticipantID2" type="xs:int" />
+              <xs:element minOccurs="0" name="FullName2" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreFinal2" type="xs:string" />
+              <xs:element minOccurs="0" name="BreakRecord" type="xs:string" />
+              <xs:element minOccurs="0" name="TeamID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ParticipantResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ParticipantID" type="xs:int" />
+              <xs:element minOccurs="0" name="EventID" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ScheduleDate" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleTime" type="xs:string" />
+              <xs:element minOccurs="0" name="EventName" type="xs:string" />
+              <xs:element minOccurs="0" name="ResultPosition" type="xs:int" />
+              <xs:element minOccurs="0" name="Medal" type="xs:string" />
+              <xs:element minOccurs="0" name="MedalImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="FlagImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="Result" type="xs:string" />
+              <xs:element minOccurs="0" name="ResultTime" type="xs:string" />
+              <xs:element minOccurs="0" name="TeamID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ParticipantDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ParticipantID" type="xs:int" />
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="FlagImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Gender" type="xs:string" />
+              <xs:element minOccurs="0" name="Height" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Weight" type="xs:decimal" />
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportName" type="xs:string" />
+              <xs:element minOccurs="0" name="FamilyName" type="xs:string" />
+              <xs:element minOccurs="0" name="GenderID" type="xs:int" />
+              <xs:element minOccurs="0" name="PassportNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="GivenName" type="xs:string" />
+              <xs:element minOccurs="0" name="IPCNo" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MedalStandingsCountry">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Rank" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element msdata:Caption="CountryName" minOccurs="0" name="SportName" type="xs:string" />
+              <xs:element minOccurs="0" name="SportImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="GoldMedal" type="xs:int" />
+              <xs:element minOccurs="0" name="SilverMedal" type="xs:int" />
+              <xs:element minOccurs="0" name="BronzeMedal" type="xs:int" />
+              <xs:element minOccurs="0" name="Total" type="xs:int" />
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleDateTime" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ParticipantInEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ParticipantInEventID" type="xs:int" />
+              <xs:element minOccurs="0" name="ParticipantID" type="xs:int" />
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportClassID" type="xs:int" />
+              <xs:element minOccurs="0" name="EventName" type="xs:string" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="TeamID" type="xs:int" />
+              <xs:element minOccurs="0" default="" name="GroupCode" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Medallist">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportName" type="xs:string" />
+              <xs:element minOccurs="0" name="SportImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="ParticipantID" type="xs:int" />
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="ParticipantImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleDate" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="EventID" type="xs:string" />
+              <xs:element minOccurs="0" name="Rank" type="xs:int" />
+              <xs:element minOccurs="0" name="EventName" type="xs:string" />
+              <xs:element minOccurs="0" name="Medal" type="xs:string" />
+              <xs:element minOccurs="0" name="MedalCode" type="xs:string" />
+              <xs:element minOccurs="0" name="MedalIconFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="Total" type="xs:int" />
+              <xs:element minOccurs="0" name="TotalGold" type="xs:int" />
+              <xs:element minOccurs="0" name="TotalSilver" type="xs:int" />
+              <xs:element minOccurs="0" name="TotalBronze" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="SmallIconFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="IconFilePath" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="KnockoutSummary">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleName" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="RoundName" type="xs:string" />
+              <xs:element minOccurs="0" name="TotalParticipant" type="xs:int" />
+              <xs:element minOccurs="0" name="CompetitionStage" type="xs:int" />
+              <xs:element minOccurs="0" name="MatchNumber" type="xs:int" />
+              <xs:element minOccurs="0" name="IsMedalGame" type="xs:boolean" />
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreFinal" type="xs:string" />
+              <xs:element minOccurs="0" name="MedalID" type="xs:int" />
+              <xs:element minOccurs="0" name="MedalType" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="IconFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="ParticipantList" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SportEventSchedule">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleName" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="RoundName" type="xs:string" />
+              <xs:element minOccurs="0" name="MatchNumber" type="xs:int" />
+              <xs:element minOccurs="0" name="TotalParticipant" type="xs:int" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="GroupCode" type="xs:string" />
+              <xs:element minOccurs="0" name="PlayFormatID" type="xs:int" />
+              <xs:element minOccurs="0" name="Location" type="xs:string" />
+              <xs:element minOccurs="0" name="StatusCodeID" type="xs:int" />
+              <xs:element minOccurs="0" name="HeadToHead" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IsMedalGame" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ExternalScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="ExternalScheduleCode" type="xs:string" />
+              <xs:element minOccurs="0" name="CompetitionStage" type="xs:int" />
+              <xs:element minOccurs="0" name="FootNote01" type="xs:string" />
+              <xs:element minOccurs="0" name="FootNote02" type="xs:string" />
+              <xs:element minOccurs="0" name="Remark" type="xs:string" />
+              <xs:element minOccurs="0" name="IsPublishStartList" type="xs:boolean" />
+              <xs:element minOccurs="0" name="EventCode" type="xs:string" />
+              <xs:element minOccurs="0" name="EventName" type="xs:string" />
+              <xs:element minOccurs="0" name="GenderID" type="xs:int" />
+              <xs:element minOccurs="0" name="EventTypeID" type="xs:int" />
+              <xs:element minOccurs="0" name="ExternalEventID" type="xs:int" />
+              <xs:element minOccurs="0" name="ExternalEventCode" type="xs:string" />
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="ExternalSportID" type="xs:int" />
+              <xs:element minOccurs="0" name="ExternalSportCode" type="xs:string" />
+              <xs:element minOccurs="0" name="SportName" type="xs:string" />
+              <xs:element minOccurs="0" name="SportCode" type="xs:string" />
+              <xs:element minOccurs="0" name="ImageFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="GenderName" type="xs:string" />
+              <xs:element minOccurs="0" name="IsLeague" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IsKnockout" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IsTimeDistancePoints" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ScheduleDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleName" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="RoundName" type="xs:string" />
+              <xs:element minOccurs="0" name="MatchNumber" type="xs:int" />
+              <xs:element minOccurs="0" name="TotalParticipant" type="xs:int" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="GroupCode" type="xs:string" />
+              <xs:element minOccurs="0" name="PlayFormatID" type="xs:int" />
+              <xs:element minOccurs="0" name="Location" type="xs:string" />
+              <xs:element minOccurs="0" name="StatusCodeID" type="xs:int" />
+              <xs:element minOccurs="0" name="HeadToHead" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IsMedalGame" type="xs:boolean" />
+              <xs:element minOccurs="0" name="CompetitionStage" type="xs:int" />
+              <xs:element minOccurs="0" name="Venue" type="xs:string" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="UpdatedRow" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LeagueSummary">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScheduleName" type="xs:string" />
+              <xs:element minOccurs="0" name="ScheduleDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="RoundName" type="xs:string" />
+              <xs:element minOccurs="0" name="TotalParticipant" type="xs:int" />
+              <xs:element minOccurs="0" name="CompetitionStage" type="xs:int" />
+              <xs:element minOccurs="0" name="MatchNumber" type="xs:int" />
+              <xs:element minOccurs="0" name="IsMedalGame" type="xs:boolean" />
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreFinal" type="xs:string" />
+              <xs:element minOccurs="0" name="MedalID" type="xs:int" />
+              <xs:element minOccurs="0" name="MedalType" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="IconFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="ParticipantList" type="xs:string" />
+              <xs:element minOccurs="0" name="EventName" type="xs:string" />
+              <xs:element minOccurs="0" name="GroupCode" type="xs:string" />
+              <xs:element minOccurs="0" name="TeamID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="League">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="LeagueID" type="xs:int" />
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="IconFilePath" type="xs:string" />
+              <xs:element minOccurs="0" name="Rank" type="xs:int" />
+              <xs:element minOccurs="0" name="GroupCode" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League20" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League19" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League18" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League17" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League16" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League15" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League14" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League13" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League12" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League11" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League10" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League9" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League8" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League7" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League6" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League5" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League4" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League3" type="xs:string" />
+              <xs:element msdata:Caption="League1" minOccurs="0" name="League2" type="xs:string" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="League1" type="xs:string" />
+              <xs:element minOccurs="0" name="TeamID" type="xs:int" />
+              <xs:element minOccurs="0" name="ParticipantInEventID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element minOccurs="0" name="ParticipantList" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SportClass">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="SportClassID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportClassCode" type="xs:string" />
+              <xs:element minOccurs="0" name="SportClassGroupCode" type="xs:string" />
+              <xs:element minOccurs="0" name="ExternalSportClassID" type="xs:int" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:int" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BrokenRecord">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="ParticipantID" type="xs:int" />
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="EventName" type="xs:string" />
+              <xs:element minOccurs="0" name="Location" type="xs:string" />
+              <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="BreakRecord" type="xs:string" />
+              <xs:element minOccurs="0" name="ScoreFinal" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Team">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="TeamID" type="xs:int" />
+              <xs:element minOccurs="0" name="TeamName" type="xs:string" />
+              <xs:element minOccurs="0" name="SportID" type="xs:int" />
+              <xs:element minOccurs="0" name="SportName" type="xs:string" />
+              <xs:element minOccurs="0" name="EventID" type="xs:int" />
+              <xs:element minOccurs="0" name="EventName" type="xs:string" />
+              <xs:element minOccurs="0" name="IsActive" type="xs:int" />
+              <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CreatedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="ModifiedDateTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TeamBiography">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="CountryName" type="xs:string" />
+              <xs:element msdata:Caption="FlagImageFilePath" minOccurs="0" name="BigCountryImage" type="xs:string" />
+              <xs:element minOccurs="0" name="BibNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="TeamID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

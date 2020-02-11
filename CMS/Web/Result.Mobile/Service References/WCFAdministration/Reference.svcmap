@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="656f662d-7a24-41b8-9c98-0d5890278aea" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/SEM.CMS.App/MA/Administration.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Administration.xsd" MetadataType="Schema" ID="02f9a008-4a58-4873-b04a-37aac6425a1d" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MA/Administration.svc?xsd=xsd1" />
+    <MetadataFile FileName="Administration1.xsd" MetadataType="Schema" ID="5dee18d9-a33a-44f6-94d4-0c711102fd8a" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MA/Administration.svc?xsd=xsd3" />
+    <MetadataFile FileName="Administration.disco" MetadataType="Disco" ID="b847e6c9-a160-4553-8a2f-514898a81d1f" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MA/Administration.svc?disco" />
+    <MetadataFile FileName="Administration2.xsd" MetadataType="Schema" ID="1ffed945-9dac-4407-bac8-c60f29f16a47" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MA/Administration.svc?xsd=xsd0" />
+    <MetadataFile FileName="Administration.wsdl" MetadataType="Wsdl" ID="61ed66ed-f324-430e-b563-7e0fb047be38" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MA/Administration.svc?wsdl" />
+    <MetadataFile FileName="AdministrationDS.xsd" MetadataType="Schema" ID="ba894709-0e14-42eb-8594-a947020d1b6e" SourceId="1" SourceUrl="http://localhost:8080/SEM.CMS.App/MA/Administration.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

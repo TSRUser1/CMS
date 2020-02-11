@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SystemMaintenanceDS" targetNamespace="http://tempuri.org/SystemMaintenanceDS.xsd" xmlns:mstns="http://tempuri.org/SystemMaintenanceDS.xsd" xmlns="http://tempuri.org/SystemMaintenanceDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SystemMaintenanceDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SystemMaintenanceDS" msprop:Generator_UserDSName="SystemMaintenanceDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataGridColumn" msprop:Generator_TableClassName="DataGridColumnDataTable" msprop:Generator_TableVarName="tableDataGridColumn" msprop:Generator_TablePropName="DataGridColumn" msprop:Generator_RowDeletingName="DataGridColumnRowDeleting" msprop:Generator_RowChangingName="DataGridColumnRowChanging" msprop:Generator_RowEvHandlerName="DataGridColumnRowChangeEventHandler" msprop:Generator_RowDeletedName="DataGridColumnRowDeleted" msprop:Generator_UserTableName="DataGridColumn" msprop:Generator_RowChangedName="DataGridColumnRowChanged" msprop:Generator_RowEvArgName="DataGridColumnRowChangeEvent" msprop:Generator_RowClassName="DataGridColumnRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DataGridColumnID" msprop:Generator_ColumnVarNameInTable="columnDataGridColumnID" msprop:Generator_ColumnPropNameInRow="DataGridColumnID" msprop:Generator_ColumnPropNameInTable="DataGridColumnIDColumn" msprop:Generator_UserColumnName="DataGridColumnID" type="xs:int" minOccurs="0" />
+              <xs:element name="DataGridName" msprop:Generator_ColumnVarNameInTable="columnDataGridName" msprop:Generator_ColumnPropNameInRow="DataGridName" msprop:Generator_ColumnPropNameInTable="DataGridNameColumn" msprop:Generator_UserColumnName="DataGridName" type="xs:string" minOccurs="0" />
+              <xs:element name="HeaderText" msprop:Generator_ColumnVarNameInTable="columnHeaderText" msprop:Generator_ColumnPropNameInRow="HeaderText" msprop:Generator_ColumnPropNameInTable="HeaderTextColumn" msprop:Generator_UserColumnName="HeaderText" type="xs:string" minOccurs="0" />
+              <xs:element name="DataField" msprop:Generator_ColumnVarNameInTable="columnDataField" msprop:Generator_ColumnPropNameInRow="DataField" msprop:Generator_ColumnPropNameInTable="DataFieldColumn" msprop:Generator_UserColumnName="DataField" type="xs:string" minOccurs="0" />
+              <xs:element name="SortID" msprop:Generator_ColumnVarNameInTable="columnSortID" msprop:Generator_ColumnPropNameInRow="SortID" msprop:Generator_ColumnPropNameInTable="SortIDColumn" msprop:Generator_UserColumnName="SortID" type="xs:int" minOccurs="0" />
+              <xs:element name="ColumnTypeID" msprop:Generator_ColumnVarNameInTable="columnColumnTypeID" msprop:Generator_ColumnPropNameInRow="ColumnTypeID" msprop:Generator_ColumnPropNameInTable="ColumnTypeIDColumn" msprop:Generator_UserColumnName="ColumnTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="NavigateURLDataField" msprop:Generator_ColumnVarNameInTable="columnNavigateURLDataField" msprop:Generator_ColumnPropNameInRow="NavigateURLDataField" msprop:Generator_ColumnPropNameInTable="NavigateURLDataFieldColumn" msprop:Generator_UserColumnName="NavigateURLDataField" type="xs:string" minOccurs="0" />
+              <xs:element name="NavigateURL" msprop:Generator_ColumnVarNameInTable="columnNavigateURL" msprop:Generator_ColumnPropNameInRow="NavigateURL" msprop:Generator_ColumnPropNameInTable="NavigateURLColumn" msprop:Generator_UserColumnName="NavigateURL" type="xs:string" minOccurs="0" />
+              <xs:element name="ColumnWidth" msprop:Generator_ColumnVarNameInTable="columnColumnWidth" msprop:Generator_ColumnPropNameInRow="ColumnWidth" msprop:Generator_ColumnPropNameInTable="ColumnWidthColumn" msprop:Generator_UserColumnName="ColumnWidth" type="xs:int" minOccurs="0" />
+              <xs:element name="CssClass" msprop:Generator_ColumnVarNameInTable="columnCssClass" msprop:Generator_ColumnPropNameInRow="CssClass" msprop:Generator_ColumnPropNameInTable="CssClassColumn" msprop:Generator_UserColumnName="CssClass" type="xs:string" minOccurs="0" />
+              <xs:element name="IsReadOnly" msprop:Generator_ColumnVarNameInTable="columnIsReadOnly" msprop:Generator_ColumnPropNameInRow="IsReadOnly" msprop:Generator_ColumnPropNameInTable="IsReadOnlyColumn" msprop:Generator_UserColumnName="IsReadOnly" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsAllowHTMLEncode" msprop:Generator_ColumnVarNameInTable="columnIsAllowHTMLEncode" msprop:Generator_ColumnPropNameInRow="IsAllowHTMLEncode" msprop:Generator_ColumnPropNameInTable="IsAllowHTMLEncodeColumn" msprop:Generator_UserColumnName="IsAllowHTMLEncode" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ModifiedBy" msprop:Generator_ColumnVarNameInTable="columnModifiedBy" msprop:Generator_ColumnPropNameInRow="ModifiedBy" msprop:Generator_ColumnPropNameInTable="ModifiedByColumn" msprop:Generator_UserColumnName="ModifiedBy" type="xs:int" minOccurs="0" />
+              <xs:element name="EnumTypeID" msprop:Generator_ColumnVarNameInTable="columnEnumTypeID" msprop:Generator_ColumnPropNameInRow="EnumTypeID" msprop:Generator_ColumnPropNameInTable="EnumTypeIDColumn" msprop:Generator_UserColumnName="EnumTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Reference" msprop:Generator_TableClassName="ReferenceDataTable" msprop:Generator_TableVarName="tableReference" msprop:Generator_RowChangedName="ReferenceRowChanged" msprop:Generator_TablePropName="Reference" msprop:Generator_RowDeletingName="ReferenceRowDeleting" msprop:Generator_RowChangingName="ReferenceRowChanging" msprop:Generator_RowEvHandlerName="ReferenceRowChangeEventHandler" msprop:Generator_RowDeletedName="ReferenceRowDeleted" msprop:Generator_RowClassName="ReferenceRow" msprop:Generator_UserTableName="Reference" msprop:Generator_RowEvArgName="ReferenceRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReferenceID" msprop:Generator_ColumnVarNameInTable="columnReferenceID" msprop:Generator_ColumnPropNameInRow="ReferenceID" msprop:Generator_ColumnPropNameInTable="ReferenceIDColumn" msprop:Generator_UserColumnName="ReferenceID" type="xs:int" minOccurs="0" />
+              <xs:element name="ReferenceInternalID" msprop:Generator_ColumnVarNameInTable="columnReferenceInternalID" msprop:Generator_ColumnPropNameInRow="ReferenceInternalID" msprop:Generator_ColumnPropNameInTable="ReferenceInternalIDColumn" msprop:Generator_UserColumnName="ReferenceInternalID" type="xs:int" minOccurs="0" />
+              <xs:element name="ReferenceCategoryID" msprop:Generator_ColumnVarNameInTable="columnReferenceCategoryID" msprop:Generator_ColumnPropNameInRow="ReferenceCategoryID" msprop:Generator_ColumnPropNameInTable="ReferenceCategoryIDColumn" msprop:Generator_UserColumnName="ReferenceCategoryID" type="xs:int" minOccurs="0" />
+              <xs:element name="ReferenceCode" msprop:Generator_ColumnVarNameInTable="columnReferenceCode" msprop:Generator_ColumnPropNameInRow="ReferenceCode" msprop:Generator_ColumnPropNameInTable="ReferenceCodeColumn" msprop:Generator_UserColumnName="ReferenceCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ReferenceContent" msprop:Generator_ColumnVarNameInTable="columnReferenceContent" msprop:Generator_ColumnPropNameInRow="ReferenceContent" msprop:Generator_ColumnPropNameInTable="ReferenceContentColumn" msprop:Generator_UserColumnName="ReferenceContent" type="xs:string" minOccurs="0" />
+              <xs:element name="ReferenceDescription" msprop:Generator_ColumnVarNameInTable="columnReferenceDescription" msprop:Generator_ColumnPropNameInRow="ReferenceDescription" msprop:Generator_ColumnPropNameInTable="ReferenceDescriptionColumn" msprop:Generator_UserColumnName="ReferenceDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="LanguageID" msprop:Generator_ColumnVarNameInTable="columnLanguageID" msprop:Generator_ColumnPropNameInRow="LanguageID" msprop:Generator_ColumnPropNameInTable="LanguageIDColumn" msprop:Generator_UserColumnName="LanguageID" type="xs:int" minOccurs="0" />
+              <xs:element name="ModifiedBy" msprop:Generator_ColumnVarNameInTable="columnModifiedBy" msprop:Generator_ColumnPropNameInRow="ModifiedBy" msprop:Generator_ColumnPropNameInTable="ModifiedByColumn" msprop:Generator_UserColumnName="ModifiedBy" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReferenceCategory" msprop:Generator_TableClassName="ReferenceCategoryDataTable" msprop:Generator_TableVarName="tableReferenceCategory" msprop:Generator_RowChangedName="ReferenceCategoryRowChanged" msprop:Generator_TablePropName="ReferenceCategory" msprop:Generator_RowDeletingName="ReferenceCategoryRowDeleting" msprop:Generator_RowChangingName="ReferenceCategoryRowChanging" msprop:Generator_RowEvHandlerName="ReferenceCategoryRowChangeEventHandler" msprop:Generator_RowDeletedName="ReferenceCategoryRowDeleted" msprop:Generator_RowClassName="ReferenceCategoryRow" msprop:Generator_UserTableName="ReferenceCategory" msprop:Generator_RowEvArgName="ReferenceCategoryRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReferenceCategoryID" msprop:Generator_ColumnVarNameInTable="columnReferenceCategoryID" msprop:Generator_ColumnPropNameInRow="ReferenceCategoryID" msprop:Generator_ColumnPropNameInTable="ReferenceCategoryIDColumn" msprop:Generator_UserColumnName="ReferenceCategoryID" type="xs:int" minOccurs="0" />
+              <xs:element name="ReferenceCategoryCode" msprop:Generator_ColumnVarNameInTable="columnReferenceCategoryCode" msprop:Generator_ColumnPropNameInRow="ReferenceCategoryCode" msprop:Generator_ColumnPropNameInTable="ReferenceCategoryCodeColumn" msprop:Generator_UserColumnName="ReferenceCategoryCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="ModifiedBy" msprop:Generator_ColumnVarNameInTable="columnModifiedBy" msprop:Generator_ColumnPropNameInRow="ModifiedBy" msprop:Generator_ColumnPropNameInTable="ModifiedByColumn" msprop:Generator_UserColumnName="ModifiedBy" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

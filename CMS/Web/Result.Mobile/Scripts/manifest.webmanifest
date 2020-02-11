@@ -1,0 +1,13 @@
+{
+  "name": "ASEAN ParaGame",
+  "short_name": "SEM",
+  "start_url": ".",
+  "display": "fullscreen",
+  "background_color": "#fff",
+  "description": "ASEAN Paragame App.",
+  "icons": [{
+    "src": "/img/header/apg_main_logo.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }]
+}

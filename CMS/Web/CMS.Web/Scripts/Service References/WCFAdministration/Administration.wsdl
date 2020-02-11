@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Administration" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/SEM.CMS.App/MA/Administration.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8080/SEM.CMS.App/MA/Administration.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/SEM.CMS.App/MA/Administration.svc?xsd=xsd2" namespace="http://tempuri.org/AdministrationDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:8080/SEM.CMS.App/MA/Administration.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAdministration_DeleteAdminUserDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAdminUserDetail" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_DeleteAdminUserDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAdminUserDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_DeleteModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteModule" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_DeleteModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_DeleteRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRole" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_DeleteRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_GetAdminUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdminUser" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_GetAdminUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdminUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_GetModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModule" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_GetModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_GetPageName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPageName" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_GetPageName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPageNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_GetRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRole" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_GetRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_InsertAdminUserDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAdminUserDetail" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_InsertAdminUserDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAdminUserDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_InsertModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertModule" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_InsertModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_InsertRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRole" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_InsertRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_UpdateAdminUserDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAdminUserDetail" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_UpdateAdminUserDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAdminUserDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_UpdateModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateModule" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_UpdateModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_UpdateRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRole" />
+  </wsdl:message>
+  <wsdl:message name="IAdministration_UpdateRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAdministration">
+    <wsdl:operation name="DeleteAdminUserDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministration/DeleteAdminUserDetail" message="tns:IAdministration_DeleteAdminUserDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministration/DeleteAdminUserDetailResponse" message="tns:IAdministration_DeleteAdminUserDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministration/DeleteModule" message="tns:IAdministration_DeleteModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministration/DeleteModuleResponse" message="tns:IAdministration_DeleteModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministration/DeleteRole" message="tns:IAdministration_DeleteRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministration/DeleteRoleResponse" message="tns:IAdministration_DeleteRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdminUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministration/GetAdminUser" message="tns:IAdministration_GetAdminUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministration/GetAdminUserResponse" message="tns:IAdministration_GetAdminUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministration/GetModule" message="tns:IAdministration_GetModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministration/GetModuleResponse" message="tns:IAdministration_GetModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPageName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministration/GetPageName" message="tns:IAdministration_GetPageName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministration/GetPageNameResponse" message="tns:IAdministration_GetPageName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministration/GetRole" message="tns:IAdministration_GetRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministration/GetRoleResponse" message="tns:IAdministration_GetRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAdminUserDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministration/InsertAdminUserDetail" message="tns:IAdministration_InsertAdminUserDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministration/InsertAdminUserDetailResponse" message="tns:IAdministration_InsertAdminUserDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministration/InsertModule" message="tns:IAdministration_InsertModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministration/InsertModuleResponse" message="tns:IAdministration_InsertModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministration/InsertRole" message="tns:IAdministration_InsertRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministration/InsertRoleResponse" message="tns:IAdministration_InsertRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAdminUserDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministration/UpdateAdminUserDetail" message="tns:IAdministration_UpdateAdminUserDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministration/UpdateAdminUserDetailResponse" message="tns:IAdministration_UpdateAdminUserDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministration/UpdateModule" message="tns:IAdministration_UpdateModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministration/UpdateModuleResponse" message="tns:IAdministration_UpdateModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministration/UpdateRole" message="tns:IAdministration_UpdateRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministration/UpdateRoleResponse" message="tns:IAdministration_UpdateRole_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAdministration" type="tns:IAdministration">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DeleteAdminUserDetail">
+      <soap:operation soapAction="http://tempuri.org/IAdministration/DeleteAdminUserDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteModule">
+      <soap:operation soapAction="http://tempuri.org/IAdministration/DeleteModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <soap:operation soapAction="http://tempuri.org/IAdministration/DeleteRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdminUser">
+      <soap:operation soapAction="http://tempuri.org/IAdministration/GetAdminUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModule">
+      <soap:operation soapAction="http://tempuri.org/IAdministration/GetModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPageName">
+      <soap:operation soapAction="http://tempuri.org/IAdministration/GetPageName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRole">
+      <soap:operation soapAction="http://tempuri.org/IAdministration/GetRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAdminUserDetail">
+      <soap:operation soapAction="http://tempuri.org/IAdministration/InsertAdminUserDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertModule">
+      <soap:operation soapAction="http://tempuri.org/IAdministration/InsertModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRole">
+      <soap:operation soapAction="http://tempuri.org/IAdministration/InsertRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAdminUserDetail">
+      <soap:operation soapAction="http://tempuri.org/IAdministration/UpdateAdminUserDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateModule">
+      <soap:operation soapAction="http://tempuri.org/IAdministration/UpdateModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRole">
+      <soap:operation soapAction="http://tempuri.org/IAdministration/UpdateRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Administration">
+    <wsdl:port name="BasicHttpBinding_IAdministration" binding="tns:BasicHttpBinding_IAdministration">
+      <soap:address location="http://localhost:8080/SEM.CMS.App/MA/Administration.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

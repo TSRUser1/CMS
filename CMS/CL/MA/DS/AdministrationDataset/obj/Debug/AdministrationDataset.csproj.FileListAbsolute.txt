@@ -1,0 +1,10 @@
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MA\DS\AdministrationDataset\bin\Debug\SEM.CMS.CL.MA.DS.AdministrationDataset.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MA\DS\AdministrationDataset\bin\Debug\SEM.CMS.CL.MA.DS.AdministrationDataset.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MA\DS\AdministrationDataset\obj\Debug\AdministrationDataset.csprojAssemblyReference.cache
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MA\DS\AdministrationDataset\obj\Debug\SEM.CMS.CL.MA.DS.AdministrationDataset.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MA\DS\AdministrationDataset\obj\Debug\SEM.CMS.CL.MA.DS.AdministrationDataset.pdb
+C:\Users\hp\Desktop\SEM\SEM\CMS\CL\MA\DS\AdministrationDataset\bin\Debug\SEM.CMS.CL.MA.DS.AdministrationDataset.dll
+C:\Users\hp\Desktop\SEM\SEM\CMS\CL\MA\DS\AdministrationDataset\bin\Debug\SEM.CMS.CL.MA.DS.AdministrationDataset.pdb
+C:\Users\hp\Desktop\SEM\SEM\CMS\CL\MA\DS\AdministrationDataset\obj\Debug\AdministrationDataset.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\SEM\SEM\CMS\CL\MA\DS\AdministrationDataset\obj\Debug\SEM.CMS.CL.MA.DS.AdministrationDataset.dll
+C:\Users\hp\Desktop\SEM\SEM\CMS\CL\MA\DS\AdministrationDataset\obj\Debug\SEM.CMS.CL.MA.DS.AdministrationDataset.pdb

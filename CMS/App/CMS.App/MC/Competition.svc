@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SEM.CMS.App.MC.Competition" CodeBehind="Competition.svc.cs" %>

@@ -1,0 +1,16 @@
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\bin\SEM.CMS.Result.Mobile.dll.config
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\bin\SEM.CMS.Result.Mobile.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\bin\SEM.CMS.Result.Mobile.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\bin\AjaxControlToolkit.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\bin\AjaxMin.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\bin\SEM.CMS.CL.AR.Common.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\bin\Microsoft.Practices.Unity.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\bin\Microsoft.Practices.Unity.Interception.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\bin\SEM.CMS.CL.AR.Common.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\obj\Debug\Result.Mobile.csprojAssemblyReference.cache
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\obj\Debug\Result.Mobile.csproj.CopyComplete
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\obj\Debug\SEM.CMS.Result.Mobile.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\Web\Result.Mobile\obj\Debug\SEM.CMS.Result.Mobile.pdb

@@ -1,0 +1,17 @@
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\bin\Debug\SEM.CMS.CL.MS.BF.SystemMaintenanceFacade.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\bin\Debug\SEM.CMS.CL.MS.BF.SystemMaintenanceFacade.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\bin\Debug\SEM.CMS.CL.AR.Common.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\bin\Debug\SEM.CMS.CL.MS.DA.SystemMaintenanceDataAccess.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\bin\Debug\SEM.CMS.CL.MS.DS.SystemMaintenanceDataset.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\bin\Debug\SEM.CMS.CL.AR.Common.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\bin\Debug\SEM.CMS.CL.MS.DA.SystemMaintenanceDataAccess.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\bin\Debug\SEM.CMS.CL.MS.DS.SystemMaintenanceDataset.pdb
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\obj\Debug\SystemMaintenanceFacade.csprojAssemblyReference.cache
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\obj\Debug\SystemMaintenanceFacade.csproj.CopyComplete
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\obj\Debug\SEM.CMS.CL.MS.BF.SystemMaintenanceFacade.dll
+C:\Users\cndho\OneDrive\Desktop\SEM\SEM\CMS\CL\MS\BF\SystemMaintenanceFacade\obj\Debug\SEM.CMS.CL.MS.BF.SystemMaintenanceFacade.pdb

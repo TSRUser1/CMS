@@ -1,0 +1,509 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CMS", "CMS", "{26530E54-052D-4745-8473-7A732C52B426}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{D5E20948-5DAC-409E-9B06-165217B25AE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{92BDC2AF-9903-44DF-88B3-582646EDE4A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.Web", "CMS\Web\CMS.Web\CMS.Web.csproj", "{CE5F68EB-6499-4821-9D6A-8BD809CA2CD9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{890DF807-CAFE-44F0-9C22-0A27FB973268} = {890DF807-CAFE-44F0-9C22-0A27FB973268}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.App", "CMS\App\CMS.App\CMS.App.csproj", "{890DF807-CAFE-44F0-9C22-0A27FB973268}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{9DFFE619-457A-47F7-BD84-263F761E129E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference", "Reference", "{42B35F5F-D77B-4CFF-B0AA-8A484A1C4C04}"
+	ProjectSection(SolutionItems) = preProject
+		CMS\Reference\AjaxMin.dll = CMS\Reference\AjaxMin.dll
+		CMS\Reference\CKEditor.NET.dll = CMS\Reference\CKEditor.NET.dll
+		CMS\Reference\Microsoft.Practices.EnterpriseLibrary.Common.dll = CMS\Reference\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		CMS\Reference\Microsoft.Practices.EnterpriseLibrary.Data.dll = CMS\Reference\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		CMS\Reference\Microsoft.Practices.ServiceLocation.dll = CMS\Reference\Microsoft.Practices.ServiceLocation.dll
+		CMS\Reference\Microsoft.Practices.Unity.dll = CMS\Reference\Microsoft.Practices.Unity.dll
+		CMS\Reference\Microsoft.Practices.Unity.Interception.dll = CMS\Reference\Microsoft.Practices.Unity.Interception.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CL", "CL", "{E7B0491B-32F3-4816-90D7-CC4286B31CD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AR", "AR", "{D75C17C3-2E0B-48A4-B24E-453887EAE707}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MA", "MA", "{BD630CE3-6D3F-45DD-8665-2F690F5F0FFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BF", "BF", "{CE156C00-9BB3-4441-A730-8FB9F2706491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdministrationFacade", "CMS\CL\MA\BF\AdministrationFacade\AdministrationFacade.csproj", "{07B1698D-7835-4992-B337-B6A9F392FA18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DA", "DA", "{590D2958-9EFB-4396-BD8E-06CE23FA7E91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DS", "DS", "{46536644-9A15-48F3-98F3-78E322E09342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdministrationDataAccess", "CMS\CL\MA\DA\AdministrationDataAccess\AdministrationDataAccess.csproj", "{ACE1DC6A-7999-47B6-A590-9AAAEF231ECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdministrationDataset", "CMS\CL\MA\DS\AdministrationDataset\AdministrationDataset.csproj", "{E03E7E7F-0BA9-4D21-B4E2-AA4DBD37577A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MS", "MS", "{83475DCE-01C4-4178-AA80-D9E7883AD57A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BF", "BF", "{E4CD1311-9D5C-4F79-9661-69D64BFF26AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DA", "DA", "{C4E50B59-6A83-488A-A125-D7F910A8A472}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DS", "DS", "{4AF0EB9F-7444-46A2-BD2A-32E533C1DC17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemMaintenanceFacade", "CMS\CL\MS\BF\SystemMaintenanceFacade\SystemMaintenanceFacade.csproj", "{EC6B8634-24B6-48A1-9311-2C86B7F9177E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemMaintenanceDataAccess", "CMS\CL\MS\DA\SystemMaintenanceDataAccess\SystemMaintenanceDataAccess.csproj", "{5F2A120D-F930-4F3A-8984-ED9571890593}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemMaintenanceDataset", "CMS\CL\MS\DS\SystemMaintenanceDataset\SystemMaintenanceDataset.csproj", "{A5EBEC0B-AE21-4E0D-A73F-7B1002FBB3DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SP", "SP", "{2D5A2F9B-1C4F-4DD0-88C4-74195FCA5C53}"
+	ProjectSection(SolutionItems) = preProject
+		CMS\DB\SP\SP_D_DeleteAdminUserDetail.sql = CMS\DB\SP\SP_D_DeleteAdminUserDetail.sql
+		CMS\DB\SP\SP_D_DeleteDataGridColumn.sql = CMS\DB\SP\SP_D_DeleteDataGridColumn.sql
+		CMS\DB\SP\SP_D_DeleteEvent.sql = CMS\DB\SP\SP_D_DeleteEvent.sql
+		CMS\DB\SP\SP_D_DeleteModule.sql = CMS\DB\SP\SP_D_DeleteModule.sql
+		CMS\DB\SP\SP_D_DeleteParticipant.sql = CMS\DB\SP\SP_D_DeleteParticipant.sql
+		CMS\DB\SP\SP_D_DeleteReferenceCategory.sql = CMS\DB\SP\SP_D_DeleteReferenceCategory.sql
+		CMS\DB\SP\SP_D_DeleteRole.sql = CMS\DB\SP\SP_D_DeleteRole.sql
+		CMS\DB\SP\SP_D_DeleteSchedule.sql = CMS\DB\SP\SP_D_DeleteSchedule.sql
+		CMS\DB\SP\SP_D_DeleteScore.sql = CMS\DB\SP\SP_D_DeleteScore.sql
+		CMS\DB\SP\SP_D_DeleteScoreName.sql = CMS\DB\SP\SP_D_DeleteScoreName.sql
+		CMS\DB\SP\SP_D_DeleteStartListByScheduleIDAndParticipantID.sql = CMS\DB\SP\SP_D_DeleteStartListByScheduleIDAndParticipantID.sql
+		CMS\DB\SP\SP_D_DeleteStartListParticipant.sql = CMS\DB\SP\SP_D_DeleteStartListParticipant.sql
+		CMS\DB\SP\SP_D_DeleteTeam.sql = CMS\DB\SP\SP_D_DeleteTeam.sql
+		CMS\DB\SP\SP_I_InsertAdminUserDetail.sql = CMS\DB\SP\SP_I_InsertAdminUserDetail.sql
+		CMS\DB\SP\SP_I_InsertAdminUserInRole.sql = CMS\DB\SP\SP_I_InsertAdminUserInRole.sql
+		CMS\DB\SP\SP_I_InsertDataGridColumn.sql = CMS\DB\SP\SP_I_InsertDataGridColumn.sql
+		CMS\DB\SP\SP_I_InsertEvent.sql = CMS\DB\SP\SP_I_InsertEvent.sql
+		CMS\DB\SP\SP_I_InsertFile.sql = CMS\DB\SP\SP_I_InsertFile.sql
+		CMS\DB\SP\SP_I_InsertFileInEvent.sql = CMS\DB\SP\SP_I_InsertFileInEvent.sql
+		CMS\DB\SP\SP_I_InsertLeagueForIndividual.sql = CMS\DB\SP\SP_I_InsertLeagueForIndividual.sql
+		CMS\DB\SP\SP_I_InsertLeagueForTeam.sql = CMS\DB\SP\SP_I_InsertLeagueForTeam.sql
+		CMS\DB\SP\SP_I_InsertModule.sql = CMS\DB\SP\SP_I_InsertModule.sql
+		CMS\DB\SP\SP_I_InsertModuleInRole.sql = CMS\DB\SP\SP_I_InsertModuleInRole.sql
+		CMS\DB\SP\SP_I_InsertParticipantDetail.sql = CMS\DB\SP\SP_I_InsertParticipantDetail.sql
+		CMS\DB\SP\SP_I_InsertReferee.sql = CMS\DB\SP\SP_I_InsertReferee.sql
+		CMS\DB\SP\SP_I_InsertReferenceCategory.sql = CMS\DB\SP\SP_I_InsertReferenceCategory.sql
+		CMS\DB\SP\SP_I_InsertRole.sql = CMS\DB\SP\SP_I_InsertRole.sql
+		CMS\DB\SP\SP_I_InsertScheduleDetail.sql = CMS\DB\SP\SP_I_InsertScheduleDetail.sql
+		CMS\DB\SP\SP_I_InsertScoreForParticipantInSchedule.sql = CMS\DB\SP\SP_I_InsertScoreForParticipantInSchedule.sql
+		CMS\DB\SP\SP_I_InsertScoreForTeamInSchedule.sql = CMS\DB\SP\SP_I_InsertScoreForTeamInSchedule.sql
+		CMS\DB\SP\SP_I_InsertScoreName.sql = CMS\DB\SP\SP_I_InsertScoreName.sql
+		CMS\DB\SP\SP_I_InsertStartList.sql = CMS\DB\SP\SP_I_InsertStartList.sql
+		CMS\DB\SP\SP_I_InsertStartListName.sql = CMS\DB\SP\SP_I_InsertStartListName.sql
+		CMS\DB\SP\SP_I_InsertStatisticForParticipantInSchedule.sql = CMS\DB\SP\SP_I_InsertStatisticForParticipantInSchedule.sql
+		CMS\DB\SP\SP_I_InsertStatisticName.sql = CMS\DB\SP\SP_I_InsertStatisticName.sql
+		CMS\DB\SP\SP_I_InsertTeam.sql = CMS\DB\SP\SP_I_InsertTeam.sql
+		CMS\DB\SP\SP_S_GetAdminLoginSession.sql = CMS\DB\SP\SP_S_GetAdminLoginSession.sql
+		CMS\DB\SP\SP_S_GetAdminUser.sql = CMS\DB\SP\SP_S_GetAdminUser.sql
+		CMS\DB\SP\SP_S_GetAdminUserByLoginID.sql = CMS\DB\SP\SP_S_GetAdminUserByLoginID.sql
+		CMS\DB\SP\SP_S_GetAdminUserInRole.sql = CMS\DB\SP\SP_S_GetAdminUserInRole.sql
+		CMS\DB\SP\SP_S_GetAdminUserList.sql = CMS\DB\SP\SP_S_GetAdminUserList.sql
+		CMS\DB\SP\SP_S_GetBrokenRecord.sql = CMS\DB\SP\SP_S_GetBrokenRecord.sql
+		CMS\DB\SP\SP_S_GetCountry.sql = CMS\DB\SP\SP_S_GetCountry.sql
+		CMS\DB\SP\SP_S_GetDataColumnByDataGridName.sql = CMS\DB\SP\SP_S_GetDataColumnByDataGridName.sql
+		CMS\DB\SP\SP_S_GetDataColumnList.sql = CMS\DB\SP\SP_S_GetDataColumnList.sql
+		CMS\DB\SP\SP_S_GetDataColumnName.sql = CMS\DB\SP\SP_S_GetDataColumnName.sql
+		CMS\DB\SP\SP_S_GetEventAthletes.sql = CMS\DB\SP\SP_S_GetEventAthletes.sql
+		CMS\DB\SP\SP_S_GetEventDetails.sql = CMS\DB\SP\SP_S_GetEventDetails.sql
+		CMS\DB\SP\SP_S_GetEventList.sql = CMS\DB\SP\SP_S_GetEventList.sql
+		CMS\DB\SP\SP_S_GetFileInEvent.sql = CMS\DB\SP\SP_S_GetFileInEvent.sql
+		CMS\DB\SP\SP_S_GetFunctionName.sql = CMS\DB\SP\SP_S_GetFunctionName.sql
+		CMS\DB\SP\SP_S_GetGeneralSchedule.sql = CMS\DB\SP\SP_S_GetGeneralSchedule.sql
+		CMS\DB\SP\SP_S_GetInitialRecord.sql = CMS\DB\SP\SP_S_GetInitialRecord.sql
+		CMS\DB\SP\SP_S_GetKnockoutSummary.sql = CMS\DB\SP\SP_S_GetKnockoutSummary.sql
+		CMS\DB\SP\SP_S_GetKnockoutSummaryForTeam.sql = CMS\DB\SP\SP_S_GetKnockoutSummaryForTeam.sql
+		CMS\DB\SP\SP_S_GetLatestMedalist.sql = CMS\DB\SP\SP_S_GetLatestMedalist.sql
+		CMS\DB\SP\SP_S_GetLeagueForIndividual.sql = CMS\DB\SP\SP_S_GetLeagueForIndividual.sql
+		CMS\DB\SP\SP_S_GetLeagueForTeam.sql = CMS\DB\SP\SP_S_GetLeagueForTeam.sql
+		CMS\DB\SP\SP_S_GetLeagueSummary.sql = CMS\DB\SP\SP_S_GetLeagueSummary.sql
+		CMS\DB\SP\SP_S_GetLeagueSummaryForTeam.sql = CMS\DB\SP\SP_S_GetLeagueSummaryForTeam.sql
+		CMS\DB\SP\SP_S_GetLiveSchedule.sql = CMS\DB\SP\SP_S_GetLiveSchedule.sql
+		CMS\DB\SP\SP_S_GetMedalAndFinalRanking.sql = CMS\DB\SP\SP_S_GetMedalAndFinalRanking.sql
+		CMS\DB\SP\SP_S_GetMedallist.sql = CMS\DB\SP\SP_S_GetMedallist.sql
+		CMS\DB\SP\SP_S_GetMedalStandings.sql = CMS\DB\SP\SP_S_GetMedalStandings.sql
+		CMS\DB\SP\SP_S_GetMedalStandingsByCountry.sql = CMS\DB\SP\SP_S_GetMedalStandingsByCountry.sql
+		CMS\DB\SP\SP_S_GetModule.sql = CMS\DB\SP\SP_S_GetModule.sql
+		CMS\DB\SP\SP_S_GetModuleInRole.sql = CMS\DB\SP\SP_S_GetModuleInRole.sql
+		CMS\DB\SP\SP_S_GetMultiMedallist.sql = CMS\DB\SP\SP_S_GetMultiMedallist.sql
+		CMS\DB\SP\SP_S_GetPageName.sql = CMS\DB\SP\SP_S_GetPageName.sql
+		CMS\DB\SP\SP_S_GetPartcipantAndScore.sql = CMS\DB\SP\SP_S_GetPartcipantAndScore.sql
+		CMS\DB\SP\SP_S_GetPartcipantAndStatistic.sql = CMS\DB\SP\SP_S_GetPartcipantAndStatistic.sql
+		CMS\DB\SP\SP_S_GetParticipant.sql = CMS\DB\SP\SP_S_GetParticipant.sql
+		CMS\DB\SP\SP_S_GetParticipantBiography.sql = CMS\DB\SP\SP_S_GetParticipantBiography.sql
+		CMS\DB\SP\SP_S_GetParticipantDetail.sql = CMS\DB\SP\SP_S_GetParticipantDetail.sql
+		CMS\DB\SP\SP_S_GetParticipantEvent.sql = CMS\DB\SP\SP_S_GetParticipantEvent.sql
+		CMS\DB\SP\SP_S_GetParticipantInEvent.sql = CMS\DB\SP\SP_S_GetParticipantInEvent.sql
+		CMS\DB\SP\SP_S_GetParticipantList.sql = CMS\DB\SP\SP_S_GetParticipantList.sql
+		CMS\DB\SP\SP_S_GetParticipantResult.sql = CMS\DB\SP\SP_S_GetParticipantResult.sql
+		CMS\DB\SP\SP_S_GetReferee.sql = CMS\DB\SP\SP_S_GetReferee.sql
+		CMS\DB\SP\SP_S_GetReferenceByReferenceCategoryID.sql = CMS\DB\SP\SP_S_GetReferenceByReferenceCategoryID.sql
+		CMS\DB\SP\SP_S_GetReferenceCategory.sql = CMS\DB\SP\SP_S_GetReferenceCategory.sql
+		CMS\DB\SP\SP_S_GetRole.sql = CMS\DB\SP\SP_S_GetRole.sql
+		CMS\DB\SP\SP_S_GetSchedule.sql = CMS\DB\SP\SP_S_GetSchedule.sql
+		CMS\DB\SP\SP_S_GetScheduleHeaderGroupedByDateFilteredByCountry.sql = CMS\DB\SP\SP_S_GetScheduleHeaderGroupedByDateFilteredByCountry.sql
+		CMS\DB\SP\SP_S_GetScheduleHeaderGroupedByDateFilteredBySport.sql = CMS\DB\SP\SP_S_GetScheduleHeaderGroupedByDateFilteredBySport.sql
+		CMS\DB\SP\SP_S_GetScheduleHeaderGroupedBySportFilteredByDate.sql = CMS\DB\SP\SP_S_GetScheduleHeaderGroupedBySportFilteredByDate.sql
+		CMS\DB\SP\SP_S_GetScheduleList.sql = CMS\DB\SP\SP_S_GetScheduleList.sql
+		CMS\DB\SP\SP_S_GetScheduleListForBanner.sql = CMS\DB\SP\SP_S_GetScheduleListForBanner.sql
+		CMS\DB\SP\SP_S_GetScoreName.sql = CMS\DB\SP\SP_S_GetScoreName.sql
+		CMS\DB\SP\SP_S_GetSport.sql = CMS\DB\SP\SP_S_GetSport.sql
+		CMS\DB\SP\SP_S_GetSportClass.sql = CMS\DB\SP\SP_S_GetSportClass.sql
+		CMS\DB\SP\SP_S_GetSportDetails.sql = CMS\DB\SP\SP_S_GetSportDetails.sql
+		CMS\DB\SP\SP_S_GetSportEventSchedule.sql = CMS\DB\SP\SP_S_GetSportEventSchedule.sql
+		CMS\DB\SP\SP_S_GetStartListMaintenance.sql = CMS\DB\SP\SP_S_GetStartListMaintenance.sql
+		CMS\DB\SP\SP_S_GetStartListName.sql = CMS\DB\SP\SP_S_GetStartListName.sql
+		CMS\DB\SP\SP_S_GetStartListParticipantList.sql = CMS\DB\SP\SP_S_GetStartListParticipantList.sql
+		CMS\DB\SP\SP_S_GetStatisticName.sql = CMS\DB\SP\SP_S_GetStatisticName.sql
+		CMS\DB\SP\SP_S_GetTeam.sql = CMS\DB\SP\SP_S_GetTeam.sql
+		CMS\DB\SP\SP_S_GetTeamAndScore.sql = CMS\DB\SP\SP_S_GetTeamAndScore.sql
+		CMS\DB\SP\SP_S_GetTeamBiography.sql = CMS\DB\SP\SP_S_GetTeamBiography.sql
+		CMS\DB\SP\SP_S_GetTeamEvent.sql = CMS\DB\SP\SP_S_GetTeamEvent.sql
+		CMS\DB\SP\SP_S_GetXMLLatestMedalist.sql = CMS\DB\SP\SP_S_GetXMLLatestMedalist.sql
+		CMS\DB\SP\SP_S_GetXMLMedalStanding.sql = CMS\DB\SP\SP_S_GetXMLMedalStanding.sql
+		CMS\DB\SP\SP_S_GetXMLSchedule.sql = CMS\DB\SP\SP_S_GetXMLSchedule.sql
+		CMS\DB\SP\SP_U_UpdateAdminLoginSessionGUID.sql = CMS\DB\SP\SP_U_UpdateAdminLoginSessionGUID.sql
+		CMS\DB\SP\SP_U_UpdateAdminUserDetail.sql = CMS\DB\SP\SP_U_UpdateAdminUserDetail.sql
+		CMS\DB\SP\SP_U_UpdateAdminUserInRole.sql = CMS\DB\SP\SP_U_UpdateAdminUserInRole.sql
+		CMS\DB\SP\SP_U_UpdateDataGridColumn.sql = CMS\DB\SP\SP_U_UpdateDataGridColumn.sql
+		CMS\DB\SP\SP_U_UpdateEvent.sql = CMS\DB\SP\SP_U_UpdateEvent.sql
+		CMS\DB\SP\SP_U_UpdateLeague.sql = CMS\DB\SP\SP_U_UpdateLeague.sql
+		CMS\DB\SP\SP_U_UpdateModule.sql = CMS\DB\SP\SP_U_UpdateModule.sql
+		CMS\DB\SP\SP_U_UpdateModuleInRole.sql = CMS\DB\SP\SP_U_UpdateModuleInRole.sql
+		CMS\DB\SP\SP_U_UpdateParticipantDetail.sql = CMS\DB\SP\SP_U_UpdateParticipantDetail.sql
+		CMS\DB\SP\SP_U_UpdateParticipantInEvent.sql = CMS\DB\SP\SP_U_UpdateParticipantInEvent.sql
+		CMS\DB\SP\SP_U_UpdateReferee.sql = CMS\DB\SP\SP_U_UpdateReferee.sql
+		CMS\DB\SP\SP_U_UpdateRole.sql = CMS\DB\SP\SP_U_UpdateRole.sql
+		CMS\DB\SP\SP_U_UpdateScheduleDetail.sql = CMS\DB\SP\SP_U_UpdateScheduleDetail.sql
+		CMS\DB\SP\SP_U_UpdateScheduleExtraDetail.sql = CMS\DB\SP\SP_U_UpdateScheduleExtraDetail.sql
+		CMS\DB\SP\SP_U_UpdateScore.sql = CMS\DB\SP\SP_U_UpdateScore.sql
+		CMS\DB\SP\SP_U_UpdateScoreName.sql = CMS\DB\SP\SP_U_UpdateScoreName.sql
+		CMS\DB\SP\SP_U_UpdateStartList.sql = CMS\DB\SP\SP_U_UpdateStartList.sql
+		CMS\DB\SP\SP_U_UpdateStartListAssignTeam.sql = CMS\DB\SP\SP_U_UpdateStartListAssignTeam.sql
+		CMS\DB\SP\SP_U_UpdateStartListByScheduleIDAndParticipantID.sql = CMS\DB\SP\SP_U_UpdateStartListByScheduleIDAndParticipantID.sql
+		CMS\DB\SP\SP_U_UpdateStartListName.sql = CMS\DB\SP\SP_U_UpdateStartListName.sql
+		CMS\DB\SP\SP_U_UpdateStartListPosition.sql = CMS\DB\SP\SP_U_UpdateStartListPosition.sql
+		CMS\DB\SP\SP_U_UpdateStatistic.sql = CMS\DB\SP\SP_U_UpdateStatistic.sql
+		CMS\DB\SP\SP_U_UpdateStatisticName.sql = CMS\DB\SP\SP_U_UpdateStatisticName.sql
+		CMS\DB\SP\SP_U_UpdateTeam.sql = CMS\DB\SP\SP_U_UpdateTeam.sql
+		CMS\DB\SP\vw_CountryInSchedule.sql = CMS\DB\SP\vw_CountryInSchedule.sql
+		CMS\DB\SP\vw_TeamInSchedule.sql = CMS\DB\SP\vw_TeamInSchedule.sql
+		CMS\DB\SP\vw_TeamVersus.sql = CMS\DB\SP\vw_TeamVersus.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "CMS\CL\AR\Common\Common.csproj", "{C6AC5CAB-EE16-4BF9-B2CF-0ECB5FB00295}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{7C3BAD38-2948-4E0F-997A-C93A34B9EE78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EmailService", "EmailService", "{E9F6B104-C927-4810-9020-526CBF3D9890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailService", "Engine\EmailService\EmailService\EmailService.csproj", "{314F8280-0993-4256-A27A-3B952FEBF82C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference", "Reference", "{568AAE51-7344-4497-A7A0-1BF3DA10CB99}"
+	ProjectSection(SolutionItems) = preProject
+		Engine\EmailService\Reference\Microsoft.Practices.EnterpriseLibrary.Common.dll = Engine\EmailService\Reference\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		Engine\EmailService\Reference\Microsoft.Practices.EnterpriseLibrary.Data.dll = Engine\EmailService\Reference\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		Engine\EmailService\Reference\Microsoft.Practices.ServiceLocation.dll = Engine\EmailService\Reference\Microsoft.Practices.ServiceLocation.dll
+		Engine\EmailService\Reference\Microsoft.Practices.Unity.dll = Engine\EmailService\Reference\Microsoft.Practices.Unity.dll
+		Engine\EmailService\Reference\Microsoft.Practices.Unity.Interception.dll = Engine\EmailService\Reference\Microsoft.Practices.Unity.Interception.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppBase", "AppBase", "{84A0D541-CDFD-42AF-A36D-BF07C472A926}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference", "Reference", "{853AC756-183B-4F5D-BD41-D6CCA8D0F414}"
+	ProjectSection(SolutionItems) = preProject
+		Engine\AppBase\Reference\Microsoft.Practices.EnterpriseLibrary.Common.dll = Engine\AppBase\Reference\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		Engine\AppBase\Reference\Microsoft.Practices.EnterpriseLibrary.Data.dll = Engine\AppBase\Reference\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		Engine\AppBase\Reference\Microsoft.Practices.ServiceLocation.dll = Engine\AppBase\Reference\Microsoft.Practices.ServiceLocation.dll
+		Engine\AppBase\Reference\Microsoft.Practices.Unity.dll = Engine\AppBase\Reference\Microsoft.Practices.Unity.dll
+		Engine\AppBase\Reference\Microsoft.Practices.Unity.Interception.dll = Engine\AppBase\Reference\Microsoft.Practices.Unity.Interception.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Universal.X307.AppBase", "Engine\AppBase\AppBase\Universal.X307.AppBase.csproj", "{5449FF7E-DFC6-45FB-9F4B-2DE6FB7C6A24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdmissionControl", "AdmissionControl", "{05EAA464-DF0D-4DA6-9AFE-CA620E305023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdmissionControl", "Engine\AdmissionControl\AdmissionControl\AdmissionControl.csproj", "{AD493930-07B4-42F4-AED9-4FC5DA212B5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference", "Reference", "{039B4B15-9BB1-4E30-A5BD-FC863565EEF6}"
+	ProjectSection(SolutionItems) = preProject
+		Engine\AdmissionControl\Reference\Microsoft.Practices.EnterpriseLibrary.Common.dll = Engine\AdmissionControl\Reference\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		Engine\AdmissionControl\Reference\Microsoft.Practices.EnterpriseLibrary.Data.dll = Engine\AdmissionControl\Reference\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		Engine\AdmissionControl\Reference\Microsoft.Practices.ServiceLocation.dll = Engine\AdmissionControl\Reference\Microsoft.Practices.ServiceLocation.dll
+		Engine\AdmissionControl\Reference\Microsoft.Practices.Unity.dll = Engine\AdmissionControl\Reference\Microsoft.Practices.Unity.dll
+		Engine\AdmissionControl\Reference\Microsoft.Practices.Unity.Interception.dll = Engine\AdmissionControl\Reference\Microsoft.Practices.Unity.Interception.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MC", "MC", "{437914CE-28B0-47AB-BA7D-DA2424F72E3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BF", "BF", "{1A57CCA9-A7ED-4BB3-86A2-F487DEB27640}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DA", "DA", "{80307B2F-867E-4B66-AE01-44092E8052D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DS", "DS", "{BE5DC482-8FFE-4AD1-9403-09C604C73689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetitionFacade", "CMS\CL\MC\BF\CompetitionFacade\CompetitionFacade.csproj", "{320CBDEB-83F2-4ED5-8AC3-5531D979402C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetitionDataAccess", "CMS\CL\MC\DA\CompetitionDataAccess\CompetitionDataAccess.csproj", "{F7CD8336-63AF-469B-B367-3B0B63D94F90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetitionDataSet", "CMS\CL\MC\DS\CompetitionDataSet\CompetitionDataSet.csproj", "{E2C609A6-08BC-451D-B39D-0C1835EF56DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Result.Web", "CMS\Web\Result.Web\Result.Web.csproj", "{0055D877-5A4E-41DC-A421-0DD157C759D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchDataProcess", "Engine\BatchDataProcess\BatchDataProcess.csproj", "{D7EFB43A-4111-453D-8C9E-42488F64156B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BacthDataProcess", "BacthDataProcess", "{C20BEB64-EBF1-471C-8B82-B1E3CB637941}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SVC.Web", "CMS\Web\SVC.Web\SVC.Web.csproj", "{CB8E30F7-A1F0-4636-B919-E30EBF9D6BCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XMLGenerator", "XMLGenerator", "{2F4B4717-094F-4951-84CC-791165A35C26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLGenerator", "Engine\XMLGenerator\XMLGenerator\XMLGenerator.csproj", "{85896160-939F-40DA-921A-A82D11505E46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BatchProcessParticipant", "BatchProcessParticipant", "{7595ECB0-D650-4F46-86BB-7A81E94B7231}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchProcessParticipant", "Engine\BatchProcessParticipant\BatchProcessParticipant\BatchProcessParticipant.csproj", "{F06B3788-BFEF-4413-B66C-30622A30B314}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Result.Mobile", "CMS\Web\Result.Mobile\Result.Mobile.csproj", "{E71ECA44-5128-4B8E-931E-224201F5F335}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE5F68EB-6499-4821-9D6A-8BD809CA2CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5F68EB-6499-4821-9D6A-8BD809CA2CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5F68EB-6499-4821-9D6A-8BD809CA2CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5F68EB-6499-4821-9D6A-8BD809CA2CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{890DF807-CAFE-44F0-9C22-0A27FB973268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{890DF807-CAFE-44F0-9C22-0A27FB973268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{890DF807-CAFE-44F0-9C22-0A27FB973268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{890DF807-CAFE-44F0-9C22-0A27FB973268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B1698D-7835-4992-B337-B6A9F392FA18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B1698D-7835-4992-B337-B6A9F392FA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B1698D-7835-4992-B337-B6A9F392FA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B1698D-7835-4992-B337-B6A9F392FA18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACE1DC6A-7999-47B6-A590-9AAAEF231ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACE1DC6A-7999-47B6-A590-9AAAEF231ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACE1DC6A-7999-47B6-A590-9AAAEF231ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACE1DC6A-7999-47B6-A590-9AAAEF231ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E03E7E7F-0BA9-4D21-B4E2-AA4DBD37577A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E03E7E7F-0BA9-4D21-B4E2-AA4DBD37577A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E03E7E7F-0BA9-4D21-B4E2-AA4DBD37577A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E03E7E7F-0BA9-4D21-B4E2-AA4DBD37577A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6B8634-24B6-48A1-9311-2C86B7F9177E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6B8634-24B6-48A1-9311-2C86B7F9177E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6B8634-24B6-48A1-9311-2C86B7F9177E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6B8634-24B6-48A1-9311-2C86B7F9177E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F2A120D-F930-4F3A-8984-ED9571890593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F2A120D-F930-4F3A-8984-ED9571890593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F2A120D-F930-4F3A-8984-ED9571890593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F2A120D-F930-4F3A-8984-ED9571890593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5EBEC0B-AE21-4E0D-A73F-7B1002FBB3DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5EBEC0B-AE21-4E0D-A73F-7B1002FBB3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5EBEC0B-AE21-4E0D-A73F-7B1002FBB3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5EBEC0B-AE21-4E0D-A73F-7B1002FBB3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6AC5CAB-EE16-4BF9-B2CF-0ECB5FB00295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6AC5CAB-EE16-4BF9-B2CF-0ECB5FB00295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6AC5CAB-EE16-4BF9-B2CF-0ECB5FB00295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6AC5CAB-EE16-4BF9-B2CF-0ECB5FB00295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{314F8280-0993-4256-A27A-3B952FEBF82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{314F8280-0993-4256-A27A-3B952FEBF82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{314F8280-0993-4256-A27A-3B952FEBF82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{314F8280-0993-4256-A27A-3B952FEBF82C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5449FF7E-DFC6-45FB-9F4B-2DE6FB7C6A24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5449FF7E-DFC6-45FB-9F4B-2DE6FB7C6A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5449FF7E-DFC6-45FB-9F4B-2DE6FB7C6A24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5449FF7E-DFC6-45FB-9F4B-2DE6FB7C6A24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD493930-07B4-42F4-AED9-4FC5DA212B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD493930-07B4-42F4-AED9-4FC5DA212B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD493930-07B4-42F4-AED9-4FC5DA212B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD493930-07B4-42F4-AED9-4FC5DA212B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320CBDEB-83F2-4ED5-8AC3-5531D979402C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320CBDEB-83F2-4ED5-8AC3-5531D979402C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320CBDEB-83F2-4ED5-8AC3-5531D979402C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320CBDEB-83F2-4ED5-8AC3-5531D979402C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7CD8336-63AF-469B-B367-3B0B63D94F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7CD8336-63AF-469B-B367-3B0B63D94F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7CD8336-63AF-469B-B367-3B0B63D94F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7CD8336-63AF-469B-B367-3B0B63D94F90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2C609A6-08BC-451D-B39D-0C1835EF56DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C609A6-08BC-451D-B39D-0C1835EF56DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C609A6-08BC-451D-B39D-0C1835EF56DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C609A6-08BC-451D-B39D-0C1835EF56DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0055D877-5A4E-41DC-A421-0DD157C759D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0055D877-5A4E-41DC-A421-0DD157C759D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0055D877-5A4E-41DC-A421-0DD157C759D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0055D877-5A4E-41DC-A421-0DD157C759D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7EFB43A-4111-453D-8C9E-42488F64156B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7EFB43A-4111-453D-8C9E-42488F64156B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7EFB43A-4111-453D-8C9E-42488F64156B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7EFB43A-4111-453D-8C9E-42488F64156B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB8E30F7-A1F0-4636-B919-E30EBF9D6BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB8E30F7-A1F0-4636-B919-E30EBF9D6BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB8E30F7-A1F0-4636-B919-E30EBF9D6BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB8E30F7-A1F0-4636-B919-E30EBF9D6BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85896160-939F-40DA-921A-A82D11505E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85896160-939F-40DA-921A-A82D11505E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85896160-939F-40DA-921A-A82D11505E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85896160-939F-40DA-921A-A82D11505E46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F06B3788-BFEF-4413-B66C-30622A30B314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06B3788-BFEF-4413-B66C-30622A30B314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06B3788-BFEF-4413-B66C-30622A30B314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06B3788-BFEF-4413-B66C-30622A30B314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E71ECA44-5128-4B8E-931E-224201F5F335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E71ECA44-5128-4B8E-931E-224201F5F335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E71ECA44-5128-4B8E-931E-224201F5F335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E71ECA44-5128-4B8E-931E-224201F5F335}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D5E20948-5DAC-409E-9B06-165217B25AE5} = {26530E54-052D-4745-8473-7A732C52B426}
+		{92BDC2AF-9903-44DF-88B3-582646EDE4A4} = {26530E54-052D-4745-8473-7A732C52B426}
+		{CE5F68EB-6499-4821-9D6A-8BD809CA2CD9} = {D5E20948-5DAC-409E-9B06-165217B25AE5}
+		{890DF807-CAFE-44F0-9C22-0A27FB973268} = {92BDC2AF-9903-44DF-88B3-582646EDE4A4}
+		{9DFFE619-457A-47F7-BD84-263F761E129E} = {26530E54-052D-4745-8473-7A732C52B426}
+		{42B35F5F-D77B-4CFF-B0AA-8A484A1C4C04} = {26530E54-052D-4745-8473-7A732C52B426}
+		{E7B0491B-32F3-4816-90D7-CC4286B31CD2} = {26530E54-052D-4745-8473-7A732C52B426}
+		{D75C17C3-2E0B-48A4-B24E-453887EAE707} = {E7B0491B-32F3-4816-90D7-CC4286B31CD2}
+		{BD630CE3-6D3F-45DD-8665-2F690F5F0FFD} = {E7B0491B-32F3-4816-90D7-CC4286B31CD2}
+		{CE156C00-9BB3-4441-A730-8FB9F2706491} = {BD630CE3-6D3F-45DD-8665-2F690F5F0FFD}
+		{07B1698D-7835-4992-B337-B6A9F392FA18} = {CE156C00-9BB3-4441-A730-8FB9F2706491}
+		{590D2958-9EFB-4396-BD8E-06CE23FA7E91} = {BD630CE3-6D3F-45DD-8665-2F690F5F0FFD}
+		{46536644-9A15-48F3-98F3-78E322E09342} = {BD630CE3-6D3F-45DD-8665-2F690F5F0FFD}
+		{ACE1DC6A-7999-47B6-A590-9AAAEF231ECF} = {590D2958-9EFB-4396-BD8E-06CE23FA7E91}
+		{E03E7E7F-0BA9-4D21-B4E2-AA4DBD37577A} = {46536644-9A15-48F3-98F3-78E322E09342}
+		{83475DCE-01C4-4178-AA80-D9E7883AD57A} = {E7B0491B-32F3-4816-90D7-CC4286B31CD2}
+		{E4CD1311-9D5C-4F79-9661-69D64BFF26AD} = {83475DCE-01C4-4178-AA80-D9E7883AD57A}
+		{C4E50B59-6A83-488A-A125-D7F910A8A472} = {83475DCE-01C4-4178-AA80-D9E7883AD57A}
+		{4AF0EB9F-7444-46A2-BD2A-32E533C1DC17} = {83475DCE-01C4-4178-AA80-D9E7883AD57A}
+		{EC6B8634-24B6-48A1-9311-2C86B7F9177E} = {E4CD1311-9D5C-4F79-9661-69D64BFF26AD}
+		{5F2A120D-F930-4F3A-8984-ED9571890593} = {C4E50B59-6A83-488A-A125-D7F910A8A472}
+		{A5EBEC0B-AE21-4E0D-A73F-7B1002FBB3DF} = {4AF0EB9F-7444-46A2-BD2A-32E533C1DC17}
+		{2D5A2F9B-1C4F-4DD0-88C4-74195FCA5C53} = {9DFFE619-457A-47F7-BD84-263F761E129E}
+		{C6AC5CAB-EE16-4BF9-B2CF-0ECB5FB00295} = {D75C17C3-2E0B-48A4-B24E-453887EAE707}
+		{E9F6B104-C927-4810-9020-526CBF3D9890} = {7C3BAD38-2948-4E0F-997A-C93A34B9EE78}
+		{314F8280-0993-4256-A27A-3B952FEBF82C} = {E9F6B104-C927-4810-9020-526CBF3D9890}
+		{568AAE51-7344-4497-A7A0-1BF3DA10CB99} = {E9F6B104-C927-4810-9020-526CBF3D9890}
+		{84A0D541-CDFD-42AF-A36D-BF07C472A926} = {7C3BAD38-2948-4E0F-997A-C93A34B9EE78}
+		{853AC756-183B-4F5D-BD41-D6CCA8D0F414} = {84A0D541-CDFD-42AF-A36D-BF07C472A926}
+		{5449FF7E-DFC6-45FB-9F4B-2DE6FB7C6A24} = {84A0D541-CDFD-42AF-A36D-BF07C472A926}
+		{05EAA464-DF0D-4DA6-9AFE-CA620E305023} = {7C3BAD38-2948-4E0F-997A-C93A34B9EE78}
+		{AD493930-07B4-42F4-AED9-4FC5DA212B5B} = {05EAA464-DF0D-4DA6-9AFE-CA620E305023}
+		{039B4B15-9BB1-4E30-A5BD-FC863565EEF6} = {05EAA464-DF0D-4DA6-9AFE-CA620E305023}
+		{437914CE-28B0-47AB-BA7D-DA2424F72E3E} = {E7B0491B-32F3-4816-90D7-CC4286B31CD2}
+		{1A57CCA9-A7ED-4BB3-86A2-F487DEB27640} = {437914CE-28B0-47AB-BA7D-DA2424F72E3E}
+		{80307B2F-867E-4B66-AE01-44092E8052D1} = {437914CE-28B0-47AB-BA7D-DA2424F72E3E}
+		{BE5DC482-8FFE-4AD1-9403-09C604C73689} = {437914CE-28B0-47AB-BA7D-DA2424F72E3E}
+		{320CBDEB-83F2-4ED5-8AC3-5531D979402C} = {1A57CCA9-A7ED-4BB3-86A2-F487DEB27640}
+		{F7CD8336-63AF-469B-B367-3B0B63D94F90} = {80307B2F-867E-4B66-AE01-44092E8052D1}
+		{E2C609A6-08BC-451D-B39D-0C1835EF56DA} = {BE5DC482-8FFE-4AD1-9403-09C604C73689}
+		{0055D877-5A4E-41DC-A421-0DD157C759D5} = {D5E20948-5DAC-409E-9B06-165217B25AE5}
+		{D7EFB43A-4111-453D-8C9E-42488F64156B} = {C20BEB64-EBF1-471C-8B82-B1E3CB637941}
+		{C20BEB64-EBF1-471C-8B82-B1E3CB637941} = {7C3BAD38-2948-4E0F-997A-C93A34B9EE78}
+		{CB8E30F7-A1F0-4636-B919-E30EBF9D6BCA} = {D5E20948-5DAC-409E-9B06-165217B25AE5}
+		{2F4B4717-094F-4951-84CC-791165A35C26} = {7C3BAD38-2948-4E0F-997A-C93A34B9EE78}
+		{85896160-939F-40DA-921A-A82D11505E46} = {2F4B4717-094F-4951-84CC-791165A35C26}
+		{7595ECB0-D650-4F46-86BB-7A81E94B7231} = {7C3BAD38-2948-4E0F-997A-C93A34B9EE78}
+		{F06B3788-BFEF-4413-B66C-30622A30B314} = {7595ECB0-D650-4F46-86BB-7A81E94B7231}
+		{E71ECA44-5128-4B8E-931E-224201F5F335} = {D5E20948-5DAC-409E-9B06-165217B25AE5}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 22
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://swat-tfs.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CMS\\CL\\AR\\Common\\Common.csproj
+		SccProjectTopLevelParentUniqueName1 = SEM.sln
+		SccProjectName1 = CMS/CL/AR/Common
+		SccLocalPath1 = CMS\\CL\\AR\\Common
+		SccProjectUniqueName2 = CMS\\CL\\MS\\DS\\SystemMaintenanceDataset\\SystemMaintenanceDataset.csproj
+		SccProjectTopLevelParentUniqueName2 = SEM.sln
+		SccProjectName2 = CMS/CL/MS/DS/SystemMaintenanceDataset
+		SccLocalPath2 = CMS\\CL\\MS\\DS\\SystemMaintenanceDataset
+		SccProjectUniqueName3 = CMS\\CL\\MS\\DA\\SystemMaintenanceDataAccess\\SystemMaintenanceDataAccess.csproj
+		SccProjectTopLevelParentUniqueName3 = SEM.sln
+		SccProjectName3 = CMS/CL/MS/DA/SystemMaintenanceDataAccess
+		SccLocalPath3 = CMS\\CL\\MS\\DA\\SystemMaintenanceDataAccess
+		SccProjectUniqueName4 = CMS\\CL\\MS\\BF\\SystemMaintenanceFacade\\SystemMaintenanceFacade.csproj
+		SccProjectTopLevelParentUniqueName4 = SEM.sln
+		SccProjectName4 = CMS/CL/MS/BF/SystemMaintenanceFacade
+		SccLocalPath4 = CMS\\CL\\MS\\BF\\SystemMaintenanceFacade
+		SccProjectUniqueName5 = CMS\\CL\\MA\\DS\\AdministrationDataset\\AdministrationDataset.csproj
+		SccProjectTopLevelParentUniqueName5 = SEM.sln
+		SccProjectName5 = CMS/CL/MA/DS/AdministrationDataset
+		SccLocalPath5 = CMS\\CL\\MA\\DS\\AdministrationDataset
+		SccProjectUniqueName6 = CMS\\CL\\MA\\DA\\AdministrationDataAccess\\AdministrationDataAccess.csproj
+		SccProjectTopLevelParentUniqueName6 = SEM.sln
+		SccProjectName6 = CMS/CL/MA/DA/AdministrationDataAccess
+		SccLocalPath6 = CMS\\CL\\MA\\DA\\AdministrationDataAccess
+		SccProjectUniqueName7 = CMS\\CL\\MA\\BF\\AdministrationFacade\\AdministrationFacade.csproj
+		SccProjectTopLevelParentUniqueName7 = SEM.sln
+		SccProjectName7 = CMS/CL/MA/BF/AdministrationFacade
+		SccLocalPath7 = CMS\\CL\\MA\\BF\\AdministrationFacade
+		SccProjectUniqueName8 = CMS\\App\\CMS.App\\CMS.App.csproj
+		SccProjectTopLevelParentUniqueName8 = SEM.sln
+		SccProjectName8 = CMS/App/CMS.App
+		SccLocalPath8 = CMS\\App\\CMS.App
+		SccProjectUniqueName9 = CMS\\Web\\CMS.Web\\CMS.Web.csproj
+		SccProjectTopLevelParentUniqueName9 = SEM.sln
+		SccProjectName9 = CMS/Web/CMS.Web
+		SccLocalPath9 = CMS\\Web\\CMS.Web
+		SccProjectUniqueName10 = Engine\\EmailService\\EmailService\\EmailService.csproj
+		SccProjectTopLevelParentUniqueName10 = SEM.sln
+		SccProjectName10 = Engine/EmailService/EmailService
+		SccLocalPath10 = Engine\\EmailService\\EmailService
+		SccProjectUniqueName11 = Engine\\AppBase\\AppBase\\Universal.X307.AppBase.csproj
+		SccProjectTopLevelParentUniqueName11 = SEM.sln
+		SccProjectName11 = Engine/AppBase/AppBase
+		SccLocalPath11 = Engine\\AppBase\\AppBase
+		SccProjectUniqueName12 = Engine\\AdmissionControl\\AdmissionControl\\AdmissionControl.csproj
+		SccProjectTopLevelParentUniqueName12 = SEM.sln
+		SccProjectName12 = Engine/AdmissionControl/AdmissionControl
+		SccLocalPath12 = Engine\\AdmissionControl\\AdmissionControl
+		SccProjectUniqueName13 = CMS\\CL\\MC\\BF\\CompetitionFacade\\CompetitionFacade.csproj
+		SccProjectTopLevelParentUniqueName13 = SEM.sln
+		SccProjectName13 = CMS/CL/MC/BF/CompetitionFacade
+		SccLocalPath13 = CMS\\CL\\MC\\BF\\CompetitionFacade
+		SccProjectUniqueName14 = CMS\\CL\\MC\\DA\\CompetitionDataAccess\\CompetitionDataAccess.csproj
+		SccProjectTopLevelParentUniqueName14 = SEM.sln
+		SccProjectName14 = CMS/CL/MC/DA/CompetitionDataAccess
+		SccLocalPath14 = CMS\\CL\\MC\\DA\\CompetitionDataAccess
+		SccProjectUniqueName15 = CMS\\CL\\MC\\DS\\CompetitionDataSet\\CompetitionDataSet.csproj
+		SccProjectTopLevelParentUniqueName15 = SEM.sln
+		SccProjectName15 = CMS/CL/MC/DS/CompetitionDataSet
+		SccLocalPath15 = CMS\\CL\\MC\\DS\\CompetitionDataSet
+		SccProjectUniqueName16 = CMS\\Web\\Result.Web\\Result.Web.csproj
+		SccProjectTopLevelParentUniqueName16 = SEM.sln
+		SccProjectName16 = CMS/Web/Result.Web
+		SccLocalPath16 = CMS\\Web\\Result.Web
+		SccProjectUniqueName17 = Engine\\BatchDataProcess\\BatchDataProcess.csproj
+		SccProjectTopLevelParentUniqueName17 = SEM.sln
+		SccProjectName17 = Engine/BatchDataProcess
+		SccLocalPath17 = Engine\\BatchDataProcess
+		SccProjectUniqueName18 = CMS\\Web\\SVC.Web\\SVC.Web.csproj
+		SccProjectTopLevelParentUniqueName18 = SEM.sln
+		SccProjectName18 = CMS/Web/SVC.Web
+		SccLocalPath18 = CMS\\Web\\SVC.Web
+		SccProjectUniqueName19 = Engine\\XMLGenerator\\XMLGenerator\\XMLGenerator.csproj
+		SccProjectTopLevelParentUniqueName19 = SEM.sln
+		SccProjectName19 = Engine/XMLGenerator/XMLGenerator
+		SccLocalPath19 = Engine\\XMLGenerator\\XMLGenerator
+		SccProjectUniqueName20 = Engine\\BatchProcessParticipant\\BatchProcessParticipant\\BatchProcessParticipant.csproj
+		SccProjectTopLevelParentUniqueName20 = SEM.sln
+		SccProjectName20 = Engine/BatchProcessParticipant/BatchProcessParticipant
+		SccLocalPath20 = Engine\\BatchProcessParticipant\\BatchProcessParticipant
+		SccProjectUniqueName21 = CMS\\Web\\Result.Mobile\\Result.Mobile.csproj
+		SccProjectTopLevelParentUniqueName21 = SEM.sln
+		SccProjectName21 = CMS/Web/Result.Mobile
+		SccLocalPath21 = CMS\\Web\\Result.Mobile
+	EndGlobalSection
+EndGlobal

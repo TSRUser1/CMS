@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Competition" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/SEM.CMS.App/MC/Competition.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8080/SEM.CMS.App/MC/Competition.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/SEM.CMS.App/MC/Competition.svc?xsd=xsd2" namespace="http://tempuri.org/CompetitionDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:8080/SEM.CMS.App/MC/Competition.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICompetition_InsertScheduleDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertScheduleDetail" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_InsertScheduleDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertScheduleDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_UpdateScheduleDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateScheduleDetail" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_UpdateScheduleDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateScheduleDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_GetSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedule" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_GetSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_DeleteSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSchedule" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_DeleteSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_GetEventList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventList" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_GetEventList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_UpdateEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEvent" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_UpdateEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_DeleteEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEvent" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_DeleteEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_InsertEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEvent" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_InsertEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_GetEventDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_GetEventDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_GetStartListParticipantList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStartListParticipantList" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_GetStartListParticipantList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStartListParticipantListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_InsertStartList_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStartList" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_InsertStartList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStartListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_GetStartListMaintenance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStartListMaintenance" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_GetStartListMaintenance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStartListMaintenanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_UpdateStartList_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStartList" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_UpdateStartList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStartListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_UpdateStartListAssignTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStartListAssignTeam" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_UpdateStartListAssignTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStartListAssignTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_DeleteStartListParticipant_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStartListParticipant" />
+  </wsdl:message>
+  <wsdl:message name="ICompetition_DeleteStartListParticipant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStartListParticipantResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICompetition">
+    <wsdl:operation name="InsertScheduleDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/InsertScheduleDetail" message="tns:ICompetition_InsertScheduleDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/InsertScheduleDetailResponse" message="tns:ICompetition_InsertScheduleDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScheduleDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/UpdateScheduleDetail" message="tns:ICompetition_UpdateScheduleDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/UpdateScheduleDetailResponse" message="tns:ICompetition_UpdateScheduleDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/GetSchedule" message="tns:ICompetition_GetSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/GetScheduleResponse" message="tns:ICompetition_GetSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/DeleteSchedule" message="tns:ICompetition_DeleteSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/DeleteScheduleResponse" message="tns:ICompetition_DeleteSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/GetEventList" message="tns:ICompetition_GetEventList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/GetEventListResponse" message="tns:ICompetition_GetEventList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/UpdateEvent" message="tns:ICompetition_UpdateEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/UpdateEventResponse" message="tns:ICompetition_UpdateEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/DeleteEvent" message="tns:ICompetition_DeleteEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/DeleteEventResponse" message="tns:ICompetition_DeleteEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/InsertEvent" message="tns:ICompetition_InsertEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/InsertEventResponse" message="tns:ICompetition_InsertEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/GetEventDetails" message="tns:ICompetition_GetEventDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/GetEventDetailsResponse" message="tns:ICompetition_GetEventDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStartListParticipantList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/GetStartListParticipantList" message="tns:ICompetition_GetStartListParticipantList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/GetStartListParticipantListResponse" message="tns:ICompetition_GetStartListParticipantList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertStartList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/InsertStartList" message="tns:ICompetition_InsertStartList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/InsertStartListResponse" message="tns:ICompetition_InsertStartList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStartListMaintenance">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/GetStartListMaintenance" message="tns:ICompetition_GetStartListMaintenance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/GetStartListMaintenanceResponse" message="tns:ICompetition_GetStartListMaintenance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStartList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/UpdateStartList" message="tns:ICompetition_UpdateStartList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/UpdateStartListResponse" message="tns:ICompetition_UpdateStartList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStartListAssignTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/UpdateStartListAssignTeam" message="tns:ICompetition_UpdateStartListAssignTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/UpdateStartListAssignTeamResponse" message="tns:ICompetition_UpdateStartListAssignTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStartListParticipant">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICompetition/DeleteStartListParticipant" message="tns:ICompetition_DeleteStartListParticipant_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICompetition/DeleteStartListParticipantResponse" message="tns:ICompetition_DeleteStartListParticipant_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICompetition" type="tns:ICompetition">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertScheduleDetail">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/InsertScheduleDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScheduleDetail">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/UpdateScheduleDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedule">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/GetSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSchedule">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/DeleteSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventList">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/GetEventList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEvent">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/UpdateEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEvent">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/DeleteEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertEvent">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/InsertEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventDetails">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/GetEventDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStartListParticipantList">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/GetStartListParticipantList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertStartList">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/InsertStartList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStartListMaintenance">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/GetStartListMaintenance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStartList">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/UpdateStartList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStartListAssignTeam">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/UpdateStartListAssignTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStartListParticipant">
+      <soap:operation soapAction="http://tempuri.org/ICompetition/DeleteStartListParticipant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Competition">
+    <wsdl:port name="BasicHttpBinding_ICompetition" binding="tns:BasicHttpBinding_ICompetition">
+      <soap:address location="http://localhost:8080/SEM.CMS.App/MC/Competition.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

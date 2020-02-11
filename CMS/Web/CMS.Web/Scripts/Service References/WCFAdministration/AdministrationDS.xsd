@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/AdministrationDS.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/AdministrationDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/AdministrationDS.xsd" id="AdministrationDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="AdministrationDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AdminUser">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AdminUserID" type="xs:int" />
+              <xs:element minOccurs="0" name="LoginID" type="xs:string" />
+              <xs:element minOccurs="0" name="FullName" type="xs:string" />
+              <xs:element minOccurs="0" name="Password" type="xs:string" />
+              <xs:element minOccurs="0" name="Designation" type="xs:string" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+              <xs:element minOccurs="0" name="HasRole" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Response">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ResponseCode" type="xs:string" />
+              <xs:element minOccurs="0" name="ResponseMessage" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Module">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ModuleID" type="xs:int" />
+              <xs:element minOccurs="0" name="ModuleName" type="xs:string" />
+              <xs:element minOccurs="0" name="FunctionName" type="xs:string" />
+              <xs:element minOccurs="0" name="PageName" type="xs:string" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Role">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="RoleID" type="xs:int" />
+              <xs:element minOccurs="0" name="RoleName" type="xs:string" />
+              <xs:element minOccurs="0" name="RoleDescription" type="xs:string" />
+              <xs:element minOccurs="0" name="HasRole" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdminUserInRole">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AdminUserInRoleID" type="xs:int" />
+              <xs:element minOccurs="0" name="AdminUserID" type="xs:int" />
+              <xs:element minOccurs="0" name="RoleID" type="xs:int" />
+              <xs:element minOccurs="0" name="HasRole" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ModuleInRole">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ModuleInRoleID" type="xs:int" />
+              <xs:element minOccurs="0" name="RoleID" type="xs:int" />
+              <xs:element minOccurs="0" name="ModuleID" type="xs:int" />
+              <xs:element minOccurs="0" name="IsReadWrite" type="xs:boolean" />
+              <xs:element minOccurs="0" name="IsReadOnly" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ModifiedBy" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

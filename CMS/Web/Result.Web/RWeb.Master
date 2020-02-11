@@ -1,0 +1,309 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RWeb.master.cs" Inherits="SEM.CMS.Result.Web.RWeb" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>8th ASEAN Para Games 2015 - Singapore</title>
+
+    <meta charset="utf-8" />
+    <meta name="save" content="history" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link rel="icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="/css/reset.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/yamm.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/jcarousel.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-53307767-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/dropdown-menu.js"></script>
+    <script src="/js/jquery.jcarousel.min.js"></script>
+    <script src="/js/jquery.touchwipe.min.js"></script>
+    <script src="/js/jquery.highlight.js"></script>
+    <script src="/js/jquery.jcarousel-autoscroll.min.js"></script>
+    <script src="/js/jcarousel.ads.js"></script>
+    <script src="/js/jquery.trigger.js"></script>
+    <script src="/js/jquery-slidemenu.js"></script>
+    <script src="/js/jcarousel.responsive.js"></script>
+
+    <script type="text/javascript">
+        function BindLiveScheduleEvents() {
+            $('.wrapper .live-schedule-inner tr').each(function () {
+                $(this).on('click', function () {
+                    var url = $(this).find('input[type=hidden]').val();
+                    window.location.href = url;
+                });
+            });
+        }
+
+        function BindMedalStandingsEvents() {
+            $('.medal-standings td.sport-name img.img-sport').off('click').on('click', function () {
+                $(this).fadeOut(0).delay(3000).fadeIn(0);
+                $(this).siblings('span.label-sport-name').fadeIn(0).delay(3000).fadeOut(0);
+            });
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="FormRWeb" runat="server">
+        <asp:ScriptManager runat="server"></asp:ScriptManager>
+        <div class="mobile-shelf">
+            <div class="left-mobile-shelf">
+
+                <ul role="menu" class="main-menu">
+                    <li class="hidden-desktop"><a href="/Schedule/General.aspx">SCHEDULE & RESULTS</a></li>
+                    <li class="">
+                        <a href="/Schedule/BySport.aspx">SPORTS</a>
+                    </li>
+                    <li class="">
+                        <a href="/Medal/Standing.aspx">MEDALS</a>
+                    </li>
+                    <li class="">
+                        <a href="/Athletes/Biography.aspx">ENTRIES</a>
+                    </li>
+                    <li class="">
+                        <a href="/Schedule/ByNPC.aspx">NPC</a>
+                    </li>
+                </ul>
+                <ul class="mobile-shortcut">
+                    <li><a href="https://www.aseanparagames2015.com/" title="APG Official Site">APG Official Site</a></li>
+                    <%--<li><a href="https://www.aseanparagames2015.com/get-involved/ticketing" title="Tickets">Tickets</a></li>--%>
+                    <li><a href="https://www.aseanparagames2015.com/digital-stadium/mobile-app" title="Mobile Apps">Mobile Apps</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <header>
+                <div class="header-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <nav class="col-md-4 col-sm-12 col-xs-12 pull-right text-right social-media">
+                                <ul>
+                                    <li><a class="ic-twitter" href="https://twitter.com/apg_2015" target="_blank" title="twitter"></a></li>
+                                    <li><a class="ic-facebook" href="https://www.facebook.com/467844179992266" target="_blank" title="facebook"></a></li>
+                                    <li><a class="ic-youtube" href="https://instagram.com/apg_2015" target="_blank" title="instagram"></a></li>
+                                    <li><a class="ic-instagram" href="http://www.youtube.com/user/SingaporeSports" target="_blank" title="youtube"></a></li>
+                                </ul>
+                                <div class="go-to-top-wrapper">
+                                    <a id="goToTop-mobile" href="#">Back To Top <i class="up-caret"></i></a>
+                                </div>
+                            </nav>
+                            <nav class="shortcut-links">
+                                <ul>
+                                    <li><a href="https://www.aseanparagames2015.com/" title="APG Official Site">APG Official Site</a></li>
+                                    <%--<li><a href="https://www.aseanparagames2015.com/get-involved/ticketing" title="Tickets">Tickets</a></li>--%>
+                                    <li><a href="https://www.aseanparagames2015.com/digital-stadium/mobile-app" title="Mobile Apps">Mobile Apps</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <section class="top-wrapper">
+                </section>
+                <section class="bottom-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="logo-wrapper">
+                             
+                                    <a href="/Schedule/General.aspx" >
+                                        <img src="/img/header/apg_main_logo.png" alt="Asean Para Games 2015 - Singapore" class="logo" title="Asean Para Games 2015 - Singapore" /></a>
+                               
+                            </div>
+                            <div class="menu-wrapper">
+                                <nav class="navbar yamm navbar-default">
+                                    <div class="container-fluid">
+                                        <div>
+                                            <button type="button" id="slide-menu-toggle" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                                        </div>
+                                        <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                                            <ul class="nav navbar-nav main-navbar">
+                                                <li runat="server" id="liSchedule" class="">
+                                                    <a href="/Schedule/General.aspx">Schedule &amp; Results</a>
+                                                </li>
+                                                <li runat="server" id="liSports" class="">
+                                                    <a href="/Schedule/BySport.aspx">Sports</a>
+                                                </li>
+                                                <li runat="server" id="liMedals" class="">
+                                                    <a href="/Medal/Standing.aspx">Medals</a>
+                                                </li>
+                                                <li runat="server" id="liEntries" class=""><a href="/Athletes/Biography.aspx">Entries</a></li>
+                                                <li runat="server" id="liNPC" class=""><a href="/Schedule/ByNPC.aspx">NPC</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </header>
+
+            <!-- BEGIN CONTENT -->
+            <div>
+                <section class="body-content-wrapper">
+                    <div class="container">
+                        <div class="row content-header" id="divEventMenu" runat="server">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolderEventMenu" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolderRWeb" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                    </div>
+                </section>
+            </div>
+            <!-- END CONTENT -->
+
+            <section class="ads-wrapper">
+                <div class="container">
+                    <div class="row" style="margin:50px 0 30px 0">
+                        <div class="col-md-6" style="margin-top:10px;">
+                            <a href="https://www.aseanparagames2015.com/digital-stadium/mobile-app?utm_campaign=8thAPGTV&utm_source=parakop&utm_medium=banner" target="_blank">
+                                <img src="/img/ads/main/Footer_banner_Download.jpg" style="width: 100%" /></a>
+                        </div>
+                        <div class="col-md-6" style="margin-top:10px;">
+                            <a href="https://bit.ly/sportsgYT" target="_blank">
+                                <img src="/img/ads/main/Footer_banner_Subscribe.jpg" style="width: 100%" /></a>
+                        </div>
+
+                        <%--   <div>
+                            <a href="#"><img src="/img/ads/main/sponsor-banner.jpg" style="max-width:100%; height:auto;" /></a>
+                        </div>--%>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <footer>
+                <div class="copyright-wrapper"></div>
+                <div class="copyright-wrapper2"></div>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    © 2015 ASEAN Para Games Singapore
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </footer>
+
+        </div>
+        <div class="container go-to-top-container">
+            <div class="col-md-12">
+                <div class="go-to-top-wrapper">
+                    <a id="goToTop" href="#"></a>
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <style>
+        #navcontainer ul {
+            margin: 0;
+            padding: 10px;
+            list-style-type: none;
+        }
+
+            #navcontainer ul li {
+                display: inline;
+            }
+
+        .body-content-wrapper table.latest-medalist > thead > tr > th {
+            padding: 10px 15px 9px 15px;
+        }
+
+        .live-schedule.table > thead > tr > th > h3,
+        .latest-medalist.table > thead > tr > th > h3 {
+            white-space: nowrap;
+        }
+
+        .medal-standings.table > tbody > tr > td {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        .live-schedule .image-small {
+            width: 50px;
+        }
+
+        .live-schedule .live-schedule-cell span {
+            white-space: normal;
+            word-break: break-word;
+        }
+
+        .wrapper .live-schedule-inner tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .medal-standings .sport {
+            text-align: center;
+        }
+
+        .medal-standings.table > tbody > tr > td {
+            vertical-align: middle;
+        }
+
+        .medal-standings .img-sport {
+            width: 40px;
+        }
+
+        .medal-standings span.label-sport-name {
+            font-size: 80%;
+        }
+
+        .body-content-wrapper .table.medal-standings > thead > tr > th.medal-standings-header {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .medal-standings span.label-medal-standing {
+            display: inline-block;
+            width: 40%;
+            vertical-align: middle;
+            word-break: break-word;
+            white-space: normal;
+            font-size: 60%;
+            line-height: normal;
+            margin-left: 8px;
+        }
+    </style>
+</body>
+</html>

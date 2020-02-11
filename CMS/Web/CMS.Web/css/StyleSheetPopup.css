@@ -1,0 +1,158 @@
+﻿/*Modal Popup*/
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+
+.modalPopup {
+	border: 1px solid Gray;
+    background-color:#0c0a0c;
+	padding:3px;
+	width:300px;
+    text-align: left;
+}
+
+.labeltext {
+    color:#dcc34f;
+    padding:5px;
+    margin:5px;
+}
+
+/*---------------------------- Calender Extender -------------------------------------*/
+
+.calendarOverride .ajax__calendar_days table tr td {
+    /*padding: 1px;*/
+}
+
+.calendarOverride .ajax__calendar_container   {
+    /*background-color: #e2e2e2; 
+    border:solid 1px #cccccc;*/
+    border: 1px solid #E0E0E0;
+    background-color: #FAFAFA;
+}
+
+.calendarOverride .ajax__calendar_header  {
+    font-family: Tahoma, Calibri, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: central;
+    color: #9F9F9F;
+    font-weight: normal;
+    /*text-shadow: 0px 0px 2px #D3D3D3;*/
+    height: 20px;
+}
+
+.calendarOverride .ajax__calendar_title,
+.calendarOverride .ajax__calendar_next,
+.calendarOverride .ajax__calendar_prev    {
+    color: #004080; 
+    /*padding-top: 3px;*/
+}
+
+.calendarOverride .ajax__calendar_body    {
+    width: 175px;
+    height: 139px; /* modified */
+    position: relative;
+}
+
+.calendarOverride .ajax__calendar_dayname {
+    font-family: Tahoma, Calibri, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    color: #dcc34f;
+    font-weight: bold;
+    /*text-shadow: 0px 0px 2px #D3D3D3;*/
+    text-align: center !important;
+    vertical-align: middle;
+    background-color: #EDEDED;
+    border: solid 1px #D3D3D3;
+    text-transform: uppercase;
+    margin: 1px;
+}
+
+.calendarOverride .ajax__calendar_day {
+    font-family: Tahoma, Calibri, sans-serif;
+    font-size: 11px;
+        text-align: center;
+        font-weight: normal;
+        /*text-shadow: 0px 0px 2px #D3D3D3;*/
+        text-align: center !important;
+        vertical-align: middle;
+        border: solid 1px #E0E0E0;
+        text-transform: uppercase;
+        margin: 1px;
+        width: 17px !important;
+        color: #6B6B6B;
+        height: 15px; /* added */
+}
+
+.calendarOverride .ajax__calendar_hover .ajax__calendar_day,
+.calendarOverride .ajax__calendar_hover .ajax__calendar_month,
+.calendarOverride .ajax__calendar_hover .ajax__calendar_year,
+.calendarOverride .ajax__calendar_active  {
+    color: #6B6B6B; 
+    font-weight: bold; 
+    background-color: #EDEDED;
+    border: solid 1px #ac1717;
+}
+
+.calendarOverride .ajax__calendar_year
+    {
+        border: solid 1px #E0E0E0;
+        font-family: Tahoma, Calibri, sans-serif;
+        font-size: 11px;
+        text-align: center;
+        font-weight: normal;
+        /*text-shadow: 0px 0px 2px #D3D3D3;*/
+        text-align: center !important;
+        vertical-align: middle;
+        margin: 1px;
+        height: 40px; /* added */
+        color: #6B6B6B;
+    }
+
+.calendarOverride .ajax__calendar_month
+    {
+        border: solid 1px #E0E0E0;
+        font-family: Tahoma, Calibri, sans-serif;
+        font-size: 11px;
+        text-align: center;
+        font-weight: normal;
+        /*text-shadow: 0px 0px 2px #D3D3D3;*/
+        text-align: center !important;
+        vertical-align: middle;
+        margin: 1px;
+        height: 40px; /* added */
+        color: #6B6B6B;
+    }
+
+.calendarOverride .ajax__calendar_today   {
+    font-family: Tahoma, Calibri, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    /*text-shadow: 0px 0px 2px #D3D3D3;*/
+    text-align: center !important;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin: 1px;
+    color: #dcc34f;
+}
+
+.calendarOverride .ajax__calendar_other {
+    background-color: #E0E0E0;
+    margin: 1px;
+    width: 17px;
+}
+.calendarOverride .ajax__calendar_hover .ajax__calendar_today,
+.calendarOverride .ajax__calendar_hover .ajax__calendar_title {
+    /*color: #9F9F9F;*/
+}
+.Calendar .ajax__calendar_footer {
+    width: 175px;
+    border: none;
+    height: 20px;
+    vertical-align: middle;
+    color: #6B6B6B;
+}
